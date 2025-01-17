@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from extended_user import urls
+from extended_user import urls as eu_urls
+from campaign import urls as cam_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/',include(urls))
+    path('users/',include(eu_urls)),
+    path('campaign/', include(cam_urls))
 ]

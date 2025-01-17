@@ -1,5 +1,8 @@
 # serializers.py
 from rest_framework import serializers
+from rest_framework import serializers
+from django.contrib.auth.models import User
+# serializers.py
 class SQLAlchemySerializer(serializers.Serializer):
     def update(self, instance, validated_data):
         # This is a placeholder method for DRF compatibility
@@ -17,9 +20,6 @@ class SQLAlchemySerializer(serializers.Serializer):
         }
 
 
-# serializers.py
-from rest_framework import serializers
-from django.contrib.auth.models import User
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
