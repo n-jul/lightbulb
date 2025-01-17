@@ -1,4 +1,4 @@
-from sqlalchemy import Column, BigInteger, String, DateTime, func
+from sqlalchemy import Column, BigInteger, String, DateTime, func, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -25,6 +25,6 @@ class UserCampaignSequence(Base):
     created_by = Column(BigInteger, nullable=False)
 
 # Example of creating the table
-# from sqlalchemy import create_engine
-# engine = create_engine('postgresql://username:password@localhost:5432/mydatabase')
-# Base.metadata.create_all(engine)
+from sqlalchemy import create_engine
+engine = create_engine('postgresql://postgres:Anjul123@localhost:5432/lightbulb')
+Base.metadata.create_all(engine)
