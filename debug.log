@@ -492,3 +492,325 @@ TypeError: 'UserCampaignSerializer' object does not support item assignment
 [20/Jan/2025 12:55:51] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
 [20/Jan/2025 12:56:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
 [20/Jan/2025 12:56:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:56:19] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 12:56:19] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 12:56:19] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 12:56:19] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 12:56:19] DEBUG [campaign.views:101] serializer: UserCampaignSerializer(data={'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}):
+    id = IntegerField(read_only=True)
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='active', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[20/Jan/2025 12:56:19] DEBUG [campaign.views:103] Data from serializer: {'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_by': 10}
+[20/Jan/2025 12:56:19] DEBUG [campaign.views:104] Creating new campaign with data: {'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_by': 10}
+[20/Jan/2025 12:56:19] INFO [campaign.views:115] Successfully created new campaign by user 10
+[20/Jan/2025 12:56:19] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[20/Jan/2025 14:14:20] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[20/Jan/2025 14:14:24] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:21:06] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 14:21:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:21:28] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 14:21:32] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:21:34] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 14:21:38] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:21:46] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 14:21:50] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:21:57] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 14:22:01] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:22:27] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:22:31] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:22:44] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:22:47] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:22:52] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:22:55] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:23:00] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:23:03] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:23:06] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:23:09] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:23:23] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:23:26] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:23:31] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:23:34] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:23:40] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:23:43] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:24:09] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:24:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:40:20] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:40:24] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:40:27] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:40:31] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:40:34] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:40:38] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:40:41] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:40:45] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:41:05] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:41:08] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:41:13] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:41:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:41:23] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:41:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:42:01] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:42:05] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:42:09] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:42:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:42:27] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:42:30] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:43:04] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:43:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:43:12] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:43:15] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:43:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:43:22] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:45:40] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:45:44] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:45:49] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:45:52] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:46:11] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 14:47:00] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:47:00] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 52, in create
+    campaign = session.query(user_campaign).filter(id==serializer.validated_data['campaign_id'], user_campaign.status=="pending")
+                             ^^^^^^^^^^^^^
+NameError: name 'user_campaign' is not defined. Did you mean: 'UserCampaign'?
+[20/Jan/2025 14:47:54] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:47:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:48:02] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:48:06] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:48:10] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:48:14] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:48:18] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 14:48:44] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:48:44] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 55, in create
+    subject = campaign.subject
+              ^^^^^^^^^^^^^^^^
+AttributeError: 'Query' object has no attribute 'subject'
+[20/Jan/2025 14:49:07] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:49:11] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:49:18] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:49:21] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:49:26] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 14:50:03] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:50:03] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 55, in create
+    subject = campaign.title
+              ^^^^^^^^^^^^^^
+AttributeError: 'Query' object has no attribute 'title'
+[20/Jan/2025 14:50:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:50:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:50:23] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:50:26] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:50:33] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:50:37] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:50:41] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:50:45] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:50:49] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 14:51:15] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:51:15] INFO [campaign.views:54] campaign object that we got: SELECT user_campaign.id AS user_campaign_id, user_campaign.type AS user_campaign_type, user_campaign.text AS user_campaign_text, user_campaign.description AS user_campaign_description, user_campaign.status AS user_campaign_status, user_campaign.created_at AS user_campaign_created_at, user_campaign.updated_at AS user_campaign_updated_at, user_campaign.created_by AS user_campaign_created_by 
+FROM user_campaign 
+WHERE user_campaign.id = %(id_1)s AND user_campaign.status = %(status_1)s
+[20/Jan/2025 14:51:15] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 56, in create
+    subject = campaign.title
+              ^^^^^^^^^^^^^^
+AttributeError: 'Query' object has no attribute 'title'
+[20/Jan/2025 14:52:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:52:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:52:30] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 14:52:35] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:52:35] INFO [campaign.views:54] campaign object that we got: SELECT user_campaign.id AS user_campaign_id, user_campaign.type AS user_campaign_type, user_campaign.text AS user_campaign_text, user_campaign.description AS user_campaign_description, user_campaign.status AS user_campaign_status, user_campaign.created_at AS user_campaign_created_at, user_campaign.updated_at AS user_campaign_updated_at, user_campaign.created_by AS user_campaign_created_by 
+FROM user_campaign 
+WHERE user_campaign.id = %(id_1)s AND user_campaign.status = %(status_1)s
+[20/Jan/2025 14:52:35] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 56, in create
+    subject = campaign.text
+              ^^^^^^^^^^^^^
+AttributeError: 'Query' object has no attribute 'text'
+[20/Jan/2025 14:53:54] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:53:59] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:54:04] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 14:54:12] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:54:13] INFO [campaign.views:54] campaign object that we got: <campaign.models.UserCampaign object at 0x000001F3F3431FD0>
+[20/Jan/2025 14:54:13] DEBUG [campaign.views:59] Querying users with 'user' role
+[20/Jan/2025 14:54:13] INFO [campaign.views:65] Attempting to send email to 1 users
+[20/Jan/2025 14:54:13] ERROR [campaign.views:72] Failed to send email: name 'from_email' is not defined
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 66, in create
+    send_mail(subject, message, from_email, users_list)
+                                ^^^^^^^^^^
+NameError: name 'from_email' is not defined
+[20/Jan/2025 14:54:13] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+[20/Jan/2025 14:54:52] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:54:57] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:54:58] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 14:55:05] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:55:05] INFO [campaign.views:54] campaign object that we got: <campaign.models.UserCampaign object at 0x000002A147A19FD0>
+[20/Jan/2025 14:55:05] DEBUG [campaign.views:59] Querying users with 'user' role
+[20/Jan/2025 14:55:05] INFO [campaign.views:65] Attempting to send email to 1 users
+[20/Jan/2025 14:55:05] ERROR [campaign.views:72] Failed to send email: send_mail() missing 1 required positional argument: 'recipient_list'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 66, in create
+    send_mail(subject, message, users_list)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: send_mail() missing 1 required positional argument: 'recipient_list'
+[20/Jan/2025 14:55:05] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+[20/Jan/2025 14:55:32] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:55:36] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:55:40] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:55:43] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:55:48] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 14:55:53] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:55:53] INFO [campaign.views:54] campaign object that we got: <campaign.models.UserCampaign object at 0x0000020DF3ABDFD0>
+[20/Jan/2025 14:55:53] DEBUG [campaign.views:59] Querying users with 'user' role
+[20/Jan/2025 14:55:53] INFO [campaign.views:65] Attempting to send email to 1 users
+[20/Jan/2025 14:55:53] ERROR [campaign.views:72] Failed to send email: send_mail() missing 1 required positional argument: 'from_email'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 66, in create
+    send_mail(subject=subject, message=message, recipient_list=users_list)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: send_mail() missing 1 required positional argument: 'from_email'
+[20/Jan/2025 14:55:53] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+[20/Jan/2025 14:57:07] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:57:11] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:57:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:57:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:57:22] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 14:57:25] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 14:57:36] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 14:57:43] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:57:43] INFO [campaign.views:54] campaign object that we got: <campaign.models.UserCampaign object at 0x0000013540FADFD0>
+[20/Jan/2025 14:57:43] DEBUG [campaign.views:59] Querying users with 'user' role
+[20/Jan/2025 14:57:43] INFO [campaign.views:65] Attempting to send email to 1 users
+[20/Jan/2025 14:57:46] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 14:57:46] INFO [campaign.views:54] campaign object that we got: <campaign.models.UserCampaign object at 0x0000013540FADFD0>
+[20/Jan/2025 14:57:46] DEBUG [campaign.views:59] Querying users with 'user' role
+[20/Jan/2025 14:57:46] INFO [campaign.views:65] Attempting to send email to 1 users
+[20/Jan/2025 14:57:48] INFO [campaign.views:67] Email sent successfully
+[20/Jan/2025 14:57:50] INFO [campaign.views:67] Email sent successfully
+[20/Jan/2025 15:01:50] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:01:55] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:02:00] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:02:05] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:02:12] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:02:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:02:27] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 15:02:27] INFO [campaign.views:54] campaign object that we got: <campaign.models.UserCampaign object at 0x00000195D429B770>
+[20/Jan/2025 15:02:27] DEBUG [campaign.views:59] Querying users with 'user' role
+[20/Jan/2025 15:02:27] INFO [campaign.views:65] Attempting to send email to 1 users
+[20/Jan/2025 15:02:27] INFO [campaign.views:66] Recipient list is <QuerySet ['njulkushwaha@gmail.com']>
+[20/Jan/2025 15:02:32] INFO [campaign.views:68] Email sent successfully
+[20/Jan/2025 15:08:41] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:08:45] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:08:50] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:08:54] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:08:58] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:09:01] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:09:05] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:09:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:10:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:10:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:10:29] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:10:32] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:10:39] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:10:42] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:10:46] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 15:10:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader

@@ -49,11 +49,21 @@ class SendTestEmailViewSet(viewsets.ViewSet):
         serializer = EmailSerializer(data=request.data)
 
         if serializer.is_valid():
-            subject = serializer.validated_data['subject']
-            message = serializer.validated_data['message']
-            from_email = serializer.validated_data['from_email']
-            recipient_list = serializer.validated_data['recipient_list']
-            
+            sender_id = serializer.validated_data["sender_id"]
+            logger.debug(f"Checking if sender with ID {sender_id} is an admin")
+            sender = session.query(extended_user).filter(extended_user.id == sender_id).first()
+
+            if not sender or sender.role != 'admin':
+                logger.warning(f"Sender with ID {sender_id} is not authorized to send emails")
+                return Response({"error": "You are not authorized to send emails"}, 
+                                status=status.HTTP_403_FORBIDDEN)
+
+            campaign = session.query(UserCampaign).filter(UserCampaign.id==serializer.validated_data['campaign_id'], UserCampaign.status=="pending").first()    
+            subject, message ="",""
+            logger.info(f"campaign object that we got: {campaign}")
+            if campaign:
+                subject = campaign.text
+                message = campaign.description
             try:
                 logger.debug("Querying users with 'user' role")
                 users_with_role = session.query(extended_user).filter(extended_user.role=='user')
@@ -62,7 +72,8 @@ class SendTestEmailViewSet(viewsets.ViewSet):
                 total_users = len(users_list)
                 
                 logger.info(f"Attempting to send email to {total_users} users")
-                send_mail(subject, message, from_email, users_list)
+                logger.info(f"Recipient list is {users_list}")
+                send_mail(subject=subject, message=message,from_email="anjulkushwaha11@gmail.com", recipient_list=users_list)
                 logger.info("Email sent successfully")
                 
                 return Response({"message": "Email sent successfully!", "Total users":total_users}, 
