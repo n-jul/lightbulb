@@ -1,1 +1,494 @@
 [17/Jan/2025 17:36:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[17/Jan/2025 17:40:53] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[17/Jan/2025 17:40:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[17/Jan/2025 17:41:08] WARNING [django.request:248] Not Found: /
+[17/Jan/2025 17:44:00] INFO [campaign.views:126] Received request to list all user campaigns
+[17/Jan/2025 17:44:01] INFO [campaign.views:130] Successfully retrieved 0 campaigns
+[17/Jan/2025 17:44:24] INFO [campaign.views:83] Received request to create new user campaign
+[17/Jan/2025 17:44:24] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[17/Jan/2025 17:44:24] INFO [campaign.views:32] User 10 confirmed as superadmin
+[17/Jan/2025 17:44:24] ERROR [django.request:248] Internal Server Error: /campaign/api/campaigns/
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 96, in create
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 495, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 1078, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\utils\model_meta.py", line 35, in get_field_info
+    opts = model._meta.concrete_model._meta
+           ^^^^^^^^^^^
+AttributeError: type object 'UserCampaign' has no attribute '_meta'
+[17/Jan/2025 17:51:44] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[17/Jan/2025 17:51:47] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[17/Jan/2025 17:51:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[17/Jan/2025 17:51:59] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[17/Jan/2025 17:52:20] INFO [campaign.views:126] Received request to list all user campaigns
+[17/Jan/2025 17:52:20] INFO [campaign.views:130] Successfully retrieved 0 campaigns
+[17/Jan/2025 17:52:56] INFO [campaign.views:83] Received request to create new user campaign
+[17/Jan/2025 17:52:56] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[17/Jan/2025 17:52:56] INFO [campaign.views:32] User 10 confirmed as superadmin
+[17/Jan/2025 17:52:56] DEBUG [campaign.views:99] Creating new campaign with data: {}
+[17/Jan/2025 17:52:56] ERROR [campaign.views:117] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 102, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[17/Jan/2025 17:52:56] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[17/Jan/2025 17:54:46] INFO [campaign.views:83] Received request to create new user campaign
+[17/Jan/2025 17:54:46] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[17/Jan/2025 17:54:46] INFO [campaign.views:32] User 10 confirmed as superadmin
+[17/Jan/2025 17:54:46] DEBUG [campaign.views:99] Creating new campaign with data: {}
+[17/Jan/2025 17:54:46] ERROR [campaign.views:117] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 102, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[17/Jan/2025 17:54:46] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 10:01:06] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:01:16] WARNING [django.request:248] Not Found: /
+[20/Jan/2025 10:01:17] WARNING [django.request:248] Not Found: /favicon.ico
+[20/Jan/2025 10:02:31] INFO [campaign.views:126] Received request to list all user campaigns
+[20/Jan/2025 10:02:32] INFO [campaign.views:130] Successfully retrieved 0 campaigns
+[20/Jan/2025 10:03:53] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 10:03:53] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 10:03:53] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 10:03:53] DEBUG [campaign.views:99] Creating new campaign with data: {}
+[20/Jan/2025 10:03:53] ERROR [campaign.views:117] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 102, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[20/Jan/2025 10:03:53] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 10:07:39] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 10:07:43] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:08:34] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 10:08:34] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 10:08:34] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 10:08:34] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 10:08:34] DEBUG [campaign.views:100] Creating new campaign with data: {}
+[20/Jan/2025 10:08:34] ERROR [campaign.views:118] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 103, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[20/Jan/2025 10:08:34] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 10:12:13] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:12:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:12:20] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:12:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:13:30] INFO [campaign.views:127] Received request to list all user campaigns
+[20/Jan/2025 10:13:30] INFO [campaign.views:131] Successfully retrieved 0 campaigns
+[20/Jan/2025 10:13:45] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 10:13:45] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 10:13:45] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 10:13:45] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 10:13:45] DEBUG [campaign.views:100] Creating new campaign with data: {}
+[20/Jan/2025 10:13:45] ERROR [campaign.views:118] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 103, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[20/Jan/2025 10:13:45] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 10:20:57] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 10:21:01] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:21:05] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 10:21:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:21:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 10:21:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:21:26] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 10:21:26] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 10:21:26] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 10:21:26] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 10:21:26] DEBUG [campaign.views:100] Data from serializer: {}
+[20/Jan/2025 10:21:26] DEBUG [campaign.views:101] Creating new campaign with data: {}
+[20/Jan/2025 10:21:26] ERROR [campaign.views:119] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 104, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[20/Jan/2025 10:21:26] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 10:29:58] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:30:02] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:30:55] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:30:59] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:31:43] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:31:47] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:31:53] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:31:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:32:04] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:32:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:32:12] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:32:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:36:17] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:36:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:36:28] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:36:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:36:38] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:36:42] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:42:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:42:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:42:33] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 10:42:37] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 10:42:43] INFO [campaign.views:128] Received request to list all user campaigns
+[20/Jan/2025 10:42:43] INFO [campaign.views:132] Successfully retrieved 0 campaigns
+[20/Jan/2025 10:42:56] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 10:42:56] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 10:42:56] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 10:42:56] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 10:42:56] DEBUG [campaign.views:100] Data from serializer: {}
+[20/Jan/2025 10:42:56] DEBUG [campaign.views:101] Creating new campaign with data: {}
+[20/Jan/2025 10:42:56] ERROR [campaign.views:119] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 104, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[20/Jan/2025 10:42:56] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 11:01:21] INFO [campaign.views:128] Received request to list all user campaigns
+[20/Jan/2025 11:01:21] INFO [campaign.views:132] Successfully retrieved 0 campaigns
+[20/Jan/2025 11:01:31] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 11:01:31] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 11:01:31] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 11:01:31] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 11:01:31] DEBUG [campaign.views:100] Data from serializer: {}
+[20/Jan/2025 11:01:31] DEBUG [campaign.views:101] Creating new campaign with data: {}
+[20/Jan/2025 11:01:31] ERROR [campaign.views:119] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 104, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[20/Jan/2025 11:01:31] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 11:14:53] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:14:57] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:15:01] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:15:04] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:15:12] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:15:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:15:21] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:15:26] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:15:34] INFO [campaign.views:129] Received request to list all user campaigns
+[20/Jan/2025 11:15:34] INFO [campaign.views:133] Successfully retrieved 0 campaigns
+[20/Jan/2025 11:15:45] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 11:15:45] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 11:15:45] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 11:15:45] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 11:15:45] DEBUG [campaign.views:99] serializer is_valid function returned: True
+[20/Jan/2025 11:15:45] DEBUG [campaign.views:101] Data from serializer: {}
+[20/Jan/2025 11:15:45] DEBUG [campaign.views:102] Creating new campaign with data: {}
+[20/Jan/2025 11:15:45] ERROR [campaign.views:120] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 105, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[20/Jan/2025 11:15:45] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 11:16:18] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:16:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:16:28] INFO [campaign.views:129] Received request to list all user campaigns
+[20/Jan/2025 11:16:29] INFO [campaign.views:133] Successfully retrieved 0 campaigns
+[20/Jan/2025 11:16:38] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 11:16:38] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 11:16:38] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 11:16:38] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 11:16:38] DEBUG [campaign.views:99] serializer: True
+[20/Jan/2025 11:16:38] DEBUG [campaign.views:101] Data from serializer: {}
+[20/Jan/2025 11:16:38] DEBUG [campaign.views:102] Creating new campaign with data: {}
+[20/Jan/2025 11:16:38] ERROR [campaign.views:120] Failed to create campaign: 'type'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 105, in create
+    type=user_campaign_data['type'],
+         ~~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'type'
+[20/Jan/2025 11:16:38] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 11:40:11] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 11:40:14] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:40:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 11:40:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:40:40] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 11:40:40] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 11:40:40] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 11:40:40] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 11:40:40] DEBUG [campaign.views:99] serializer: UserCampaignSerializer(data={'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}):
+[20/Jan/2025 11:40:40] ERROR [campaign.views:120] Failed to create campaign: You must call `.is_valid()` before accessing `.validated_data`.
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 100, in create
+    user_campaign_data = serializer.validated_data
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 267, in validated_data
+    raise AssertionError(msg)
+AssertionError: You must call `.is_valid()` before accessing `.validated_data`.
+[20/Jan/2025 11:40:40] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 11:42:17] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:42:21] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:42:29] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:42:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:42:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:42:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:43:01] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 11:43:01] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 11:43:01] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 11:43:01] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 11:43:01] DEBUG [campaign.views:100] serializer: UserCampaignSerializer(data={'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}):
+[20/Jan/2025 11:43:01] ERROR [campaign.views:121] Failed to create campaign: You must call `.is_valid()` before accessing `.validated_data`.
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 101, in create
+    user_campaign_data = serializer.validated_data
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 267, in validated_data
+    raise AssertionError(msg)
+AssertionError: You must call `.is_valid()` before accessing `.validated_data`.
+[20/Jan/2025 11:43:01] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 11:45:47] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:45:51] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:45:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:46:00] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:46:04] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:46:08] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:46:17] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:46:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:46:25] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:46:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:46:36] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:46:40] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:46:49] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:46:52] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:54:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:54:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:54:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:54:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:54:29] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:54:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:54:36] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:54:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:54:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 11:55:00] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:55:50] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 11:55:58] WARNING [django.request:248] Not Found: /
+[20/Jan/2025 11:56:04] INFO [campaign.views:127] Received request to list all user campaigns
+[20/Jan/2025 11:56:04] INFO [campaign.views:131] Successfully retrieved 0 campaigns
+[20/Jan/2025 11:56:21] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 11:56:21] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 11:56:21] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 11:56:21] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 11:56:21] DEBUG [campaign.views:101] serializer: UserCampaignSerializer(data={'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}):
+[20/Jan/2025 11:56:21] ERROR [campaign.views:122] Failed to create campaign: You must call `.is_valid()` before accessing `.validated_data`.
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 102, in create
+    user_campaign_data = serializer.validated_data
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 267, in validated_data
+    raise AssertionError(msg)
+AssertionError: You must call `.is_valid()` before accessing `.validated_data`.
+[20/Jan/2025 11:56:21] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 12:05:29] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:05:34] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:05:43] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:05:47] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:05:51] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:05:55] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:07:44] INFO [campaign.views:127] Received request to list all user campaigns
+[20/Jan/2025 12:07:44] INFO [campaign.views:131] Successfully retrieved 0 campaigns
+[20/Jan/2025 12:07:58] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 12:07:58] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 12:07:58] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 12:07:58] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 12:07:59] ERROR [django.request:248] Internal Server Error: /campaign/api/campaigns/
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 97, in create
+    if not serializer.is_valid():
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py", line 19, in is_valid
+    self.errors = {}
+    ^^^^^^^^^^^
+AttributeError: property 'errors' of 'UserCampaignSerializer' object has no setter
+[20/Jan/2025 12:09:25] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:09:30] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:09:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:09:38] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:10:14] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:10:17] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:10:31] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:10:36] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:11:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:11:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:11:20] INFO [campaign.views:127] Received request to list all user campaigns
+[20/Jan/2025 12:11:20] INFO [campaign.views:131] Successfully retrieved 0 campaigns
+[20/Jan/2025 12:11:33] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 12:11:33] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 12:11:33] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 12:11:33] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 12:11:33] DEBUG [campaign.views:101] serializer: UserCampaignSerializer(data={'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}):
+[20/Jan/2025 12:11:33] ERROR [campaign.views:122] Failed to create campaign: You must call `.is_valid()` before accessing `.validated_data`.
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 102, in create
+    user_campaign_data = serializer.validated_data
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 267, in validated_data
+    raise AssertionError(msg)
+AssertionError: You must call `.is_valid()` before accessing `.validated_data`.
+[20/Jan/2025 12:11:33] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 12:13:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:13:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:13:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:13:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:13:20] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:13:25] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:13:28] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:13:32] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:13:51] INFO [campaign.views:127] Received request to list all user campaigns
+[20/Jan/2025 12:13:51] INFO [campaign.views:131] Successfully retrieved 0 campaigns
+[20/Jan/2025 12:14:05] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 12:14:05] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 12:14:05] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 12:14:05] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 12:14:05] DEBUG [campaign.views:101] serializer: UserCampaignSerializer(data={'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}):
+[20/Jan/2025 12:14:05] ERROR [campaign.views:122] Failed to create campaign: You must call `.is_valid()` before accessing `.validated_data`.
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 102, in create
+    user_campaign_data = serializer.validated_data
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 267, in validated_data
+    raise AssertionError(msg)
+AssertionError: You must call `.is_valid()` before accessing `.validated_data`.
+[20/Jan/2025 12:14:05] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 12:42:09] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:42:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:42:16] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:42:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:45:54] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:45:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:46:01] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:46:04] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:46:11] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:46:15] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:46:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:46:22] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:46:26] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:46:32] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:46:34] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:46:38] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:46:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:46:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:46:53] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:46:56] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:47:01] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:47:05] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:47:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:47:24] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:50:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:50:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:50:36] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:50:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:50:51] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[20/Jan/2025 12:50:54] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:51:28] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 12:51:28] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 12:51:28] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 12:51:29] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 12:51:29] DEBUG [campaign.views:101] serializer: UserCampaignSerializer(data={'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}):
+    id = IntegerField(read_only=True)
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='active', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[20/Jan/2025 12:51:29] DEBUG [campaign.views:103] Data from serializer: {'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_by': 10}
+[20/Jan/2025 12:51:29] DEBUG [campaign.views:104] Creating new campaign with data: {'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_by': 10}
+[20/Jan/2025 12:51:29] INFO [campaign.views:115] Successfully created new campaign by user 10
+[20/Jan/2025 12:51:29] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[20/Jan/2025 12:54:59] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 12:55:03] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:55:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 12:55:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:55:14] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 12:55:17] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 12:55:26] INFO [campaign.views:128] Received request to list all user campaigns
+[20/Jan/2025 12:55:26] INFO [campaign.views:132] Successfully retrieved 1 campaigns
+[20/Jan/2025 12:55:26] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[20/Jan/2025 12:55:51] INFO [campaign.views:83] Received request to create new user campaign
+[20/Jan/2025 12:55:51] DEBUG [campaign.views:84] Request data: {'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}
+[20/Jan/2025 12:55:51] INFO [campaign.views:27] Checking superadmin status for user_id: 10
+[20/Jan/2025 12:55:51] INFO [campaign.views:32] User 10 confirmed as superadmin
+[20/Jan/2025 12:55:51] DEBUG [campaign.views:101] serializer: UserCampaignSerializer(data={'created_by': 10, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active'}):
+    id = IntegerField(read_only=True)
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='active', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[20/Jan/2025 12:55:51] DEBUG [campaign.views:103] Data from serializer: {'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_by': 10}
+[20/Jan/2025 12:55:51] DEBUG [campaign.views:104] Creating new campaign with data: {'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_by': 10}
+[20/Jan/2025 12:55:51] INFO [campaign.views:115] Successfully created new campaign by user 10
+[20/Jan/2025 12:55:51] ERROR [campaign.views:123] Failed to create campaign: 'UserCampaignSerializer' object does not support item assignment
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 118, in create
+    response_serializer['User_creation']='Success'
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: 'UserCampaignSerializer' object does not support item assignment
+[20/Jan/2025 12:55:51] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[20/Jan/2025 12:56:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[20/Jan/2025 12:56:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
