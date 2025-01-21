@@ -36,8 +36,6 @@ class EmailSerializer(serializers.Serializer):
     campaign_id = serializers.IntegerField(required=True)
 
 class UserCampaignSerializer(SQLAlchemySerializer):
-    id = serializers.IntegerField(read_only=True)
-    # type, text, description, created_by are required fields
     type = serializers.CharField(required=True)
     text = serializers.CharField(required=True)
     description = serializers.CharField(required=False, allow_blank=True)

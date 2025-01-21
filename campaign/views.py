@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.permissions import BasePermission, IsAuthenticated
 from django.core.mail import send_mail
 from django.contrib.auth.models import User as DjangoUser
 from .serializers import EmailSerializer
@@ -18,7 +19,7 @@ DATABASE_URL = "postgresql://postgres:Anjul123@localhost:5432/lightbulb"
 engine = create_engine(DATABASE_URL)
 Session = sessionmaker(bind=engine)
 session = Session()
-
+    
 def check_if_superadmin(user_id):
     """
     Checks if a given user ID exists in the database and if their role is 'superadmin'.
@@ -40,6 +41,19 @@ def check_if_superadmin(user_id):
     finally:
         session.close()
 
+class IsSuperAdmin(BasePermission):
+    """
+    Custom permission to allow only superadmin users to access the view.
+    """
+
+    def has_permission(self, request, view):
+        # Since user is already authenticated (checked by IsAuthenticated), 
+        # just check if the user is a superadmin
+        if check_if_superadmin(request.user.id):
+            return True
+
+        # If the user is not a superadmin
+        return False
 class SendTestEmailViewSet(viewsets.ViewSet):
     """
     A simple ViewSet for sending test emails.
@@ -90,20 +104,12 @@ class UserCampaignViewSet(viewsets.ViewSet):
     """
     A viewset for viewing and creating user campaigns using SQLAlchemy.
     """
+    permission_classes = [IsAuthenticated, IsSuperAdmin]
     def create(self, request, *args, **kwargs):
         logger.info("Received request to create new user campaign")
         logger.debug(f"Request data: {request.data}")
-        user_id = request.data.get('created_by', None)
-        
-        if not user_id:
-            logger.warning("No user ID provided in campaign creation request")
-            return Response({'error': "No user ID provided."}, 
-                          status=status.HTTP_400_BAD_REQUEST)
-            
-        if not check_if_superadmin(user_id):
-            logger.warning(f"Non-superadmin user {user_id} attempted to create campaign")
-            return Response({'error': "You don't have the permission to create the campaign..."})
-
+        created_by = request.user.id
+        request.data['created_by']=created_by
         serializer = UserCampaignSerializer(data=request.data)
         if not serializer.is_valid():
             logger.warning(f"Invalid campaign data provided: {serializer.errors}")
@@ -123,7 +129,7 @@ class UserCampaignViewSet(viewsets.ViewSet):
                 )
                 session.add(new_campaign)
                 session.commit()
-                logger.info(f"Successfully created new campaign by user {user_id}")
+                logger.info(f"Successfully created new campaign by user {created_by}")
                 
                 response_serializer = UserCampaignSerializer(new_campaign)
                 return Response(response_serializer.data, status=status.HTTP_201_CREATED)

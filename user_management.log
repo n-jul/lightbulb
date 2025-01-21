@@ -1,0 +1,19 @@
+2025-01-21 14:41:57,060 - extended_user.views - INFO - Processing login request
+2025-01-21 14:41:58,499 - extended_user.views - WARNING - Failed login attempt for user: njul
+2025-01-21 15:39:37,467 - extended_user.views - INFO - Processing login request
+2025-01-21 15:39:39,336 - extended_user.views - INFO - Successful login for user: njul
+2025-01-21 15:53:39,708 - extended_user.views - INFO - Processing login request
+2025-01-21 15:53:41,499 - extended_user.views - WARNING - Failed login attempt for user: njul11
+2025-01-21 15:59:11,453 - extended_user.views - INFO - Fetching all extended users
+2025-01-21 15:59:11,590 - extended_user.views - INFO - Successfully retrieved 5 extended users
+2025-01-21 16:00:51,313 - extended_user.views - INFO - Attempting to create new user and extended user
+2025-01-21 16:00:52,954 - extended_user.views - INFO - Created Django user with ID: 11
+2025-01-21 16:00:52,955 - extended_user.views - ERROR - Error creating extended user: 'role'
+2025-01-21 16:00:53,004 - extended_user.views - INFO - Rolled back Django user creation for ID: None
+2025-01-21 16:02:48,272 - extended_user.views - INFO - Attempting to create new user and extended user
+2025-01-21 16:02:50,039 - extended_user.views - INFO - Created Django user with ID: 12
+2025-01-21 16:02:50,050 - extended_user.views - INFO - Created extended user with ID: 12
+2025-01-21 16:03:13,658 - extended_user.views - INFO - Processing login request
+2025-01-21 16:03:15,655 - extended_user.views - INFO - Successful login for user: anjul
+2025-01-21 16:10:53,549 - extended_user.views - INFO - Processing login request
+2025-01-21 16:10:55,611 - extended_user.views - INFO - Successful login for user: anjul
