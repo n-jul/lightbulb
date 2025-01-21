@@ -814,3 +814,8 @@ TypeError: send_mail() missing 1 required positional argument: 'from_email'
 [20/Jan/2025 15:10:42] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
 [20/Jan/2025 15:10:46] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
 [20/Jan/2025 15:10:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[20/Jan/2025 15:11:04] WARNING [django.request:248] Method Not Allowed: /campaign/api/send_email/
+[20/Jan/2025 15:11:19] INFO [campaign.views:48] Received request to send test email
+[20/Jan/2025 15:11:19] DEBUG [campaign.views:53] Checking if sender with ID 10 is an admin
+[20/Jan/2025 15:11:19] WARNING [campaign.views:57] Sender with ID 10 is not authorized to send emails
+[20/Jan/2025 15:11:19] WARNING [django.request:248] Forbidden: /campaign/api/send_email/
