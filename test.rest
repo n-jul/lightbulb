@@ -2,3 +2,9 @@ POST http://127.0.0.1.8000/
 Content-Type: application/json
 
 {"username":"zack"}
+
+###
+POST http://127.0.0.1:8000/users/api/login/
+Content-Type: application/json
+
+{"username":"njul", "password":"123123"}
