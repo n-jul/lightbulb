@@ -97,9 +97,14 @@ class LoginView(APIView):
             if user is not None:
                 refresh = RefreshToken.for_user(user)
                 logger.info(f"Successful login for user: {username}")
+                user_role = session.query(extended_user).filter_by(id=user.id).first()
+                role = None
+                if user_role:
+                    role = user_role.role
                 return Response({
                     'refresh': str(refresh),
                     'access': str(refresh.access_token),
+                    'role': role,
                     "message": "Login successfull"
                 })
             else:

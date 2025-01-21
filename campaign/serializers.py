@@ -32,7 +32,6 @@ class SQLAlchemySerializer(serializers.Serializer):
     def errors(self):
         return self._errors
 class EmailSerializer(serializers.Serializer):
-    sender_id = serializers.IntegerField(required=True)
     campaign_id = serializers.IntegerField(required=True)
 
 class UserCampaignSerializer(SQLAlchemySerializer):
@@ -41,7 +40,7 @@ class UserCampaignSerializer(SQLAlchemySerializer):
     description = serializers.CharField(required=False, allow_blank=True)
     
     # status will default to 'active' if not provided
-    status = serializers.CharField(default='active', required=False)
+    status = serializers.CharField(default='pending', required=False)
     
     # created_at and updated_at will be populated by the database, so they are read-only
     created_at = serializers.DateTimeField(read_only=True)

@@ -41,37 +41,60 @@ def check_if_superadmin(user_id):
     finally:
         session.close()
 
+def check_if_admin(user_id):
+    """
+    Checks if a given user ID exists in the database and if their role is 'admin'.
+    Returns True if user exists and is a admin, otherwise False.
+    """
+    logger.info(f"Checking superadmin status for user_id: {user_id}")
+    try:
+        user = session.query(extended_user).filter_by(id=user_id).first()
+        
+        if user and user.role == 'admin':
+            logger.info(f"User {user_id} confirmed as admin")
+            return True
+        logger.warning(f"User {user_id} is not a admin or doesn't exist")
+        return False
+        
+    except Exception as e:
+        logger.error(f"Error checking admin status for user {user_id}: {str(e)}", exc_info=True)
+        return False
+    finally:
+        session.close()
+
 class IsSuperAdmin(BasePermission):
     """
     Custom permission to allow only superadmin users to access the view.
     """
-
     def has_permission(self, request, view):
         # Since user is already authenticated (checked by IsAuthenticated), 
         # just check if the user is a superadmin
         if check_if_superadmin(request.user.id):
             return True
-
         # If the user is not a superadmin
+        return False
+
+class IsAdmin(BasePermission):
+    """
+    Custom permission to allow only admin users to access the view.
+    """
+    def has_permission(self, request, view):
+        # Since user is already authenticated (checked by IsAuthenticated), 
+        # just check if the user is a admin
+        if check_if_admin(request.user.id):
+            return True
+
+        # If the user is not a admin
         return False
 class SendTestEmailViewSet(viewsets.ViewSet):
     """
     A simple ViewSet for sending test emails.
     """
+    permission_classes=[IsAuthenticated, IsAdmin]
     def create(self, request):
         logger.info("Received request to send test email")
         serializer = EmailSerializer(data=request.data)
-
         if serializer.is_valid():
-            sender_id = serializer.validated_data["sender_id"]
-            logger.debug(f"Checking if sender with ID {sender_id} is an admin")
-            sender = session.query(extended_user).filter(extended_user.id == sender_id).first()
-
-            if not sender or sender.role != 'admin':
-                logger.warning(f"Sender with ID {sender_id} is not authorized to send emails")
-                return Response({"error": "You are not authorized to send emails"}, 
-                                status=status.HTTP_403_FORBIDDEN)
-
             campaign = session.query(UserCampaign).filter(UserCampaign.id==serializer.validated_data['campaign_id'], UserCampaign.status=="pending").first()    
             subject, message ="",""
             logger.info(f"campaign object that we got: {campaign}")

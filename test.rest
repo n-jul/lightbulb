@@ -7,7 +7,7 @@ Content-Type: application/json
 POST http://127.0.0.1:8000/users/api/login/
 Content-Type: application/json
 
-{"username":"anjul", "password":"Anjul123"}
+{"username":"test_admin", "password":"test123"}
 
 ###
 POST http://127.0.0.1:8000/campaign/api/campaigns/
@@ -20,3 +20,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
     "description": "This campaign is to introduce our latest product to our users.",
     "status": "active"
 }
+
+###
+POST http://127.0.0.1:8000/campaign/api/send_email/ 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NDU4MjExLCJpYXQiOjE3Mzc0NTc5MTEsImp0aSI6ImY3N2U0NTVhMTE1ODQzMjU4ZjUyMDFhMWI0MzE2NmZlIiwidXNlcl9pZCI6MTN9.icm88sHjTPU7r4Fn_M9n3hVy3h0mysLUXrfibvhJ27M
+
+{"campaign_id":6}

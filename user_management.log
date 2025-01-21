@@ -17,3 +17,22 @@
 2025-01-21 16:03:15,655 - extended_user.views - INFO - Successful login for user: anjul
 2025-01-21 16:10:53,549 - extended_user.views - INFO - Processing login request
 2025-01-21 16:10:55,611 - extended_user.views - INFO - Successful login for user: anjul
+2025-01-21 16:33:15,439 - extended_user.views - INFO - Fetching all extended users
+2025-01-21 16:33:15,670 - extended_user.views - INFO - Successfully retrieved 6 extended users
+2025-01-21 16:34:24,535 - extended_user.views - INFO - Attempting to create new user and extended user
+2025-01-21 16:34:26,054 - extended_user.views - INFO - Created Django user with ID: 13
+2025-01-21 16:34:26,064 - extended_user.views - INFO - Created extended user with ID: 13
+2025-01-21 16:34:53,749 - extended_user.views - INFO - Processing login request
+2025-01-21 16:34:55,526 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-21 16:41:49,865 - extended_user.views - INFO - Processing login request
+2025-01-21 16:41:51,647 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-21 17:26:43,998 - extended_user.views - INFO - Processing login request
+2025-01-21 17:26:45,527 - extended_user.views - WARNING - Failed login attempt for user: anjul
+2025-01-21 17:27:45,235 - extended_user.views - INFO - Processing login request
+2025-01-21 17:27:46,911 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-21 17:36:57,786 - extended_user.views - INFO - Processing login request
+2025-01-21 17:36:59,572 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-21 17:37:30,616 - extended_user.views - INFO - Processing login request
+2025-01-21 17:37:32,073 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-21 17:38:13,563 - extended_user.views - INFO - Processing login request
+2025-01-21 17:38:15,137 - extended_user.views - INFO - Successful login for user: test_admin
