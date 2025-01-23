@@ -1377,3 +1377,21 @@ Traceback (most recent call last):
 AttributeError: 'Query' object has no attribute 'role'
 [21/Jan/2025 17:38:55] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\views.py changed, reloading.
 [21/Jan/2025 17:38:59] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[21/Jan/2025 17:39:01] INFO [extended_user.views:89] Processing login request
+[21/Jan/2025 17:39:03] INFO [extended_user.views:99] Successful login for user: test_admin
+[22/Jan/2025 23:23:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[22/Jan/2025 23:23:20] WARNING [django.request:248] Not Found: /
+[22/Jan/2025 23:23:21] WARNING [django.request:248] Not Found: /favicon.ico
+[22/Jan/2025 23:24:17] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[22/Jan/2025 23:25:08] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[22/Jan/2025 23:25:34] INFO [extended_user.views:89] Processing login request
+[22/Jan/2025 23:25:36] INFO [extended_user.views:99] Successful login for user: test_admin
+[23/Jan/2025 12:08:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 12:08:38] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\models.py changed, reloading.
+[23/Jan/2025 12:08:42] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 12:08:53] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\models.py changed, reloading.
+[23/Jan/2025 12:08:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 12:09:11] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\models.py changed, reloading.
+[23/Jan/2025 12:09:15] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 12:09:37] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 12:10:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader

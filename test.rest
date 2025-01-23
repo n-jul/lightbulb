@@ -27,3 +27,7 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NDU4MjExLCJpYXQiOjE3Mzc0NTc5MTEsImp0aSI6ImY3N2U0NTVhMTE1ODQzMjU4ZjUyMDFhMWI0MzE2NmZlIiwidXNlcl9pZCI6MTN9.icm88sHjTPU7r4Fn_M9n3hVy3h0mysLUXrfibvhJ27M
 
 {"campaign_id":6}
+
+###
+GET http://127.0.0.1:8000/campaign/api/campaigns/
+Content-Type: application/json
