@@ -1395,3 +1395,369 @@ AttributeError: 'Query' object has no attribute 'role'
 [23/Jan/2025 12:09:15] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
 [23/Jan/2025 12:09:37] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
 [23/Jan/2025 12:10:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 12:10:35] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 12:10:37] INFO [extended_user.views:99] Successful login for user: test_admin
+[23/Jan/2025 12:23:36] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 12:23:37] INFO [extended_user.views:99] Successful login for user: test_admin
+[23/Jan/2025 12:52:55] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 12:52:57] INFO [extended_user.views:99] Successful login for user: test_admin
+[23/Jan/2025 14:11:28] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:11:30] INFO [extended_user.views:99] Successful login for user: test_admin
+[23/Jan/2025 14:14:09] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:14:11] INFO [extended_user.views:99] Successful login for user: test_admin
+[23/Jan/2025 14:15:00] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:15:01] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:15:01] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:15:11] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:15:13] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:15:13] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:15:37] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:15:38] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:15:38] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:16:19] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:16:21] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:16:21] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:16:42] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:16:44] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:16:44] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:16:52] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:16:54] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:16:54] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:16:59] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:17:01] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:17:01] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:17:11] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:17:13] WARNING [extended_user.views:111] Failed login attempt for user: test
+[23/Jan/2025 14:17:13] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:17:19] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:17:21] INFO [extended_user.views:99] Successful login for user: test_admin
+[23/Jan/2025 14:18:08] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:18:10] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:18:10] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:20:32] WARNING [django.request:248] Not Found: /
+[23/Jan/2025 14:20:33] WARNING [django.request:248] Not Found: /favicon.ico
+[23/Jan/2025 14:20:43] INFO [extended_user.views:38] Fetching all extended users
+[23/Jan/2025 14:20:43] INFO [extended_user.views:43] Successfully retrieved 7 extended users
+[23/Jan/2025 14:21:32] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:21:34] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:21:34] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:21:45] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:21:47] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:21:47] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:21:50] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:21:52] WARNING [extended_user.views:111] Failed login attempt for user: anjul
+[23/Jan/2025 14:21:52] WARNING [django.request:248] Unauthorized: /users/api/login/
+[23/Jan/2025 14:23:41] INFO [extended_user.views:50] Attempting to create new user and extended user
+[23/Jan/2025 14:23:43] INFO [extended_user.views:57] Created Django user with ID: 14
+[23/Jan/2025 14:23:43] INFO [extended_user.views:67] Created extended user with ID: 14
+[23/Jan/2025 14:24:07] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:24:09] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 14:24:39] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:24:41] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 14:26:27] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:26:29] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 14:28:37] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:28:39] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 14:48:38] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:48:40] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 14:49:02] WARNING [django.request:248] Not Found: /api/create-campaign
+[23/Jan/2025 14:50:26] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 14:51:48] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 14:51:50] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 14:52:06] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 14:52:52] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 14:52:52] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 14:52:52] INFO [campaign.views:132] Received request to create new user campaign
+[23/Jan/2025 14:52:52] DEBUG [campaign.views:133] Request data: {'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active'}
+[23/Jan/2025 14:52:52] DEBUG [campaign.views:141] serializer: UserCampaignSerializer(data={'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_by': 14}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[23/Jan/2025 14:52:52] DEBUG [campaign.views:143] Data from serializer: {'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_by': 14}
+[23/Jan/2025 14:52:52] DEBUG [campaign.views:144] Creating new campaign with data: {'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_by': 14}
+[23/Jan/2025 14:52:52] INFO [campaign.views:155] Successfully created new campaign by user 14
+[23/Jan/2025 14:52:52] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 14:53:09] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 14:53:09] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 14:53:09] INFO [campaign.views:132] Received request to create new user campaign
+[23/Jan/2025 14:53:09] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[23/Jan/2025 14:53:19] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 14:53:19] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 14:53:19] INFO [campaign.views:132] Received request to create new user campaign
+[23/Jan/2025 14:53:19] DEBUG [campaign.views:133] Request data: {'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.'}
+[23/Jan/2025 14:53:19] DEBUG [campaign.views:141] serializer: UserCampaignSerializer(data={'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'created_by': 14}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[23/Jan/2025 14:53:19] DEBUG [campaign.views:143] Data from serializer: {'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 14}
+[23/Jan/2025 14:53:19] DEBUG [campaign.views:144] Creating new campaign with data: {'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 14}
+[23/Jan/2025 14:53:19] INFO [campaign.views:155] Successfully created new campaign by user 14
+[23/Jan/2025 14:53:19] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 14:54:09] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 14:58:56] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:01:07] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:01:45] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:02:07] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:03:01] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:06:11] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:06:37] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 15:06:38] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 15:07:39] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:07:42] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:08:15] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:08:15] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:08:15] INFO [campaign.views:132] Received request to create new user campaign
+[23/Jan/2025 15:08:15] DEBUG [campaign.views:133] Request data: {'type': 'sdfgh', 'description': 'sdfgsdfghxcvb', 'text': 'dfgh'}
+[23/Jan/2025 15:08:15] DEBUG [campaign.views:141] serializer: UserCampaignSerializer(data={'type': 'sdfgh', 'description': 'sdfgsdfghxcvb', 'text': 'dfgh', 'created_by': 14}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[23/Jan/2025 15:08:15] DEBUG [campaign.views:143] Data from serializer: {'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_by': 14}
+[23/Jan/2025 15:08:15] DEBUG [campaign.views:144] Creating new campaign with data: {'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_by': 14}
+[23/Jan/2025 15:08:15] INFO [campaign.views:155] Successfully created new campaign by user 14
+[23/Jan/2025 15:08:15] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:18:31] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:18:33] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:18:37] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:18:59] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 15:19:01] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 15:19:01] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:19:01] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:19:01] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:19:01] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:19:01] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:19:01] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:19:01] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:19:01] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:19:01] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:22:33] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:23:36] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 15:23:38] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 15:23:38] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:23:38] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:23:38] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:23:38] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:23:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:23:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:23:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:23:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:23:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:23:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:23:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:23:39] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:23:39] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:23:39] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:23:39] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:23:39] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:23:39] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:23:39] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:23:39] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:23:39] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:23:39] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:23:39] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:24:09] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:24:18] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[23/Jan/2025 15:24:36] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 15:24:38] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 15:25:07] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:25:07] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:25:07] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:25:07] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:25:07] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:25:07] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:25:07] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:25:07] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:25:07] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:25:07] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:25:07] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:26:32] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 15:26:34] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 15:26:34] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:26:34] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:26:34] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:26:34] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:26:34] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:26:34] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:26:34] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:26:34] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:26:34] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:26:34] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:26:34] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:26:35] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:26:35] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:26:35] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:26:35] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:26:35] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:26:35] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:26:35] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:26:35] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:26:35] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:26:35] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:26:35] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:30:36] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 15:30:38] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 15:30:38] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:30:38] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:30:38] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:30:38] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:30:38] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:30:38] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:30:38] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:30:38] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:30:38] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:31:18] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:31:18] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:31:18] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:31:18] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:31:18] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:31:18] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:31:18] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:31:18] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:31:18] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:31:18] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:31:18] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:31:56] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 15:31:58] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 15:31:58] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:31:58] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:31:58] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:31:58] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:31:58] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:31:58] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:31:58] INFO [campaign.views:167] Received request to list all user campaigns
+[23/Jan/2025 15:31:58] INFO [campaign.views:171] Successfully retrieved 7 campaigns
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 2, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 1, 'type': 'email', 'text': 'Sample campaign text', 'description': 'Sample campaign description', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 10}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 12}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:31:58] DEBUG [campaign.serializers:29] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[23/Jan/2025 15:39:46] WARNING [django.request:248] Not Found: /campaign/api/campaigns/2
+[23/Jan/2025 15:42:13] WARNING [django.request:248] Not Found: /campaign/api/campaigns/1
+[23/Jan/2025 15:44:54] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:44:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:45:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:45:08] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:45:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:45:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:45:25] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:45:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:45:36] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:45:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:46:02] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:46:06] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:46:12] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:46:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:46:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:46:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:46:29] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:46:34] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:46:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:46:50] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:46:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:47:00] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:47:09] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:47:14] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:47:26] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:47:35] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:47:58] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:48:06] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:48:10] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:48:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:48:24] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:48:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:48:39] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:48:44] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:48:47] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:48:51] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:49:06] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:49:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:49:23] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:49:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[23/Jan/2025 15:49:33] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/1/
+[23/Jan/2025 15:49:43] INFO [extended_user.views:89] Processing login request
+[23/Jan/2025 15:49:45] INFO [extended_user.views:99] Successful login for user: superadmin
+[23/Jan/2025 15:50:05] INFO [campaign.views:28] Checking superadmin status for user_id: 14
+[23/Jan/2025 15:50:05] INFO [campaign.views:33] User 14 confirmed as superadmin
+[23/Jan/2025 15:50:05] ERROR [campaign.views:188] Failed to retrieve campaign by ID 1: Textual column expression 'user_campaign' should be explicitly declared with text('user_campaign'), or use column('user_campaign') for more specificity
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 182, in retrieve
+    campaign = session.query("user_campaign").filter(UserCampaign.id==pk).first()
+               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 2955, in query
+    return self._query_cls(entities, self, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\query.py", line 275, in __init__
+    self._set_entities(entities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\query.py", line 288, in _set_entities
+    coercions.expect(
+    ~~~~~~~~~~~~~~~~^
+        roles.ColumnsClauseRole,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        post_inspect=True,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\coercions.py", line 395, in expect
+    resolved = impl._literal_coercion(
+        element, argname=argname, **kw
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\coercions.py", line 621, in _literal_coercion
+    return self._text_coercion(element, argname, **kw)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\coercions.py", line 1142, in _text_coercion
+    raise exc.ArgumentError(
+    ...<11 lines>...
+    )
+sqlalchemy.exc.ArgumentError: Textual column expression 'user_campaign' should be explicitly declared with text('user_campaign'), or use column('user_campaign') for more specificity
+[23/Jan/2025 15:50:05] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/1/
+[23/Jan/2025 15:51:00] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[23/Jan/2025 15:51:04] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader

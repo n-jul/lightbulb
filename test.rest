@@ -7,20 +7,22 @@ Content-Type: application/json
 POST http://127.0.0.1:8000/users/api/login/
 Content-Type: application/json
 
-{"username":"test_admin", "password":"test123"}
+{"username":"superadmin", "password":"superadmin"}
 
 ###
 POST http://127.0.0.1:8000/campaign/api/campaigns/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NDU2MzU1LCJpYXQiOjE3Mzc0NTYwNTUsImp0aSI6ImYxY2E4ZDhhYzI0YjQ1OGM5ZjFhNmJlZmM1OGRhMjhhIiwidXNlcl9pZCI6MTJ9.-4hKGfa_c9B8Jrx-U_jb65xsOz8JJlBITPEwCnf2xWo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NjI0MjIwLCJpYXQiOjE3Mzc2MjM5MjAsImp0aSI6ImI0Y2ZkMTYxMjhkZTQ1MzhhMTE2NTI1YzQ5OWFhMTAxIiwidXNlcl9pZCI6MTR9.IYkZRb2FIjeExR0AHwbZ_nqcutaBxvRd2N8mvWYEokQ
 
 {
     "type": "Email",
     "text": "Welcome to our new product launch!",
-    "description": "This campaign is to introduce our latest product to our users.",
-    "status": "active"
+    "description": "This campaign is to introduce our latest product to our users." 
 }
-
+###
+GET http://127.0.0.1:8000/campaign/api/campaigns/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NjI3ODg1LCJpYXQiOjE3Mzc2Mjc1ODUsImp0aSI6IjNjYmExZmQ4Y2FhNTRiZTk5NDhiNjYwODViZmZjMzc2IiwidXNlcl9pZCI6MTR9.VCkcIJ8zzI8RH7PxXP1xVxo5ZabNL0zeFzcDx1tj_AQ
 ###
 POST http://127.0.0.1:8000/campaign/api/send_email/ 
 Content-Type: application/json

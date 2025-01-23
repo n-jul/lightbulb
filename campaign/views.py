@@ -177,3 +177,17 @@ class UserCampaignViewSet(viewsets.ViewSet):
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
         finally:
             session.close()
+    def retrieve(self,request,pk=None, *args, **kwargs):
+        try:
+            campaign = session.query(UserCampaign).filter(UserCampaign.id==pk).first()
+            if campaign is None:
+                return Response({"detail": "Campaign not found"}, status=status.HTTP_404_NOT_FOUND)
+            serializer = UserCampaignSerializer(campaign)
+            return Response(serializer.data)
+        except Exception as e:
+            logger.error(f"Failed to retrieve campaign by ID {pk}: {str(e)}", exc_info=True)
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        finally:
+            session.close()
+
+            
