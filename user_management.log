@@ -109,3 +109,49 @@
 2025-01-23 15:31:58,600 - extended_user.views - INFO - Successful login for user: superadmin
 2025-01-23 15:49:43,450 - extended_user.views - INFO - Processing login request
 2025-01-23 15:49:45,349 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 16:22:51,446 - extended_user.views - INFO - Processing login request
+2025-01-23 16:22:53,382 - extended_user.views - WARNING - Failed login attempt for user: superadmin
+2025-01-23 16:23:03,205 - extended_user.views - INFO - Processing login request
+2025-01-23 16:23:04,732 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 16:26:14,816 - extended_user.views - INFO - Processing login request
+2025-01-23 16:26:16,552 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 16:28:53,939 - extended_user.views - INFO - Processing login request
+2025-01-23 16:28:55,563 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 16:45:38,257 - extended_user.views - INFO - Processing login request
+2025-01-23 16:45:39,917 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 16:46:48,347 - extended_user.views - INFO - Processing login request
+2025-01-23 16:46:49,833 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-23 16:47:42,314 - extended_user.views - INFO - Processing login request
+2025-01-23 16:47:44,059 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 16:52:57,674 - extended_user.views - INFO - Processing login request
+2025-01-23 16:52:59,589 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 16:58:47,019 - extended_user.views - INFO - Processing login request
+2025-01-23 16:58:48,551 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 17:56:01,248 - extended_user.views - INFO - Processing login request
+2025-01-23 17:56:02,762 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 18:04:12,203 - extended_user.views - INFO - Processing login request
+2025-01-23 18:04:13,760 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-23 18:12:36,787 - extended_user.views - INFO - Processing login request
+2025-01-23 18:12:38,650 - extended_user.views - WARNING - Failed login attempt for user: superadmin
+2025-01-24 09:50:04,681 - extended_user.views - INFO - Processing login request
+2025-01-24 09:50:06,792 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-24 09:52:01,339 - extended_user.views - INFO - Processing login request
+2025-01-24 09:52:02,952 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-24 10:55:02,882 - extended_user.views - INFO - Processing login request
+2025-01-24 10:55:04,710 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 11:14:26,757 - extended_user.views - INFO - Processing login request
+2025-01-24 11:14:28,735 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 11:16:34,070 - extended_user.views - INFO - Processing login request
+2025-01-24 11:16:35,865 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 11:45:16,822 - extended_user.views - INFO - Processing login request
+2025-01-24 11:45:18,473 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 11:46:03,004 - extended_user.views - INFO - Processing login request
+2025-01-24 11:46:04,536 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-24 11:51:08,753 - extended_user.views - INFO - Processing login request
+2025-01-24 11:51:10,269 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 12:33:51,799 - extended_user.views - INFO - Processing login request
+2025-01-24 12:33:53,583 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 12:39:57,171 - extended_user.views - INFO - Processing login request
+2025-01-24 12:39:58,980 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 14:24:02,873 - extended_user.views - INFO - Processing login request
+2025-01-24 14:24:04,680 - extended_user.views - INFO - Successful login for user: test_admin

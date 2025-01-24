@@ -32,6 +32,7 @@ class SQLAlchemySerializer(serializers.Serializer):
     def errors(self):
         return self._errors
 class EmailSerializer(serializers.Serializer):
+    on_email = serializers.BooleanField(default=True)
     campaign_id = serializers.IntegerField(required=True)
 
 class UserCampaignSerializer(SQLAlchemySerializer):

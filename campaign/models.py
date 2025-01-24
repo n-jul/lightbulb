@@ -1,11 +1,10 @@
 from sqlalchemy import Column, BigInteger, String, DateTime, func, ForeignKey, Boolean, Table
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import create_engine
-Base = declarative_base()
-
+from sqlalchemy import create_engine, MetaData
 engine = create_engine('postgresql://postgres:Anjul123@localhost:5432/lightbulb')
-Base.metadata.create_all(engine)
-
+metadata = MetaData()
+Base = declarative_base(metadata=metadata)
+auth_user = Table('auth_user',metadata,autoload_with=engine)
 class UserCampaign(Base):
     __tablename__ = 'user_campaign'
     id = Column(BigInteger, primary_key=True, autoincrement=True)
@@ -31,6 +30,7 @@ class UserMessage(Base):
     __tablename__="user_message"
     id = Column(BigInteger,primary_key=True,autoincrement=True)
     campaign_id = Column(BigInteger, ForeignKey('user_campaign.id'),nullable=False)
-    user_id = Column(BigInteger,ForeignKey('public.auth_user.id'), nullable=False)
-    is_select = Column(Boolean, default=True, server_default='true')
+    user_id = Column(BigInteger,ForeignKey('auth_user.id'), nullable=False)
+    is_selected = Column(Boolean, default=True, server_default='true')
 # Example of creating the table
+# Base.metadata.create_all(engine)

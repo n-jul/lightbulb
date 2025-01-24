@@ -7,7 +7,7 @@ Content-Type: application/json
 POST http://127.0.0.1:8000/users/api/login/
 Content-Type: application/json
 
-{"username":"superadmin", "password":"superadmin"}
+{"username":"test_admin", "password":"test123"}
 
 ###
 POST http://127.0.0.1:8000/campaign/api/campaigns/
@@ -24,12 +24,30 @@ GET http://127.0.0.1:8000/campaign/api/campaigns/1
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NjI3ODg1LCJpYXQiOjE3Mzc2Mjc1ODUsImp0aSI6IjNjYmExZmQ4Y2FhNTRiZTk5NDhiNjYwODViZmZjMzc2IiwidXNlcl9pZCI6MTR9.VCkcIJ8zzI8RH7PxXP1xVxo5ZabNL0zeFzcDx1tj_AQ
 ###
-POST http://127.0.0.1:8000/campaign/api/send_email/ 
+PUT http://127.0.0.1:8000/campaign/api/campaigns/1/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NDU4MjExLCJpYXQiOjE3Mzc0NTc5MTEsImp0aSI6ImY3N2U0NTVhMTE1ODQzMjU4ZjUyMDFhMWI0MzE2NmZlIiwidXNlcl9pZCI6MTN9.icm88sHjTPU7r4Fn_M9n3hVy3h0mysLUXrfibvhJ27M
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NjMxNjc5LCJpYXQiOjE3Mzc2MzEzNzksImp0aSI6IjIwNzQzODYxZWVlMzQwN2Q4YmM0YTIzZDc5NGYzNDRlIiwidXNlcl9pZCI6MTR9.rAj9dWe58odKs80buu2BvnydHbx2AO6FUAMiTs5iM_I
 
-{"campaign_id":6}
+{
+    "type": "Emaillllll",
+    "text": "Welcome to our new product launch!",
+    "description": "This campaign is to introduce our latest product to our users." 
+}
+###
 
 ###
 GET http://127.0.0.1:8000/campaign/api/campaigns/
 Content-Type: application/json
+
+
+###
+GET http://127.0.0.1:8000/campaign/api/send_email/ 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3Njk3NzY4LCJpYXQiOjE3Mzc2OTc0NjgsImp0aSI6IjQ3OGJmYzU4YzVlMzRjOGJhY2Y1ZTIzMzM5MTg5ODYxIiwidXNlcl9pZCI6MTN9.f-rvbCYSP6NzdhLIMc-M4bh69A5w17lGTb6J0tS5vG8
+
+###
+POST http://127.0.0.1:8000/campaign/api/send_email/ 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzA5NTI0LCJpYXQiOjE3Mzc3MDkyMjQsImp0aSI6IjUyZjkzMTk2Y2Y5ODQzNWQ4OTJlYWE5NGUwNGZlZTQyIiwidXNlcl9pZCI6MTN9.CxL_nPgJqKz2NEJ-D9yWW_d2zHNaFCFOHJqAbcIqxpE
+
+{"campaign_id":10, "on_email":false}
