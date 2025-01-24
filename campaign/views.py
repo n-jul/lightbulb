@@ -268,5 +268,48 @@ class UserCampaignViewSet(viewsets.ViewSet):
         finally:
             session.close()
                 
-                
-            
+class MessageViewSet(viewsets.ViewSet):
+    permission_classes = [IsAuthenticated]
+
+    def list(self, request):
+        """
+        List all messages for the authenticated user.
+        """
+        user_id = request.user.id
+        logger.info(f"Fetching messages for user_id: {user_id}")
+
+        try:
+                messages = (
+                    session.query(UserMessage)
+                    .filter_by(user_id=user_id)
+                    .distinct()
+                    .all()
+                )
+                logger.debug(f"Fetched {len(messages)} messages for user_id {user_id}")
+
+                # Extract campaign IDs
+                campaign_ids = [message.campaign_id for message in messages]
+                logger.debug(f"Extracted campaign_ids: {campaign_ids}")
+
+                # Query campaigns using campaign IDs
+                campaigns = (
+                    session.query(UserCampaign)
+                    .filter(UserCampaign.id.in_(campaign_ids))
+                    .all()
+                )
+                logger.info(f"Fetched {len(campaigns)} campaigns for user_id {user_id}")
+
+                # Serialize the campaign data
+                serializer = UserCampaignSerializer(campaigns, many=True)
+                logger.info("Serialized campaign data successfully")
+
+                return Response(serializer.data)
+
+        except Exception as e:
+            logger.error(f"An error occurred while fetching campaigns for user_id {user_id}: {e}")
+            return Response(
+                {"error": "An error occurred while processing your request."},
+                status=500,
+            )
+
+    

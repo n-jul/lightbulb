@@ -155,3 +155,34 @@
 2025-01-24 12:39:58,980 - extended_user.views - INFO - Successful login for user: test_admin
 2025-01-24 14:24:02,873 - extended_user.views - INFO - Processing login request
 2025-01-24 14:24:04,680 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 14:30:22,929 - extended_user.views - INFO - Processing login request
+2025-01-24 14:30:24,575 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 14:31:45,979 - extended_user.views - INFO - Processing login request
+2025-01-24 14:31:47,563 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 14:39:56,773 - extended_user.views - INFO - Processing login request
+2025-01-24 14:39:58,332 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 14:41:28,605 - extended_user.views - INFO - Processing login request
+2025-01-24 14:41:30,321 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 14:50:14,100 - extended_user.views - INFO - Processing login request
+2025-01-24 14:50:15,767 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 15:01:01,253 - extended_user.views - INFO - Processing login request
+2025-01-24 15:01:02,804 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 15:10:11,540 - extended_user.views - INFO - Processing login request
+2025-01-24 15:10:13,477 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 15:19:25,165 - extended_user.views - INFO - Processing login request
+2025-01-24 15:19:26,988 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-24 15:20:29,969 - extended_user.views - INFO - Processing login request
+2025-01-24 15:20:31,567 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 17:31:31,866 - extended_user.views - INFO - Fetching all extended users
+2025-01-24 17:31:32,046 - extended_user.views - INFO - Successfully retrieved 8 extended users
+2025-01-24 17:37:12,892 - extended_user.views - INFO - Attempting to create new user and extended user
+2025-01-24 17:37:13,046 - extended_user.views - WARNING - Invalid user data: {'password': [ErrorDetail(string='This field is required.', code='required')]}
+2025-01-24 17:37:31,653 - extended_user.views - INFO - Attempting to create new user and extended user
+2025-01-24 17:37:33,691 - extended_user.views - INFO - Created Django user with ID: 15
+2025-01-24 17:37:33,705 - extended_user.views - INFO - Created extended user with ID: 15
+2025-01-24 17:40:26,034 - extended_user.views - INFO - Processing login request
+2025-01-24 17:40:28,071 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-24 17:41:23,569 - extended_user.views - INFO - Fetching all extended users
+2025-01-24 17:41:23,573 - extended_user.views - INFO - Successfully retrieved 9 extended users
+2025-01-24 17:41:52,859 - extended_user.views - INFO - Processing login request
+2025-01-24 17:41:54,541 - extended_user.views - INFO - Successful login for user: test_admin

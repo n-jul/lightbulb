@@ -7,7 +7,7 @@ Content-Type: application/json
 POST http://127.0.0.1:8000/users/api/login/
 Content-Type: application/json
 
-{"username":"test_admin", "password":"test123"}
+{"username":"n_jul", "password":"123123"}
 
 ###
 POST http://127.0.0.1:8000/campaign/api/campaigns/
@@ -39,11 +39,16 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 GET http://127.0.0.1:8000/campaign/api/campaigns/
 Content-Type: application/json
 
+###
+GET http://127.0.0.1:8000/campaign/api/message/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzIxMjc0LCJpYXQiOjE3Mzc3MjA5NzQsImp0aSI6ImQ0MzhiZTMyNmEzNDRkYmE5ZGQ4ZTcxMzQzYTZlMDRhIiwidXNlcl9pZCI6MTV9.awU5s8-HkBdLhyskzWrVHeOsu23vxwk1CuZ9ajV5N_s
+
 
 ###
 GET http://127.0.0.1:8000/campaign/api/send_email/ 
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3Njk3NzY4LCJpYXQiOjE3Mzc2OTc0NjgsImp0aSI6IjQ3OGJmYzU4YzVlMzRjOGJhY2Y1ZTIzMzM5MTg5ODYxIiwidXNlcl9pZCI6MTN9.f-rvbCYSP6NzdhLIMc-M4bh69A5w17lGTb6J0tS5vG8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzEwMTkwLCJpYXQiOjE3Mzc3MDk4OTAsImp0aSI6IjM3ZWYwOGRlMTBiYTRmMTBhNjQyMWI4ZTAzNmJmMWIyIiwidXNlcl9pZCI6MTN9.fLU51Kl7aX64oUznNFnZ42AzIOlgGsnYRXIQJx3hNn8
 
 ###
 POST http://127.0.0.1:8000/campaign/api/send_email/ 
@@ -51,3 +56,13 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzA5NTI0LCJpYXQiOjE3Mzc3MDkyMjQsImp0aSI6IjUyZjkzMTk2Y2Y5ODQzNWQ4OTJlYWE5NGUwNGZlZTQyIiwidXNlcl9pZCI6MTN9.CxL_nPgJqKz2NEJ-D9yWW_d2zHNaFCFOHJqAbcIqxpE
 
 {"campaign_id":10, "on_email":false}
+
+
+
+########### USER API ENDPOINTS
+
+###
+POST http://127.0.0.1:8000/users/api/signup/
+Content-Type: application/json
+
+{"username":"n_jul", "email":"anjulkushwaha11@gmail.com", "first_name":"anjul", "last_name":"kus", "role":"user", "password":"123123"}
