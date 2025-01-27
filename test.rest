@@ -42,7 +42,7 @@ Content-Type: application/json
 ###
 GET http://127.0.0.1:8000/campaign/api/message/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzIxMjc0LCJpYXQiOjE3Mzc3MjA5NzQsImp0aSI6ImQ0MzhiZTMyNmEzNDRkYmE5ZGQ4ZTcxMzQzYTZlMDRhIiwidXNlcl9pZCI6MTV9.awU5s8-HkBdLhyskzWrVHeOsu23vxwk1CuZ9ajV5N_s
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3OTU0MTAwLCJpYXQiOjE3Mzc5NTM4MDAsImp0aSI6Ijc1NjhlYzM2ZmY3ODQyODBhYjBkMGZlYTM0YTVjNTJjIiwidXNlcl9pZCI6MTV9.IPOf-JkYd2C_ZRsSmpYBv6oZb-aVlCtNTn2voLCnVCE
 
 
 ###

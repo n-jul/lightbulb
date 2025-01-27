@@ -281,7 +281,7 @@ class MessageViewSet(viewsets.ViewSet):
         try:
                 messages = (
                     session.query(UserMessage)
-                    .filter_by(user_id=user_id)
+                    .filter_by(user_id=user_id, is_selected=True)
                     .distinct()
                     .all()
                 )

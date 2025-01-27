@@ -186,3 +186,27 @@
 2025-01-24 17:41:23,573 - extended_user.views - INFO - Successfully retrieved 9 extended users
 2025-01-24 17:41:52,859 - extended_user.views - INFO - Processing login request
 2025-01-24 17:41:54,541 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-24 17:46:12,210 - extended_user.views - INFO - Processing login request
+2025-01-24 17:46:14,572 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-24 17:48:04,193 - extended_user.views - INFO - Processing login request
+2025-01-24 17:48:05,819 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-27 10:04:38,735 - extended_user.views - INFO - Processing login request
+2025-01-27 10:04:40,384 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-27 10:05:57,048 - extended_user.views - INFO - Processing login request
+2025-01-27 10:05:58,725 - extended_user.views - WARNING - Failed login attempt for user: anjul
+2025-01-27 10:06:46,022 - extended_user.views - INFO - Processing login request
+2025-01-27 10:06:47,655 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 10:08:24,112 - extended_user.views - INFO - Processing login request
+2025-01-27 10:08:25,745 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 10:14:05,999 - extended_user.views - INFO - Processing login request
+2025-01-27 10:14:07,793 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-27 10:19:11,092 - extended_user.views - INFO - Processing login request
+2025-01-27 10:19:12,673 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 10:24:18,691 - extended_user.views - INFO - Processing login request
+2025-01-27 10:24:20,366 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 10:26:38,547 - extended_user.views - INFO - Processing login request
+2025-01-27 10:26:40,560 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 10:31:35,273 - extended_user.views - INFO - Processing login request
+2025-01-27 10:31:37,056 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 10:39:26,925 - extended_user.views - INFO - Processing login request
+2025-01-27 10:39:28,781 - extended_user.views - INFO - Successful login for user: n_jul
