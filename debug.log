@@ -4255,3 +4255,107 @@ WHERE user_message.user_id = %(user_id_1)s AND user_message.campaign_id = %(camp
 [27/Jan/2025 10:40:46] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
 [27/Jan/2025 10:41:02] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
 [27/Jan/2025 10:41:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:41:19] INFO [campaign.views:279] Fetching messages for user_id: 15
+[27/Jan/2025 10:41:20] DEBUG [campaign.views:288] Fetched 1 messages for user_id 15
+[27/Jan/2025 10:41:20] DEBUG [campaign.views:292] Extracted campaign_ids: [8]
+[27/Jan/2025 10:41:20] INFO [campaign.views:300] Fetched 1 campaigns for user_id 15
+[27/Jan/2025 10:41:20] INFO [campaign.views:304] Serialized campaign data successfully
+[27/Jan/2025 10:41:20] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 10:41:20] INFO [campaign.views:279] Fetching messages for user_id: 15
+[27/Jan/2025 10:41:20] DEBUG [campaign.views:288] Fetched 1 messages for user_id 15
+[27/Jan/2025 10:41:20] DEBUG [campaign.views:292] Extracted campaign_ids: [8]
+[27/Jan/2025 10:41:20] INFO [campaign.views:300] Fetched 1 campaigns for user_id 15
+[27/Jan/2025 10:41:20] INFO [campaign.views:304] Serialized campaign data successfully
+[27/Jan/2025 10:41:20] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 10:46:30] WARNING [django.request:248] Unauthorized: /campaign/api/message/
+[27/Jan/2025 10:46:47] WARNING [django.request:248] Unauthorized: /campaign/api/message/
+[27/Jan/2025 10:46:47] WARNING [django.request:248] Unauthorized: /campaign/api/message/
+[27/Jan/2025 10:47:28] INFO [extended_user.views:89] Processing login request
+[27/Jan/2025 10:47:29] INFO [extended_user.views:99] Successful login for user: n_jul
+[27/Jan/2025 10:47:30] INFO [campaign.views:279] Fetching messages for user_id: 15
+[27/Jan/2025 10:47:30] DEBUG [campaign.views:288] Fetched 1 messages for user_id 15
+[27/Jan/2025 10:47:30] DEBUG [campaign.views:292] Extracted campaign_ids: [8]
+[27/Jan/2025 10:47:30] INFO [campaign.views:300] Fetched 1 campaigns for user_id 15
+[27/Jan/2025 10:47:30] INFO [campaign.views:304] Serialized campaign data successfully
+[27/Jan/2025 10:47:30] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 10:47:30] INFO [campaign.views:279] Fetching messages for user_id: 15
+[27/Jan/2025 10:47:30] DEBUG [campaign.views:288] Fetched 1 messages for user_id 15
+[27/Jan/2025 10:47:30] DEBUG [campaign.views:292] Extracted campaign_ids: [8]
+[27/Jan/2025 10:47:30] INFO [campaign.views:300] Fetched 1 campaigns for user_id 15
+[27/Jan/2025 10:47:30] INFO [campaign.views:304] Serialized campaign data successfully
+[27/Jan/2025 10:47:30] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 10:51:10] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:51:14] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:54:54] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:54:59] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:55:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:55:08] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:55:14] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:55:17] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:55:30] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:55:34] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:55:42] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:55:46] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:56:04] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:56:08] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:56:33] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:56:36] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:56:47] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:56:51] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:56:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:56:59] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:57:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:57:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:57:14] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:57:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:57:25] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:57:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:57:46] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:57:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:57:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:58:01] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:58:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:58:14] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:58:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:58:24] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:58:28] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:58:31] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 10:58:38] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 10:58:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:03:11] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:03:15] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:03:20] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:03:24] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:03:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:03:40] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:03:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:03:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:03:53] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:03:57] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:04:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:04:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:04:20] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:04:25] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:04:31] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:04:35] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:04:44] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:04:47] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:04:58] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:05:03] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:05:14] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:05:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:06:27] INFO [extended_user.views:89] Processing login request
+[27/Jan/2025 11:06:29] INFO [extended_user.views:99] Successful login for user: n_jul
+[27/Jan/2025 11:06:53] WARNING [django.request:248] Method Not Allowed: /campaign/api/message/
+[27/Jan/2025 11:08:46] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:09:14] WARNING [django.request:248] Method Not Allowed: /campaign/api/message/
+[27/Jan/2025 11:10:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:10:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:11:40] WARNING [django.request:248] Unauthorized: /campaign/api/message/
+[27/Jan/2025 11:11:49] INFO [extended_user.views:89] Processing login request
+[27/Jan/2025 11:11:51] INFO [extended_user.views:99] Successful login for user: n_jul
+[27/Jan/2025 11:12:07] WARNING [django.request:248] Method Not Allowed: /campaign/api/message/
+[27/Jan/2025 11:12:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:12:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:13:33] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:13:37] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader

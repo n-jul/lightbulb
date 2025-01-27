@@ -270,14 +270,12 @@ class UserCampaignViewSet(viewsets.ViewSet):
                 
 class MessageViewSet(viewsets.ViewSet):
     permission_classes = [IsAuthenticated]
-
     def list(self, request):
         """
         List all messages for the authenticated user.
         """
         user_id = request.user.id
         logger.info(f"Fetching messages for user_id: {user_id}")
-
         try:
                 messages = (
                     session.query(UserMessage)
@@ -311,5 +309,30 @@ class MessageViewSet(viewsets.ViewSet):
                 {"error": "An error occurred while processing your request."},
                 status=500,
             )
+    def update(self,request,pk=None):
+        """Update a campaign by it's id"""
+        user_id = request.user.id
+        try:
+            campaign = session.query(UserMessage).filter_by(id=pk).first()
+            if not campaign:
+                logger.warning(f"Campaign with ID {pk} not found for user_id {user_id}")
+                return Response({"error":"Campain not found"},status=404)
+            campaign.is_selected=False
+            session.commit()
+            logger.info(f"Successfully updated is_selected for campaign_id: {pk}")
+            serializer = UserCampaignSerializer(campaign)
+            return Response(serializer.data)
+        except Exception as e:
+            logger.error(f"An error occurred while updating campaign_id {pk}: {e}")
+            session.rollback()  # Rollback transaction if an error occurs
+            return Response(
+                {"error": "An error occurred while processing your request."},
+                status=500,
+            )
+
+            
+
+
+    
 
     
