@@ -4359,3 +4359,79 @@ WHERE user_message.user_id = %(user_id_1)s AND user_message.campaign_id = %(camp
 [27/Jan/2025 11:12:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
 [27/Jan/2025 11:13:33] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
 [27/Jan/2025 11:13:37] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[27/Jan/2025 11:17:36] WARNING [django.request:248] Unauthorized: /campaign/api/message/4/
+[27/Jan/2025 11:17:42] INFO [extended_user.views:89] Processing login request
+[27/Jan/2025 11:17:44] INFO [extended_user.views:99] Successful login for user: n_jul
+[27/Jan/2025 11:18:02] INFO [campaign.views:322] Successfully updated is_selected for campaign_id: 4
+[27/Jan/2025 11:18:02] DEBUG [campaign.serializers:29] to_representation output: {'id': 4, 'campaign_id': 10, 'user_id': 15, 'is_selected': False}
+[27/Jan/2025 11:20:24] WARNING [django.request:248] Unauthorized: /campaign/api/message/
+[27/Jan/2025 11:20:24] WARNING [django.request:248] Unauthorized: /campaign/api/message/
+[27/Jan/2025 11:20:46] INFO [extended_user.views:89] Processing login request
+[27/Jan/2025 11:20:48] INFO [extended_user.views:99] Successful login for user: n_jul
+[27/Jan/2025 11:20:48] INFO [campaign.views:278] Fetching messages for user_id: 15
+[27/Jan/2025 11:20:48] DEBUG [campaign.views:286] Fetched 2 messages for user_id 15
+[27/Jan/2025 11:20:48] DEBUG [campaign.views:290] Extracted campaign_ids: [8, 10]
+[27/Jan/2025 11:20:48] INFO [campaign.views:298] Fetched 2 campaigns for user_id 15
+[27/Jan/2025 11:20:48] INFO [campaign.views:302] Serialized campaign data successfully
+[27/Jan/2025 11:20:48] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:20:48] DEBUG [campaign.serializers:29] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:20:48] INFO [campaign.views:278] Fetching messages for user_id: 15
+[27/Jan/2025 11:20:48] DEBUG [campaign.views:286] Fetched 2 messages for user_id 15
+[27/Jan/2025 11:20:48] DEBUG [campaign.views:290] Extracted campaign_ids: [8, 10]
+[27/Jan/2025 11:20:48] INFO [campaign.views:298] Fetched 2 campaigns for user_id 15
+[27/Jan/2025 11:20:48] INFO [campaign.views:302] Serialized campaign data successfully
+[27/Jan/2025 11:20:48] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:20:48] DEBUG [campaign.serializers:29] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:24] INFO [campaign.views:278] Fetching messages for user_id: 15
+[27/Jan/2025 11:21:24] DEBUG [campaign.views:286] Fetched 2 messages for user_id 15
+[27/Jan/2025 11:21:24] DEBUG [campaign.views:290] Extracted campaign_ids: [8, 10]
+[27/Jan/2025 11:21:24] INFO [campaign.views:298] Fetched 2 campaigns for user_id 15
+[27/Jan/2025 11:21:24] INFO [campaign.views:302] Serialized campaign data successfully
+[27/Jan/2025 11:21:24] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:24] DEBUG [campaign.serializers:29] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:24] INFO [campaign.views:278] Fetching messages for user_id: 15
+[27/Jan/2025 11:21:24] DEBUG [campaign.views:286] Fetched 2 messages for user_id 15
+[27/Jan/2025 11:21:24] DEBUG [campaign.views:290] Extracted campaign_ids: [8, 10]
+[27/Jan/2025 11:21:24] INFO [campaign.views:298] Fetched 2 campaigns for user_id 15
+[27/Jan/2025 11:21:24] INFO [campaign.views:302] Serialized campaign data successfully
+[27/Jan/2025 11:21:24] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:24] DEBUG [campaign.serializers:29] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:25] INFO [campaign.views:278] Fetching messages for user_id: 15
+[27/Jan/2025 11:21:25] DEBUG [campaign.views:286] Fetched 2 messages for user_id 15
+[27/Jan/2025 11:21:25] DEBUG [campaign.views:290] Extracted campaign_ids: [8, 10]
+[27/Jan/2025 11:21:25] INFO [campaign.views:298] Fetched 2 campaigns for user_id 15
+[27/Jan/2025 11:21:25] INFO [campaign.views:302] Serialized campaign data successfully
+[27/Jan/2025 11:21:25] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:25] DEBUG [campaign.serializers:29] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:46] INFO [campaign.views:278] Fetching messages for user_id: 15
+[27/Jan/2025 11:21:46] DEBUG [campaign.views:286] Fetched 2 messages for user_id 15
+[27/Jan/2025 11:21:46] DEBUG [campaign.views:290] Extracted campaign_ids: [8, 10]
+[27/Jan/2025 11:21:46] INFO [campaign.views:298] Fetched 2 campaigns for user_id 15
+[27/Jan/2025 11:21:46] INFO [campaign.views:302] Serialized campaign data successfully
+[27/Jan/2025 11:21:46] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:46] DEBUG [campaign.serializers:29] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:48] INFO [campaign.views:278] Fetching messages for user_id: 15
+[27/Jan/2025 11:21:48] DEBUG [campaign.views:286] Fetched 2 messages for user_id 15
+[27/Jan/2025 11:21:48] DEBUG [campaign.views:290] Extracted campaign_ids: [8, 10]
+[27/Jan/2025 11:21:48] INFO [campaign.views:298] Fetched 2 campaigns for user_id 15
+[27/Jan/2025 11:21:48] INFO [campaign.views:302] Serialized campaign data successfully
+[27/Jan/2025 11:21:48] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:21:48] DEBUG [campaign.serializers:29] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:22:12] INFO [campaign.views:278] Fetching messages for user_id: 15
+[27/Jan/2025 11:22:12] DEBUG [campaign.views:286] Fetched 2 messages for user_id 15
+[27/Jan/2025 11:22:12] DEBUG [campaign.views:290] Extracted campaign_ids: [8, 10]
+[27/Jan/2025 11:22:12] INFO [campaign.views:298] Fetched 2 campaigns for user_id 15
+[27/Jan/2025 11:22:12] INFO [campaign.views:302] Serialized campaign data successfully
+[27/Jan/2025 11:22:12] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:22:12] DEBUG [campaign.serializers:29] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:22:13] INFO [campaign.views:278] Fetching messages for user_id: 15
+[27/Jan/2025 11:22:13] DEBUG [campaign.views:286] Fetched 2 messages for user_id 15
+[27/Jan/2025 11:22:13] DEBUG [campaign.views:290] Extracted campaign_ids: [8, 10]
+[27/Jan/2025 11:22:13] INFO [campaign.views:298] Fetched 2 campaigns for user_id 15
+[27/Jan/2025 11:22:13] INFO [campaign.views:302] Serialized campaign data successfully
+[27/Jan/2025 11:22:13] DEBUG [campaign.serializers:29] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:22:13] DEBUG [campaign.serializers:29] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
+[27/Jan/2025 11:22:19] WARNING [campaign.views:318] Campaign with ID 8 not found for user_id 15
+[27/Jan/2025 11:22:19] WARNING [django.request:248] Not Found: /campaign/api/message/8/
+[27/Jan/2025 11:24:07] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[27/Jan/2025 11:24:13] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader

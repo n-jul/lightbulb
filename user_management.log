@@ -216,3 +216,7 @@
 2025-01-27 11:06:29,096 - extended_user.views - INFO - Successful login for user: n_jul
 2025-01-27 11:11:49,181 - extended_user.views - INFO - Processing login request
 2025-01-27 11:11:51,223 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 11:17:42,132 - extended_user.views - INFO - Processing login request
+2025-01-27 11:17:44,670 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 11:20:46,673 - extended_user.views - INFO - Processing login request
+2025-01-27 11:20:48,339 - extended_user.views - INFO - Successful login for user: n_jul

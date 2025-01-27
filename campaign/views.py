@@ -313,7 +313,7 @@ class MessageViewSet(viewsets.ViewSet):
         """Update a campaign by it's id"""
         user_id = request.user.id
         try:
-            campaign = session.query(UserMessage).filter_by(id=pk).first()
+            campaign = session.query(UserMessage).filter_by(campaign_id=pk).first()
             if not campaign:
                 logger.warning(f"Campaign with ID {pk} not found for user_id {user_id}")
                 return Response({"error":"Campain not found"},status=404)
