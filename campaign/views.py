@@ -238,7 +238,7 @@ class UserCampaignViewSet(viewsets.ViewSet):
             logger.error(f"Failed to retrieve campaign by ID {pk}: {str(e)}", exc_info=True)
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
         finally:
-            session.close()
+            session.close() 
 
     def update(self,request,pk=None, *args,**kwargs):
         try:

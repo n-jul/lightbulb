@@ -220,3 +220,11 @@
 2025-01-27 11:17:44,670 - extended_user.views - INFO - Successful login for user: n_jul
 2025-01-27 11:20:46,673 - extended_user.views - INFO - Processing login request
 2025-01-27 11:20:48,339 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 11:27:56,360 - extended_user.views - INFO - Processing login request
+2025-01-27 11:27:58,165 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 11:28:51,128 - extended_user.views - INFO - Processing login request
+2025-01-27 11:28:52,731 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 11:35:51,770 - extended_user.views - INFO - Processing login request
+2025-01-27 11:35:53,326 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-27 12:54:31,365 - extended_user.views - INFO - Processing login request
+2025-01-27 12:54:33,968 - extended_user.views - INFO - Successful login for user: superadmin
