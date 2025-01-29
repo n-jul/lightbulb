@@ -12,6 +12,8 @@ from sqlalchemy import create_engine
 from extended_user.models import extended_user
 import logging
 from .tasks import send_email_task
+from django.utils.timezone import make_aware, is_aware, now, get_current_timezone, localtime
+from datetime import timedelta
 
 # Create a logger for this file
 logger = logging.getLogger(__name__)
@@ -63,6 +65,10 @@ def check_if_admin(user_id):
     finally:
         session.close()
 
+def make_date_aware(dt):
+    if dt and not is_aware(dt):
+        return make_aware(dt)
+    return dt
 class IsSuperAdmin(BasePermission):
     """
     Custom permission to allow only superadmin users to access the view.
@@ -97,6 +103,8 @@ class SendTestEmailViewSet(viewsets.ViewSet):
         serializer = EmailSerializer(data=request.data)
         if serializer.is_valid():
             if serializer.validated_data['on_email']:
+                send_now = serializer.validated_data["send_now"]
+                scheduled_time = serializer.validated_data.get("scheduled_time")
                 campaign = session.query(UserCampaign).filter(UserCampaign.id==serializer.validated_data['campaign_id'], UserCampaign.status=="pending").first()    
                 subject, message ="",""
                 logger.info(f"campaign object that we got: {campaign}")
@@ -112,12 +120,14 @@ class SendTestEmailViewSet(viewsets.ViewSet):
                     
                     logger.info(f"Attempting to send email to {total_users} users")
                     logger.info(f"Recipient list is {users_list}")
-                    send_email_task.apply_async(args=[subject, message, "anjulkushwaha11@gmail.com", users_list])
+                    if send_now or not scheduled_time:
+                        send_email_task.apply_async(args=[subject, message, "anjulkushwaha11@gmail.com", users_list])
+                        logger.info("Email sent successfully")
+                        return Response({"message": "Email sent successfully!", "Total users":total_users}, status=status.HTTP_201_CREATED)
+                    hardcoded_time = now()+timedelta(minutes=1)
+                    send_email_task.apply_async(args=[subject, message, "anjulkushwaha11@gmail.com", users_list], eta=scheduled_time)
+                    return Response({"message": "Email scheduled successfully!"})
 
-                    logger.info("Email sent successfully")
-                    
-                    return Response({"message": "Email sent successfully!", "Total users":total_users}, 
-                                status=status.HTTP_201_CREATED)
                 except Exception as e:
                     logger.error(f"Failed to send email: {str(e)}", exc_info=True)
                     return Response({"error": "Failed to send email"}, 

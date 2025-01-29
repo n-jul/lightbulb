@@ -2,6 +2,8 @@ import logging
 from rest_framework import serializers
 from .models import UserCampaign
 from sqlalchemy.orm import Session
+from datetime import datetime, timezone
+from django.utils.timezone import make_aware, is_aware
 logger = logging.getLogger(__name__)
 
 class SQLAlchemySerializer(serializers.Serializer):
@@ -34,6 +36,10 @@ class SQLAlchemySerializer(serializers.Serializer):
 class EmailSerializer(serializers.Serializer):
     on_email = serializers.BooleanField(default=True)
     campaign_id = serializers.IntegerField(required=True)
+    send_now = serializers.BooleanField(default=True)
+    scheduled_time = serializers.DateTimeField(required=False, allow_null=True)
+    
+    
 
 class UserCampaignSerializer(SQLAlchemySerializer):
     type = serializers.CharField(required=True)

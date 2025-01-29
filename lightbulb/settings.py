@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'extended_user',
     'rest_framework',
     'corsheaders',
-    'django_celery_results'
+    'django_celery_results',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -202,3 +203,4 @@ CELERY_ACCEPT_CONTENT = ['json']        # Task serialization format
 CELERY_TASK_SERIALIZER = 'json'         # Serialize tasks in JSON
 CELERY_RESULT_BACKEND = 'django-db'     # Store results in Django DB
 CELERY_RESULT_BACKEND = 'django-db'
+

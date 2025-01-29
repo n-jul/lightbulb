@@ -7214,3 +7214,2659 @@ def xstarmap(task, it):
 [29/Jan/2025 11:45:26] INFO [campaign.views:117] Email sent successfully
 [29/Jan/2025 11:50:11] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
 [29/Jan/2025 11:55:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 11:56:18] INFO [campaign.views:96] Received request to send test email
+[29/Jan/2025 11:56:18] INFO [campaign.views:102] campaign object that we got: <campaign.models.UserCampaign object at 0x0000015DA519C6E0>
+[29/Jan/2025 11:56:18] DEBUG [campaign.views:107] Querying users with 'user' role
+[29/Jan/2025 11:56:18] INFO [campaign.views:113] Attempting to send email to 2 users
+[29/Jan/2025 11:56:18] INFO [campaign.views:114] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 11:56:18] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 11:56:18] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 11:56:18] DEBUG [amqp:460] Channel open
+[29/Jan/2025 11:56:18] INFO [campaign.views:117] Email sent successfully
+[29/Jan/2025 12:00:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:00:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:15:26] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 12:15:31] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:15:41] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 12:15:45] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:15:51] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 12:15:55] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:16:42] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 12:16:48] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:17:00] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 12:17:05] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:17:12] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 12:17:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:18:00] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:18:04] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:18:11] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:18:15] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:18:22] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:18:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:18:41] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:18:46] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:18:52] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:18:57] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:19:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:19:13] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:19:37] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:19:43] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:19:50] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:19:55] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:20:04] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:20:09] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:20:31] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:20:36] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:20:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:20:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:21:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 12:21:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:22:49] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:22:53] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:25:06] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:25:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:25:28] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:26:23] INFO [campaign.views:96] Received request to send test email
+[29/Jan/2025 12:26:23] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 98, in create
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 501, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py", line 43, in validate_scheduled_time
+    return make_aware(datetime.strptime(value, "%Y-%m-%d %H:%M:%S"))
+           ^^^^^^^^^^
+NameError: name 'make_aware' is not defined
+[29/Jan/2025 12:27:53] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:27:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:28:24] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:28:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:29:13] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 12:29:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:29:37] INFO [campaign.views:96] Received request to send test email
+[29/Jan/2025 12:29:37] INFO [campaign.views:104] campaign object that we got: <campaign.models.UserCampaign object at 0x000001FCA34D0D70>
+[29/Jan/2025 12:29:37] DEBUG [campaign.views:109] Querying users with 'user' role
+[29/Jan/2025 12:29:38] INFO [campaign.views:115] Attempting to send email to 2 users
+[29/Jan/2025 12:29:38] INFO [campaign.views:116] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 12:29:38] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 12:29:38] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 12:29:38] DEBUG [amqp:460] Channel open
+[29/Jan/2025 12:32:09] INFO [campaign.views:96] Received request to send test email
+[29/Jan/2025 12:32:09] INFO [campaign.views:104] campaign object that we got: <campaign.models.UserCampaign object at 0x000001FCA35D8F50>
+[29/Jan/2025 12:32:09] DEBUG [campaign.views:109] Querying users with 'user' role
+[29/Jan/2025 12:32:09] INFO [campaign.views:115] Attempting to send email to 2 users
+[29/Jan/2025 12:32:09] INFO [campaign.views:116] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 12:32:09] INFO [campaign.views:120] Email sent successfully
+[29/Jan/2025 12:34:59] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:35:20] INFO [campaign.views:96] Received request to send test email
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 12:35:36] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 12:36:03] INFO [campaign.views:104] campaign object that we got: <campaign.models.UserCampaign object at 0x00000222BD44DD30>
+[29/Jan/2025 12:36:08] DEBUG [campaign.views:109] Querying users with 'user' role
+[29/Jan/2025 12:36:13] INFO [campaign.views:115] Attempting to send email to 2 users
+[29/Jan/2025 12:36:37] INFO [campaign.views:116] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 12:37:02] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 12:37:02] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 12:37:02] DEBUG [amqp:460] Channel open
+[29/Jan/2025 12:41:34] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 12:41:44] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:41:58] INFO [campaign.views:101] Received request to send test email
+[29/Jan/2025 12:42:06] INFO [campaign.views:109] campaign object that we got: <campaign.models.UserCampaign object at 0x00000248B5E07770>
+[29/Jan/2025 12:42:09] DEBUG [campaign.views:114] Querying users with 'user' role
+[29/Jan/2025 12:42:12] INFO [campaign.views:120] Attempting to send email to 2 users
+[29/Jan/2025 12:42:12] INFO [campaign.views:121] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 12:42:14] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 12:42:15] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 12:42:15] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 12:42:15] DEBUG [amqp:460] Channel open
+[29/Jan/2025 12:48:48] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 12:49:02] INFO [campaign.views:101] Received request to send test email
+[29/Jan/2025 12:49:02] INFO [campaign.views:109] campaign object that we got: <campaign.models.UserCampaign object at 0x00000269C8CC6F90>
+[29/Jan/2025 12:49:02] DEBUG [campaign.views:114] Querying users with 'user' role
+[29/Jan/2025 12:49:03] INFO [campaign.views:120] Attempting to send email to 2 users
+[29/Jan/2025 12:49:07] INFO [campaign.views:121] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 12:49:19] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 12:49:36] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 12:49:36] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 12:49:36] DEBUG [amqp:460] Channel open
+[29/Jan/2025 12:59:58] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 13:00:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 13:00:57] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 13:01:06] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 13:03:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 13:03:11] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 14:16:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:16:48] INFO [campaign.views:101] Received request to send test email
+[29/Jan/2025 14:16:49] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x000001B9E89FC1A0>
+[29/Jan/2025 14:16:49] DEBUG [campaign.views:116] Querying users with 'user' role
+[29/Jan/2025 14:16:49] INFO [campaign.views:122] Attempting to send email to 2 users
+[29/Jan/2025 14:16:54] INFO [campaign.views:123] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:17:07] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 14:17:07] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 14:17:07] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:17:07] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 14:17:07] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 14:17:07] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:17:07] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 14:17:08] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 14:17:08] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 14:17:08] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 14:17:08] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 14:17:08] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 14:17:08] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 14:17:08] DEBUG [amqp:460] Channel open
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 14:17:44] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:18:35] INFO [campaign.views:101] Received request to send test email
+[29/Jan/2025 14:18:38] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x000001B9E8BD5F90>
+[29/Jan/2025 14:18:38] DEBUG [campaign.views:116] Querying users with 'user' role
+[29/Jan/2025 14:18:38] INFO [campaign.views:122] Attempting to send email to 2 users
+[29/Jan/2025 14:18:39] INFO [campaign.views:123] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:21:27] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:21:40] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:23:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:23:29] INFO [campaign.views:101] Received request to send test email
+[29/Jan/2025 14:23:31] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x000002C9E4543770>
+[29/Jan/2025 14:23:31] DEBUG [campaign.views:116] Querying users with 'user' role
+[29/Jan/2025 14:23:32] INFO [campaign.views:122] Attempting to send email to 2 users
+[29/Jan/2025 14:23:35] INFO [campaign.views:123] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 14:23:35] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 14:23:35] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 14:23:35] DEBUG [amqp:460] Channel open
+[29/Jan/2025 14:27:01] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:27:14] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:27:23] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:27:34] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:27:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:27:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:28:32] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:28:47] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 14:28:48] INFO [campaign.views:112] campaign object that we got: <campaign.models.UserCampaign object at 0x000002965ACEE660>
+[29/Jan/2025 14:28:48] DEBUG [campaign.views:117] Querying users with 'user' role
+[29/Jan/2025 14:28:48] INFO [campaign.views:123] Attempting to send email to 2 users
+[29/Jan/2025 14:28:54] INFO [campaign.views:124] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:28:54] ERROR [campaign.views:134] Failed to send email: name 'timdelta' is not defined
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 129, in create
+    hardcoded_time = now()+timdelta(minutes=1)
+                           ^^^^^^^^
+NameError: name 'timdelta' is not defined. Did you mean: 'timedelta'?
+[29/Jan/2025 14:28:54] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+[29/Jan/2025 14:29:13] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:29:31] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:29:54] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 14:29:54] INFO [campaign.views:112] campaign object that we got: <campaign.models.UserCampaign object at 0x0000023F360CB620>
+[29/Jan/2025 14:29:54] DEBUG [campaign.views:117] Querying users with 'user' role
+[29/Jan/2025 14:29:55] INFO [campaign.views:123] Attempting to send email to 2 users
+[29/Jan/2025 14:30:00] INFO [campaign.views:124] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 14:30:00] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 14:30:01] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 14:30:01] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 14:30:01] DEBUG [amqp:460] Channel open
+[29/Jan/2025 14:35:29] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 14:35:32] INFO [campaign.views:112] campaign object that we got: <campaign.models.UserCampaign object at 0x0000023F365CE0D0>
+[29/Jan/2025 14:35:32] DEBUG [campaign.views:117] Querying users with 'user' role
+[29/Jan/2025 14:35:32] INFO [campaign.views:123] Attempting to send email to 2 users
+[29/Jan/2025 14:35:36] INFO [campaign.views:124] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:40:12] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:40:25] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:41:24] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:41:36] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:43:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:44:37] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 14:44:38] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 109, in create
+    scheduled_time = make_aware(scheduled_time)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\utils\timezone.py", line 243, in make_aware
+    raise ValueError("make_aware expects a naive datetime, got %s" % value)
+ValueError: make_aware expects a naive datetime, got 2025-01-29 14:46:00+00:00
+[29/Jan/2025 14:46:12] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:46:28] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:47:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:47:49] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 14:47:49] INFO [campaign.views:114] campaign object that we got: <campaign.models.UserCampaign object at 0x000001C7A1E3B770>
+[29/Jan/2025 14:47:49] DEBUG [campaign.views:119] Querying users with 'user' role
+[29/Jan/2025 14:47:49] INFO [campaign.views:125] Attempting to send email to 2 users
+[29/Jan/2025 14:47:51] INFO [campaign.views:126] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 14:47:51] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 14:47:51] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 14:47:51] DEBUG [amqp:460] Channel open
+[29/Jan/2025 14:51:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\lightbulb\settings.py changed, reloading.
+[29/Jan/2025 14:51:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:51:55] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:52:06] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:52:23] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 14:52:35] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 14:52:47] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:53:24] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 14:53:24] INFO [campaign.views:114] campaign object that we got: <campaign.models.UserCampaign object at 0x0000023FBCDC01A0>
+[29/Jan/2025 14:53:24] DEBUG [campaign.views:119] Querying users with 'user' role
+[29/Jan/2025 14:53:24] INFO [campaign.views:125] Attempting to send email to 2 users
+[29/Jan/2025 14:53:27] INFO [campaign.views:126] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 14:53:27] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 14:53:27] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 14:53:27] DEBUG [amqp:460] Channel open
+[29/Jan/2025 14:54:01] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 14:54:01] INFO [campaign.views:114] campaign object that we got: <campaign.models.UserCampaign object at 0x0000023FBCF95D10>
+[29/Jan/2025 14:54:01] DEBUG [campaign.views:119] Querying users with 'user' role
+[29/Jan/2025 14:54:01] INFO [campaign.views:125] Attempting to send email to 2 users
+[29/Jan/2025 14:54:02] INFO [campaign.views:126] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:58:52] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:59:05] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 14:59:06] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 104, in create
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 501, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py", line 49, in validate_scheduled_time
+    if not is_aware(parsed_time):
+           ^^^^^^^^
+NameError: name 'is_aware' is not defined
+[29/Jan/2025 14:59:21] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 14:59:32] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 14:59:42] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 14:59:42] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x00000233DF773770>
+[29/Jan/2025 14:59:42] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 14:59:42] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 14:59:44] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 14:59:44] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 14:59:45] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 14:59:45] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 14:59:45] DEBUG [amqp:460] Channel open
+[29/Jan/2025 15:01:33] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 15:01:45] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:01:55] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:01:55] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x0000026B3920E660>
+[29/Jan/2025 15:01:55] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:01:55] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:01:59] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 15:01:59] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 15:02:00] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 15:02:00] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 15:02:00] DEBUG [amqp:460] Channel open
+[29/Jan/2025 15:04:03] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:04:04] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x0000026B39666C10>
+[29/Jan/2025 15:04:04] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:04:04] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:04:06] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:05:35] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:05:35] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:05:35] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x0000026B39666C10>
+[29/Jan/2025 15:05:35] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:05:35] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x0000026B39666C10>
+[29/Jan/2025 15:05:35] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:05:35] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:05:35] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:05:35] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:05:35] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:05:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 15:05:36] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 15:05:36] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 15:05:36] DEBUG [amqp:460] Channel open
+[29/Jan/2025 15:05:46] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:06:07] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 15:06:22] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 15:10:44] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:10:44] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x000001FE47AB1D30>
+[29/Jan/2025 15:10:44] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:10:44] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:10:44] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:10:44] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 108, in create
+    campaign = session.query(UserCampaign).filter(UserCampaign.id==serializer.validated_data['campaign_id'], UserCampaign.status=="pending").first()
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\query.py", line 2754, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\query.py", line 2853, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 990, in _raise_for_prerequisite_state
+    raise sa_exc.InvalidRequestError(
+    ...<3 lines>...
+    )
+sqlalchemy.exc.InvalidRequestError: This session is provisioning a new connection; concurrent operations are not permitted (Background on this error at: https://sqlalche.me/e/20/isce)
+[29/Jan/2025 15:10:45] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 15:10:46] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 15:10:46] DEBUG [amqp:460] Channel open
+[29/Jan/2025 15:10:47] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 15:10:56] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:11:30] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 15:11:38] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 15:11:46] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x000001A12E7B9D30>
+[29/Jan/2025 15:11:46] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:11:46] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:11:49] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:11:49] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 15:11:49] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 15:11:49] DEBUG [amqp:460] Channel open
+[29/Jan/2025 15:24:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 15:24:44] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:25:25] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 15:25:36] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 15:26:58] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:27:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:27:49] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:27:49] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x0000021E3EA12F90>
+[29/Jan/2025 15:27:49] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:27:50] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:27:56] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 15:27:57] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 15:27:57] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 15:27:57] DEBUG [amqp:460] Channel open
+[29/Jan/2025 15:29:29] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:30:12] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x0000021E3EF11D10>
+[29/Jan/2025 15:30:12] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:30:12] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:30:12] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:30:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 15:31:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:31:20] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:31:22] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 104, in create
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\serializers.py", line 501, in to_internal_value
+    validated_value = validate_method(validated_value)
+TypeError: EmailSerializer.validate_scheduled_time() takes 1 positional argument but 2 were given
+[29/Jan/2025 15:32:37] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 15:32:44] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:33:20] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 15:33:31] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 15:40:26] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:40:26] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x00000150F73EB770>
+[29/Jan/2025 15:40:26] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:40:26] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+Traceback (most recent call last):
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 108, in create
+    campaign = session.query(UserCampaign).filter(UserCampaign.id==serializer.validated_data['campaign_id'], UserCampaign.status=="pending").first()
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\query.py", line 2754, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\query.py", line 2853, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 103, in _go
+    self._raise_for_prerequisite_state(fn.__name__, current_state)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 990, in _raise_for_prerequisite_state
+    raise sa_exc.InvalidRequestError(
+    ...<3 lines>...
+    )
+sqlalchemy.exc.InvalidRequestError: This session is provisioning a new connection; concurrent operations are not permitted (Background on this error at: https://sqlalche.me/e/20/isce)
+[29/Jan/2025 15:40:26] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:40:26] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:40:27] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 15:40:28] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 15:40:28] DEBUG [amqp:460] Channel open
+[29/Jan/2025 15:40:31] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 15:40:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:40:54] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 15:41:06] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 15:41:27] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x0000020273DFEF90>
+[29/Jan/2025 15:41:27] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:41:27] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:41:31] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:41:31] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 15:41:31] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 15:41:31] DEBUG [amqp:460] Channel open
+[29/Jan/2025 15:47:24] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 15:47:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:48:00] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 15:48:02] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x00000285B6BC3620>
+[29/Jan/2025 15:48:02] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 15:48:03] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 15:48:04] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 15:48:15] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 15:50:02] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 15:50:02] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 15:50:02] DEBUG [amqp:460] Channel open
+[29/Jan/2025 15:53:48] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py changed, reloading.
+[29/Jan/2025 15:53:59] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:56:09] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:58:17] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 15:59:11] ERROR [celery.utils.dispatch.signal:280] Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x0000023DC07D0EC0>> raised: TypeError("Field.__init__() got an unexpected keyword argument 'allow_blank'")
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\utils\dispatch\signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\fixups\django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\fixups\django.py", line 140, in validate_models
+    run_checks()
+    ~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\checks\registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\checks\urls.py", line 44, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\checks\urls.py", line 63, in _load_all_namespaces
+    url_patterns = getattr(resolver, "url_patterns", [])
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\urls\resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\urls\resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\S\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1022, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "F:\PROGRAMMING\django\ILP\backend\lightbulb\urls.py", line 20, in <module>
+    from campaign import urls as cam_urls
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\urls.py", line 3, in <module>
+    from .views import SendTestEmailViewSet, UserCampaignViewSet, MessageViewSet
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 7, in <module>
+    from .serializers import EmailSerializer
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py", line 36, in <module>
+    class EmailSerializer(serializers.Serializer):
+    ...<3 lines>...
+        scheduled_time = serializers.DateTimeField(required=False, allow_blank=True)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\serializers.py", line 40, in EmailSerializer
+    scheduled_time = serializers.DateTimeField(required=False, allow_blank=True)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\fields.py", line 1143, in __init__
+    super().__init__(**kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^
+TypeError: Field.__init__() got an unexpected keyword argument 'allow_blank'
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 16:00:09] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:00:35] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 16:01:03] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 16:01:15] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 16:01:26] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x000002156EC55A90>
+[29/Jan/2025 16:01:26] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 16:01:26] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 16:01:28] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 16:01:31] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 16:01:31] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 16:01:31] DEBUG [amqp:460] Channel open
+[29/Jan/2025 16:01:44] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[29/Jan/2025 16:02:01] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 16:02:18] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 16:02:19] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x000001BBFAA1A660>
+[29/Jan/2025 16:02:19] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 16:02:19] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 16:02:20] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 16:02:22] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 16:02:23] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 16:02:23] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 16:02:23] DEBUG [amqp:460] Channel open
+[29/Jan/2025 16:04:01] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\lightbulb\settings.py changed, reloading.
+[29/Jan/2025 16:04:15] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 16:04:22] INFO [campaign.views:102] Received request to send test email
+[29/Jan/2025 16:04:24] INFO [campaign.views:110] campaign object that we got: <campaign.models.UserCampaign object at 0x0000019F2124B770>
+[29/Jan/2025 16:04:24] DEBUG [campaign.views:115] Querying users with 'user' role
+[29/Jan/2025 16:04:25] INFO [campaign.views:121] Attempting to send email to 2 users
+[29/Jan/2025 16:04:26] INFO [campaign.views:122] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 16:04:28] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 16:04:29] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 16:04:29] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 16:04:29] DEBUG [amqp:460] Channel open
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 16:32:32] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 16:39:40] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:00:21] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:01:15] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:01:42] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:03:50] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:04:10] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:07:22] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:07:32] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:07:39] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:07:51] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:07:59] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:09:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:09:09] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 17:09:09] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 17:09:09] DEBUG [amqp:460] Channel open
+[29/Jan/2025 17:09:09] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:09:42] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:09:55] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:09:59] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:12:41] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:14:34] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:15:02] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:15:10] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:15:21] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:19:53] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:24:31] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:24:52] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:28:21] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:29] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:29] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:28:29] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:02] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:02] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:02] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:30:46] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:30:53] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:34:57] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:35:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:35:10] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[29/Jan/2025 17:35:10] DEBUG [amqp:104] using channel_id: 1
+[29/Jan/2025 17:35:10] DEBUG [amqp:460] Channel open
+[29/Jan/2025 17:35:10] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:39:31] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[29/Jan/2025 17:39:38] WARNING [django.request:248] Not Found: /
+[29/Jan/2025 17:39:39] WARNING [django.request:248] Not Found: /favicon.ico
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:41:35] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:45:33] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:49:04] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:49:23] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:49:31] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:49:46] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:50:05] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:50:41] DEBUG [asyncio:631] Using proactor: IocpProactor
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:50:59] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[29/Jan/2025 17:51:03] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+

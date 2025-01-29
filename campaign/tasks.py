@@ -11,3 +11,8 @@ def send_email_task(subject, message, from_email, recipient_list):
     logger.critical(f"Logger+++++++++++++++++++++++++++++++++++++")
     send_mail(subject, message, from_email, recipient_list)
     
+@shared_task
+def add():
+    logger.info("✅ Hello from Celery Task!")
+    
+    
