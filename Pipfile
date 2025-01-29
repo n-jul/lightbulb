@@ -10,6 +10,8 @@ alembic = "*"
 psycopg2-binary = "*"
 djangorestframework-simplejwt = "*"
 django-cors-headers = "*"
+celery = "*"
+django-celery-results = "*"
 
 [dev-packages]
 

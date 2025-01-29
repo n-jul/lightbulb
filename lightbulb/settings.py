@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'extended_user',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'django_celery_results'
 ]
 
 MIDDLEWARE = [
@@ -190,5 +191,14 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',  # Add your frontend URL here
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',# Add your frontend URL here
 ]
+# CORS_ALLOW_ALL_ORIGINS =True
+
+# Celery Settings
+CELERY_BROKER_URL = 'amqp://localhost'  # RabbitMQ URL
+CELERY_ACCEPT_CONTENT = ['json']        # Task serialization format
+CELERY_TASK_SERIALIZER = 'json'         # Serialize tasks in JSON
+CELERY_RESULT_BACKEND = 'django-db'     # Store results in Django DB
+CELERY_RESULT_BACKEND = 'django-db'

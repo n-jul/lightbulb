@@ -228,3 +228,15 @@
 2025-01-27 11:35:53,326 - extended_user.views - INFO - Successful login for user: n_jul
 2025-01-27 12:54:31,365 - extended_user.views - INFO - Processing login request
 2025-01-27 12:54:33,968 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-28 18:08:55,168 - extended_user.views - INFO - Processing login request
+2025-01-28 18:08:56,977 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-28 18:09:30,633 - extended_user.views - INFO - Processing login request
+2025-01-28 18:09:32,291 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-28 18:11:14,492 - extended_user.views - INFO - Processing login request
+2025-01-28 18:11:16,153 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-28 18:12:36,990 - extended_user.views - INFO - Processing login request
+2025-01-28 18:12:38,799 - extended_user.views - INFO - Successful login for user: superadmin
+2025-01-28 18:12:48,346 - extended_user.views - INFO - Processing login request
+2025-01-28 18:12:50,049 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-28 18:15:01,429 - extended_user.views - INFO - Processing login request
+2025-01-28 18:15:03,119 - extended_user.views - INFO - Successful login for user: n_jul

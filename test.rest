@@ -49,9 +49,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 ###
 POST http://127.0.0.1:8000/campaign/api/send_email/ 
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NzA5NTI0LCJpYXQiOjE3Mzc3MDkyMjQsImp0aSI6IjUyZjkzMTk2Y2Y5ODQzNWQ4OTJlYWE5NGUwNGZlZTQyIiwidXNlcl9pZCI6MTN9.CxL_nPgJqKz2NEJ-D9yWW_d2zHNaFCFOHJqAbcIqxpE
 
-{"campaign_id":10, "on_email":false}
+{"campaign_id":10, "on_email":true}
 
 
 

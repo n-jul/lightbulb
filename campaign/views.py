@@ -11,6 +11,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from extended_user.models import extended_user
 import logging
+from .tasks import send_email_task
 
 # Create a logger for this file
 logger = logging.getLogger(__name__)
@@ -90,7 +91,7 @@ class SendTestEmailViewSet(viewsets.ViewSet):
     """
     A simple ViewSet for sending test emails.
     """
-    permission_classes=[IsAuthenticated, IsAdmin]
+    # permission_classes=[IsAuthenticated, IsAdmin]
     def create(self, request):
         logger.info("Received request to send test email")
         serializer = EmailSerializer(data=request.data)
@@ -106,12 +107,13 @@ class SendTestEmailViewSet(viewsets.ViewSet):
                     logger.debug("Querying users with 'user' role")
                     users_with_role = session.query(extended_user).filter(extended_user.role=='user')
                     user_ids = [user.id for user in users_with_role]
-                    users_list = DjangoUser.objects.filter(id__in=user_ids).values_list('email', flat=True)
+                    users_list = list(DjangoUser.objects.filter(id__in=user_ids).values_list('email', flat=True))
                     total_users = len(users_list)
                     
                     logger.info(f"Attempting to send email to {total_users} users")
                     logger.info(f"Recipient list is {users_list}")
-                    send_mail(subject=subject, message=message,from_email="anjulkushwaha11@gmail.com", recipient_list=users_list)
+                    send_email_task.apply_async(args=[subject, message, "anjulkushwaha11@gmail.com", users_list])
+
                     logger.info("Email sent successfully")
                     
                     return Response({"message": "Email sent successfully!", "Total users":total_users}, 
