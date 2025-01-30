@@ -9870,3 +9870,2320 @@ def add():
 def send_email_task(subject, message, from_email, recipient_list):
     return 1
 
+[30/Jan/2025 10:36:03] ERROR [celery.utils.dispatch.signal:280] Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x0000019C38C87620>> raised: ModuleNotFoundError("No module named 'corsheaders'")
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\utils\dispatch\signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 138, in validate_models
+    self.django_setup()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 134, in django_setup
+    django.setup()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\config.py", line 193, in create
+    import_module(entry)
+    ~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\S\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'corsheaders'
+[30/Jan/2025 10:36:04] ERROR [celery.utils.dispatch.signal:280] Signal handler <promise@0x19c38cd8eb0 --> <bound method Celery._autodiscover_tasks of <Celery lightbulb at 0x19c38c86cf0>>> raised: AppRegistryNotReady("Apps aren't loaded yet.")
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\utils\dispatch\signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\vine\promises.py", line 161, in __call__
+    return self.throw()
+           ~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\vine\promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\app\base.py", line 694, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\app\base.py", line 706, in _autodiscover_tasks_from_fixups
+    for pkg in fixup.autodiscover_tasks()
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 110, in autodiscover_tasks
+    return [config.name for config in apps.get_app_configs()]
+                                      ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 147, in get_app_configs
+    self.check_apps_ready()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 138, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+[30/Jan/2025 10:37:34] ERROR [celery.utils.dispatch.signal:280] Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x0000027C371F7620>> raised: ModuleNotFoundError("No module named 'corsheaders'")
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\utils\dispatch\signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 138, in validate_models
+    self.django_setup()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 134, in django_setup
+    django.setup()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\config.py", line 193, in create
+    import_module(entry)
+    ~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\S\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'corsheaders'
+[30/Jan/2025 10:37:34] ERROR [celery.utils.dispatch.signal:280] Signal handler <promise@0x27c37248eb0 --> <bound method Celery._autodiscover_tasks of <Celery lightbulb at 0x27c371f6cf0>>> raised: AppRegistryNotReady("Apps aren't loaded yet.")
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\utils\dispatch\signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\vine\promises.py", line 161, in __call__
+    return self.throw()
+           ~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\vine\promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\app\base.py", line 694, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\app\base.py", line 706, in _autodiscover_tasks_from_fixups
+    for pkg in fixup.autodiscover_tasks()
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 110, in autodiscover_tasks
+    return [config.name for config in apps.get_app_configs()]
+                                      ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 147, in get_app_configs
+    self.check_apps_ready()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 138, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+[30/Jan/2025 10:38:20] ERROR [celery.utils.dispatch.signal:280] Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x00000280A74B7620>> raised: ModuleNotFoundError("No module named 'corsheaders'")
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\utils\dispatch\signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 138, in validate_models
+    self.django_setup()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 134, in django_setup
+    django.setup()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\config.py", line 193, in create
+    import_module(entry)
+    ~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\S\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'corsheaders'
+[30/Jan/2025 10:38:20] ERROR [celery.utils.dispatch.signal:280] Signal handler <promise@0x280a7508eb0 --> <bound method Celery._autodiscover_tasks of <Celery lightbulb at 0x280a74b6cf0>>> raised: AppRegistryNotReady("Apps aren't loaded yet.")
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\utils\dispatch\signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\vine\promises.py", line 161, in __call__
+    return self.throw()
+           ~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\vine\promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\app\base.py", line 694, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\app\base.py", line 706, in _autodiscover_tasks_from_fixups
+    for pkg in fixup.autodiscover_tasks()
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 110, in autodiscover_tasks
+    return [config.name for config in apps.get_app_configs()]
+                                      ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 147, in get_app_configs
+    self.check_apps_ready()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 138, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+[30/Jan/2025 10:39:52] ERROR [celery.utils.dispatch.signal:280] Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x0000023C67617620>> raised: ModuleNotFoundError("No module named 'corsheaders'")
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\utils\dispatch\signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 138, in validate_models
+    self.django_setup()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 134, in django_setup
+    django.setup()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\config.py", line 193, in create
+    import_module(entry)
+    ~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\S\AppData\Local\Programs\Python\Python313\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'corsheaders'
+[30/Jan/2025 10:39:52] ERROR [celery.utils.dispatch.signal:280] Signal handler <promise@0x23c67668eb0 --> <bound method Celery._autodiscover_tasks of <Celery lightbulb at 0x23c67616cf0>>> raised: AppRegistryNotReady("Apps aren't loaded yet.")
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\utils\dispatch\signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\vine\promises.py", line 161, in __call__
+    return self.throw()
+           ~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\vine\promises.py", line 158, in __call__
+    retval = fun(*final_args, **final_kwargs)
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\app\base.py", line 694, in _autodiscover_tasks
+    return self._autodiscover_tasks_from_fixups(related_name)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\app\base.py", line 706, in _autodiscover_tasks_from_fixups
+    for pkg in fixup.autodiscover_tasks()
+               ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\celery\fixups\django.py", line 110, in autodiscover_tasks
+    return [config.name for config in apps.get_app_configs()]
+                                      ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 147, in get_app_configs
+    self.check_apps_ready()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\storefront-2F-OSPJL\Lib\site-packages\django\apps\registry.py", line 138, in check_apps_ready
+    raise AppRegistryNotReady("Apps aren't loaded yet.")
+django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
+[30/Jan/2025 10:41:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically(session):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 10:42:08] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically(session):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 10:43:32] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:46:38] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 10:47:06] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 10:47:35] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 10:48:11] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically(session):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 10:48:45] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically(session):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 10:48:57] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:51:19] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 10:51:28] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 10:51:48] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 10:52:13] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically(session):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 10:52:37] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically(session):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 10:52:53] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 10:54:32] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 10:54:45] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:01:57] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:02:04] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:02:50] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:02:57] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:12:56] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:13:06] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:13:40] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:14:01] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:14:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:16:37] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:16:55] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:20:24] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:20:37] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:21:59] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:22:02] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:22:07] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:22:39] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:23:06] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:23:29] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:25:23] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:25:37] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:34:24] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:34:37] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:38:23] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:39:47] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:41:51] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:41:57] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:42:48] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:44:46] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:45:00] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:45:00] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:45:00] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:45:01] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:45:03] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:45:29] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:49:02] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:49:15] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:50:29] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:54:00] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:54:06] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:54:29] DEBUG [asyncio:631] Using proactor: IocpProactor
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 11:56:30] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:00:20] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:00:26] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:01:30] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:01:34] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:11:30] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:11:43] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:20:48] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:20:58] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:24:56] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[30/Jan/2025 12:25:07] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
