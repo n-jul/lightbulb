@@ -3,7 +3,7 @@ from django.core.mail import send_mail
 import logging
 from datetime import date
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, func
 from sqlalchemy.exc import SQLAlchemyError
 from .models import UserCampaignSequence,UserCampaign
 from extended_user.models import extended_user
@@ -36,7 +36,7 @@ def send_campaigns_periodically():
         # Fetch pending campaigns for today
         logger.debug("Fetching pending campaigns scheduled for today...")
         pending_campaigns = session.query(UserCampaignSequence).filter(
-            # UserCampaignSequence.scheduled_date.date() == today,
+            func.date(UserCampaignSequence.scheduled_date) == today,
             UserCampaignSequence.status == "pending"
         ).all()
         logger.info(f"Found {len(pending_campaigns)} pending campaigns.")
