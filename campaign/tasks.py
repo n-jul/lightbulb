@@ -15,4 +15,3 @@ def send_email_task(subject, message, from_email, recipient_list):
 def add():
     logger.info("✅ Hello from Celery Task!")
     
-    
