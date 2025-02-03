@@ -262,3 +262,5 @@
 2025-02-03 11:18:45,420 - extended_user.views - ERROR - Error fetching extended users: name 'practice' is not defined
 2025-02-03 11:19:28,696 - extended_user.views - INFO - Fetching all practices...
 2025-02-03 11:19:28,699 - extended_user.views - ERROR - Error fetching extended users: name 'practice' is not defined
+2025-02-03 15:10:45,127 - extended_user.views - INFO - Processing login request
+2025-02-03 15:10:47,041 - extended_user.views - INFO - Successful login for user: test_admin

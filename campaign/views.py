@@ -5,7 +5,7 @@ from rest_framework.permissions import BasePermission, IsAuthenticated
 from django.core.mail import send_mail
 from django.contrib.auth.models import User as DjangoUser
 from .serializers import EmailSerializer, ScheduleCampaignSerializer
-from .models import UserCampaign, UserMessage, UserCampaignSequence
+from .models import UserCampaign, UserMessage, UserCampaignSequence, AdminUserCampaign
 from .serializers import UserCampaignSerializer
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
@@ -256,6 +256,101 @@ class UserCampaignViewSet(viewsets.ViewSet):
     def update(self,request,pk=None, *args,**kwargs):
         try:
             campaign = session.query(UserCampaign).filter(UserCampaign.id==pk).first()
+            if campaign is None:
+                return Response({"detail": "Campaign not found"}, status=status.HTTP_404_NOT_FOUND)
+            request.data["created_by"]=request.user.id
+            serializer = UserCampaignSerializer(data=request.data)
+            if not serializer.is_valid():
+                logger.warning(f"Invalid campaign update data: {serializer.errors}")
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            campaign.type = request.data.get('type', campaign.type)
+            campaign.text = request.data.get('text', campaign.text)
+            campaign.description = request.data.get('description', campaign.description)
+            campaign.status = request.data.get('status', campaign.status)
+            campaign.created_by = request.user.id or campaign.created_by
+            # Commit the changes to the database
+            session.commit()
+
+            # Serialize the updated campaign and return the response
+            response_serializer = UserCampaignSerializer(campaign)
+            return Response(response_serializer.data, status=status.HTTP_200_OK)
+        except Exception as e:
+            session.rollback()
+            logger.error(f"Failed to update campaign {pk}: {str(e)}", exc_info=True)
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        finally:
+            session.close()
+            
+class AdminUserCampaignViewSet(viewsets.ViewSet):
+    """
+    A viewset for viewing and creating user campaigns using SQLAlchemy by Admin.
+    """
+    permission_classes = [IsAuthenticated, IsAdmin]
+    def create(self, request, *args, **kwargs):
+        logger.info("Received request to create new user campaign by admin.")
+        logger.debug(f"Request data: {request.data}")
+        created_by = request.user.id
+        request.data['created_by']=created_by
+        serializer = UserCampaignSerializer(data=request.data)
+        if not serializer.is_valid():
+            logger.warning(f"Invalid campaign data provided: {serializer.errors}")
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        try:
+                logger.debug(f"serializer: {serializer}")
+                user_campaign_data = serializer.validated_data
+                logger.debug(f"Data from serializer: {serializer.validated_data}")
+                logger.debug(f"Creating new campaign with data: {user_campaign_data}")
+                
+                new_campaign = AdminUserCampaign(
+                    type=user_campaign_data['type'],
+                    text=user_campaign_data['text'],
+                    description=user_campaign_data.get('description', ''),
+                    created_by=user_campaign_data['created_by'],
+                    status=user_campaign_data['status'],
+                )
+                session.add(new_campaign)
+                session.commit()
+                logger.info(f"Successfully created new campaign by user {created_by}")
+                
+                response_serializer = UserCampaignSerializer(new_campaign)
+                return Response(response_serializer.data, status=status.HTTP_201_CREATED)
+
+        except Exception as e:
+            session.rollback()
+            logger.error(f"Failed to create campaign: {str(e)}", exc_info=True)
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        finally:
+            session.close()
+    def list(self, request, *args, **kwargs):
+        logger.info("Received request to list all user campaigns")
+        try:
+            campaigns = session.query(AdminUserCampaign).all()
+            campaign_count = len(campaigns)
+            logger.info(f"Successfully retrieved {campaign_count} campaigns")
+            
+            serializer = UserCampaignSerializer(campaigns, many=True)
+            return Response(serializer.data)
+        except Exception as e:
+            logger.error(f"Failed to retrieve campaigns: {str(e)}", exc_info=True)
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        finally:
+            session.close()
+    def retrieve(self,request,pk=None, *args, **kwargs):
+        try:
+            campaign = session.query(AdminUserCampaign).filter(AdminUserCampaign.id==pk).first()
+            if campaign is None:
+                return Response({"detail": "Campaign not found"}, status=status.HTTP_404_NOT_FOUND)
+            serializer = UserCampaignSerializer(campaign)
+            return Response(serializer.data)
+        except Exception as e:
+            logger.error(f"Failed to retrieve campaign by ID {pk}: {str(e)}", exc_info=True)
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        finally:
+            session.close() 
+
+    def update(self,request,pk=None, *args,**kwargs):
+        try:
+            campaign = session.query(AdminUserCampaign).filter(AdminUserCampaign.id==pk).first()
             if campaign is None:
                 return Response({"detail": "Campaign not found"}, status=status.HTTP_404_NOT_FOUND)
             request.data["created_by"]=request.user.id

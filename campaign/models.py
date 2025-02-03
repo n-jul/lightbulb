@@ -34,3 +34,14 @@ class UserMessage(Base):
     is_selected = Column(Boolean, default=True, server_default='true')
 # Example of creating the table
 # Base.metadata.create_all(engine)
+
+class AdminUserCampaign(Base):
+    __tablename__="admin_user_campaign"
+    id = Column(BigInteger, primary_key=True, autoincrement=True)
+    type = Column(String, nullable=False)
+    text = Column(String, nullable=False)
+    description = Column(String, nullable=True)
+    status = Column(String, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now(), nullable=False)
+    created_by = Column(BigInteger, nullable=False)

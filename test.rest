@@ -8,11 +8,6 @@ POST http://127.0.0.1:8000/users/api/login/
 Content-Type: application/json
 
 {"username":"n_jul", "password":"123123"}
-###
-POST http://127.0.0.1:8000/users/api/login/
-Content-Type: application/json
-
-{"username":"test_admin", "password":"test123"}
 
 ###
 POST http://127.0.0.1:8000/campaign/api/campaigns/
@@ -97,3 +92,45 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
     "campaign_id":10,
     "scheduled_date":"2025-01-30 17:00:00+05:30"
 }
+
+
+
+####admin related endpoints
+
+###
+POST http://127.0.0.1:8000/users/api/login/
+Content-Type: application/json
+
+{"username":"test_admin", "password":"test123"}
+
+###
+POST http://127.0.0.1:8000/campaign/api/admin/campaigns/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4NTc1OTQ3LCJpYXQiOjE3Mzg1NzU2NDcsImp0aSI6ImEyZjUzZmI5YjVkZDRkNWQ4NjM5Mzg3YmI5N2RmNDY0IiwidXNlcl9pZCI6MTN9.tjT5QrviGwnb5NKSLP-BjKCf6Lymsh5HRjNYg_UmGQY
+
+{
+    "type": "Email",
+    "text": "Welcome to our new product launch!",
+    "description": "This campaign is to introduce our latest product to our users." 
+}
+
+###
+GET http://127.0.0.1:8000/campaign/api/admin/campaigns/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MTgwNzMzLCJpYXQiOjE3Mzg1NzU5MzMsImp0aSI6IjlhNGZiYWNhY2ZiNjQ2OTNhZmIyZDEzYmZhZmZjOGJjIiwidXNlcl9pZCI6MTN9.Q2xR8OaUVX45qelllWw33-tzPCOHYqBGC9h7fpRBMDw
+
+###
+PUT http://127.0.0.1:8000/campaign/api/admin/campaigns/1/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MTgwNzMzLCJpYXQiOjE3Mzg1NzU5MzMsImp0aSI6IjlhNGZiYWNhY2ZiNjQ2OTNhZmIyZDEzYmZhZmZjOGJjIiwidXNlcl9pZCI6MTN9.Q2xR8OaUVX45qelllWw33-tzPCOHYqBGC9h7fpRBMDw
+
+{
+    "type": "Emaillllll149",
+    "text": "Welcome to our new product launch!",
+    "description": "This campaign is to introduce our latest product to our users." 
+}
+
+###
+GET http://127.0.0.1:8000/campaign/api/admin/campaigns/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MTgwNzMzLCJpYXQiOjE3Mzg1NzU5MzMsImp0aSI6IjlhNGZiYWNhY2ZiNjQ2OTNhZmIyZDEzYmZhZmZjOGJjIiwidXNlcl9pZCI6MTN9.Q2xR8OaUVX45qelllWw33-tzPCOHYqBGC9h7fpRBMDw

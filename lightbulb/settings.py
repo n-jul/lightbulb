@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from datetime import timedelta
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -204,3 +205,8 @@ CELERY_TASK_SERIALIZER = 'json'         # Serialize tasks in JSON
 CELERY_RESULT_BACKEND = 'django-db'     # Store results in Django DB
 CELERY_RESULT_BACKEND = 'django-db'
 
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=7),  # Set the expiration time here
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=30),  # Optional: set a refresh token lifetime
+}
