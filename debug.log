@@ -13063,3 +13063,5 @@ Original exception text was: 'UserCampaignSequence' object has no attribute 'cam
 [03/Feb/2025 12:27:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14}
 [03/Feb/2025 12:52:41] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\tasks.py changed, reloading.
 [03/Feb/2025 12:52:46] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 12:57:22] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\urls.py changed, reloading.
+[03/Feb/2025 12:57:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader

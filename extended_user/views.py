@@ -7,13 +7,13 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
-from .models import extended_user
+from .models import extended_user, practice
 from .serializers import ExtendedUserSerializer, UserSerializer, LoginSerializer
 from sqlalchemy import MetaData
 import logging
 
 # Configure logging
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)        
 logger.setLevel(logging.INFO)
 # Create handlers
 file_handler = logging.FileHandler('user_management.log')
@@ -58,7 +58,7 @@ class ExtendedUserViewSet(viewsets.ViewSet):
                 
                 # Now create the extended_user in SQLAlchemy
                 extended_user_data = {
-                    'role': user_data['role'],
+                    'role': 'user',
                     'id': user.id
                 }
                 new_extended_user = extended_user(**extended_user_data)
@@ -116,7 +116,20 @@ class LoginView(APIView):
             logger.warning(f"Invalid login data: {serializer.errors}")
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
+class PracticeViewSet(viewsets.ViewSet):
+    def list(self, request, *args, **kwargs):
+        logger.info("Fetching all practices...")
+        try:
+            # Use SQLAlchemy to query extended_user table
+            practices = session.query(practice).all()
+            practice_list = [
+            {"id": p.id, "name": p.name} for p in practices
+            ]
+            logger.info(f"Successfully retrieved {len(practices)} practices")
+            return Response({"practices": practice_list}, status=status.HTTP_200_OK)
+        except Exception as e:
+            logger.error(f"Error fetching extended users: {str(e)}")
+            return Response({"error": "Failed to fetch practices.."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 # from rest_framework import viewsets

@@ -39,7 +39,9 @@ class EmailSerializer(serializers.Serializer):
     send_now = serializers.BooleanField(default=True)
     scheduled_time = serializers.DateTimeField(required=False, allow_null=True)
     
-    
+class ScheduleCampaignSerializer(serializers.Serializer):
+    campaign_id = serializers.IntegerField(required=True)    
+    scheduled_date = serializers.DateTimeField(required=True)   
 
 class UserCampaignSerializer(SQLAlchemySerializer):
     type = serializers.CharField(required=True)
