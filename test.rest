@@ -8,6 +8,11 @@ POST http://127.0.0.1:8000/users/api/login/
 Content-Type: application/json
 
 {"username":"n_jul", "password":"123123"}
+###
+POST http://127.0.0.1:8000/users/api/login/
+Content-Type: application/json
+
+{"username":"test_admin", "password":"test123"}
 
 ###
 POST http://127.0.0.1:8000/campaign/api/campaigns/
@@ -60,8 +65,10 @@ Content-Type: application/json
 POST http://127.0.0.1:8000/users/api/signup/
 Content-Type: application/json
 
-{"username":"n_jul", "email":"anjulkushwaha11@gmail.com", "first_name":"anjul", "last_name":"kus", "role":"user", "password":"123123"}
+{"username":"n__jul", "email":"anjulkushwaha11@gmail.com", "first_name":"anjul", "last_name":"kus", "password":"123123", "practice": "anj@prac"}
 
+###
+GET http://127.0.0.1:8000/users/api/practice/
 
 
 ##########MESSAGE RELATED ENDPOINTS.
@@ -75,3 +82,18 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 PUT http://127.0.0.1:8000/campaign/api/message/10/
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3OTU3Nzc4LCJpYXQiOjE3Mzc5NTc0NzgsImp0aSI6ImYyZWJiM2ZiZmZiNjQxOGRhMDA5YjE0ZjNhYWEzZDA1IiwidXNlcl9pZCI6MTV9.F2cvyBDB29e0rlooYs949JaLsR104ns8gBgKr6MwGp4
+
+
+
+
+
+##### ENDPOINTS FOR SCHEDULING CAMPAIGNS
+
+POST http://127.0.0.1:8000/campaign/api/schedule_campaign/ 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4MjI4MjE1LCJpYXQiOjE3MzgyMjc5MTUsImp0aSI6IjMzY2RmZTI2MTNlNjQ4ZThiMWQzMWRmNjE2ZDdiY2UxIiwidXNlcl9pZCI6MTN9.uHs7D_0Te6cl3qovjkJvXGGOZ_kMymtRtL0xgYZfhR8
+
+{
+    "campaign_id":10,
+    "scheduled_date":"2025-01-30 17:00:00+05:30"
+}

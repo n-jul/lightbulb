@@ -22,12 +22,13 @@ schedule, created = IntervalSchedule.objects.get_or_create(
 )
 
 # ✅ Step 5: Create a Periodic Task (only if it doesn't already exist)
-if not PeriodicTask.objects.filter(name="Send Email Every 1 Minute").exists():
+if not PeriodicTask.objects.filter(name="mock send campaign for testing").exists():
     PeriodicTask.objects.create(
         interval=schedule,
-        name="Send Email Every 1 Minute",  # Unique name
-        task="campaign.tasks.add",  # Ensure this task exists in tasks.py
-        args=json.dumps(["recipient@example.com"]),  # Arguments in JSON format
+        name="mock send campaign for testing",  # Unique name
+        task="campaign.tasks.send_campaigns_periodically",  # Ensure this task exists in tasks.py
+        # args=json.dumps(["anjul.kushwaha@practicenumbers.com"]),  # Arguments in JSON format
+        # args='[]'
     )
     print("✅ Scheduled Task Created Successfully!")
 else:
