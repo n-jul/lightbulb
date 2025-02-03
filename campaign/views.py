@@ -4,8 +4,8 @@ from rest_framework import status
 from rest_framework.permissions import BasePermission, IsAuthenticated
 from django.core.mail import send_mail
 from django.contrib.auth.models import User as DjangoUser
-from .serializers import EmailSerializer
-from .models import UserCampaign, UserMessage
+from .serializers import EmailSerializer, ScheduleCampaignSerializer
+from .models import UserCampaign, UserMessage, UserCampaignSequence
 from .serializers import UserCampaignSerializer
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
@@ -14,6 +14,7 @@ import logging
 from .tasks import send_email_task
 from django.utils.timezone import make_aware, is_aware, now, get_current_timezone, localtime
 from datetime import timedelta
+from sqlalchemy.exc import SQLAlchemyError
 
 # Create a logger for this file
 logger = logging.getLogger(__name__)
@@ -342,8 +343,58 @@ class MessageViewSet(viewsets.ViewSet):
                 status=500,
             )
 
-            
+class ScheduleCampaignViewSet(viewsets.ViewSet):
+    permission_classes = [IsAuthenticated, IsAdmin]
+    def create(self, request):
+        logger.info("Received request to schedule the campaign")
 
+        serializer = ScheduleCampaignSerializer(data=request.data)
+
+        if serializer.is_valid():
+            campaign_id = serializer.validated_data["campaign_id"]
+            scheduled_date = serializer.validated_data["scheduled_date"]
+
+            try:
+                # Create new campaign sequence
+                new_campaign_sequence = UserCampaignSequence(
+                    user_campaign_id=campaign_id,
+                    scheduled_date=scheduled_date,
+                    status="pending",
+                    created_by=request.user.id  # Assuming the user ID is available from the request
+                )
+                
+                # Add to session and commit
+                session.add(new_campaign_sequence)
+                session.commit()
+                
+                # Log successful insertion
+                logger.info(f"Successfully added campaign sequence with ID: {new_campaign_sequence.id}")
+                
+                # Return the newly created object as a response
+                response_data = {
+                    "campaign_id":new_campaign_sequence.user_campaign_id,
+                    "scheduled_date": new_campaign_sequence.scheduled_date,
+                }
+                response_serializer = ScheduleCampaignSerializer(response_data)
+                return Response(response_serializer.data, status=status.HTTP_201_CREATED)
+            
+            except SQLAlchemyError as e:
+                # Log and handle database errors
+                session.rollback()  # Rollback the transaction in case of error
+                logger.error(f"Database error occurred while adding campaign sequence: {str(e)}")
+                return Response({"error": "Database error occurred while scheduling campaign."},
+                                status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+            except Exception as e:
+                # Log and handle other unexpected errors
+                logger.error(f"Unexpected error occurred while adding campaign sequence: {str(e)}")
+                return Response({"error": "Unexpected error occurred while scheduling campaign."},
+                                status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        
+        else:
+            # Log validation errors
+            logger.error(f"Invalid data received for campaign scheduling: {serializer.errors}")
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     
 

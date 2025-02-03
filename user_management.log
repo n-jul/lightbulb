@@ -240,3 +240,25 @@
 2025-01-28 18:12:50,049 - extended_user.views - INFO - Successful login for user: n_jul
 2025-01-28 18:15:01,429 - extended_user.views - INFO - Processing login request
 2025-01-28 18:15:03,119 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-30 14:07:27,873 - extended_user.views - INFO - Processing login request
+2025-01-30 14:07:29,546 - extended_user.views - INFO - Processing login request
+2025-01-30 14:07:30,554 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-30 14:07:31,953 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-30 14:34:39,250 - extended_user.views - INFO - Processing login request
+2025-01-30 14:34:41,391 - extended_user.views - INFO - Successful login for user: n_jul
+2025-01-30 14:35:14,175 - extended_user.views - INFO - Processing login request
+2025-01-30 14:35:15,943 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-30 14:36:33,540 - extended_user.views - INFO - Processing login request
+2025-01-30 14:36:35,296 - extended_user.views - INFO - Successful login for user: test_admin
+2025-01-30 14:42:38,299 - extended_user.views - INFO - Processing login request
+2025-01-30 14:42:39,919 - extended_user.views - INFO - Successful login for user: test_admin
+2025-02-03 10:24:15,518 - extended_user.views - INFO - Processing login request
+2025-02-03 10:24:18,091 - extended_user.views - INFO - Successful login for user: test_admin
+2025-02-03 11:16:40,303 - extended_user.views - INFO - Fetching all practices...
+2025-02-03 11:16:40,317 - extended_user.views - ERROR - Error fetching extended users: name 'practice' is not defined
+2025-02-03 11:17:32,327 - extended_user.views - INFO - Fetching all practices...
+2025-02-03 11:17:32,330 - extended_user.views - ERROR - Error fetching extended users: name 'practice' is not defined
+2025-02-03 11:18:45,418 - extended_user.views - INFO - Fetching all practices...
+2025-02-03 11:18:45,420 - extended_user.views - ERROR - Error fetching extended users: name 'practice' is not defined
+2025-02-03 11:19:28,696 - extended_user.views - INFO - Fetching all practices...
+2025-02-03 11:19:28,699 - extended_user.views - ERROR - Error fetching extended users: name 'practice' is not defined
