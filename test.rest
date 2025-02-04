@@ -12,7 +12,7 @@ Content-Type: application/json
 ###
 POST http://127.0.0.1:8000/campaign/api/campaigns/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NjI0MjIwLCJpYXQiOjE3Mzc2MjM5MjAsImp0aSI6ImI0Y2ZkMTYxMjhkZTQ1MzhhMTE2NTI1YzQ5OWFhMTAxIiwidXNlcl9pZCI6MTR9.IYkZRb2FIjeExR0AHwbZ_nqcutaBxvRd2N8mvWYEokQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjQ3NjI0LCJpYXQiOjE3Mzg2NDI4MjQsImp0aSI6Ijk5OTM3ZDA5OWJjZjQxZDBiNDI3NGE1YmY3Y2UyMGM1IiwidXNlcl9pZCI6MTN9.DEGQKKHUIdsVs16aFxJu9Jq---3UO06brEGlJf_OXoY
 
 {
     "type": "Email",
@@ -36,9 +36,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 ###
 
 ###
-GET http://127.0.0.1:8000/campaign/api/campaigns/
+GET http://127.0.0.1:8000/campaign/api/campaigns/1/
 Content-Type: application/json
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjQ3NjI0LCJpYXQiOjE3Mzg2NDI4MjQsImp0aSI6Ijk5OTM3ZDA5OWJjZjQxZDBiNDI3NGE1YmY3Y2UyMGM1IiwidXNlcl9pZCI6MTN9.DEGQKKHUIdsVs16aFxJu9Jq---3UO06brEGlJf_OXoY
 
 
 ###
@@ -49,8 +49,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 ###
 POST http://127.0.0.1:8000/campaign/api/send_email/ 
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MjQ3NjI0LCJpYXQiOjE3Mzg2NDI4MjQsImp0aSI6Ijk5OTM3ZDA5OWJjZjQxZDBiNDI3NGE1YmY3Y2UyMGM1IiwidXNlcl9pZCI6MTN9.DEGQKKHUIdsVs16aFxJu9Jq---3UO06brEGlJf_OXoY
 
-{"campaign_id":10, "on_email":true, "send_now":false, "scheduled_time": "2025-01-29T16:06:00Z"}
+{"campaign_id":10, "on_email":true, "send_now":true, "scheduled_time": "2025-01-29T16:06:00Z"}
 
 
 
@@ -60,7 +61,7 @@ Content-Type: application/json
 POST http://127.0.0.1:8000/users/api/signup/
 Content-Type: application/json
 
-{"username":"n__jul", "email":"anjulkushwaha11@gmail.com", "first_name":"anjul", "last_name":"kus", "password":"123123", "practice": "anj@prac"}
+{"username":"n__jul11111", "email":"anjulkushwaha11@gmail.com", "first_name":"anjul", "last_name":"kus", "password":"123123", "practice_id": 2}
 
 ###
 GET http://127.0.0.1:8000/users/api/practice/
@@ -104,13 +105,13 @@ Content-Type: application/json
 {"username":"test_admin", "password":"test123"}
 
 ###
-POST http://127.0.0.1:8000/campaign/api/admin/campaigns/
+POST http://127.0.0.1:8000/campaign/api/campaigns/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4NTc1OTQ3LCJpYXQiOjE3Mzg1NzU2NDcsImp0aSI6ImEyZjUzZmI5YjVkZDRkNWQ4NjM5Mzg3YmI5N2RmNDY0IiwidXNlcl9pZCI6MTN9.tjT5QrviGwnb5NKSLP-BjKCf6Lymsh5HRjNYg_UmGQY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MTgwNzMzLCJpYXQiOjE3Mzg1NzU5MzMsImp0aSI6IjlhNGZiYWNhY2ZiNjQ2OTNhZmIyZDEzYmZhZmZjOGJjIiwidXNlcl9pZCI6MTN9.Q2xR8OaUVX45qelllWw33-tzPCOHYqBGC9h7fpRBMDw
 
 {
     "type": "Email",
-    "text": "Welcome to our new product launch!",
+    "text": "checking for admin id!",
     "description": "This campaign is to introduce our latest product to our users." 
 }
 
@@ -120,13 +121,13 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MTgwNzMzLCJpYXQiOjE3Mzg1NzU5MzMsImp0aSI6IjlhNGZiYWNhY2ZiNjQ2OTNhZmIyZDEzYmZhZmZjOGJjIiwidXNlcl9pZCI6MTN9.Q2xR8OaUVX45qelllWw33-tzPCOHYqBGC9h7fpRBMDw
 
 ###
-PUT http://127.0.0.1:8000/campaign/api/admin/campaigns/1/
+PUT http://127.0.0.1:8000/campaign/api/campaigns/1/
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MTgwNzMzLCJpYXQiOjE3Mzg1NzU5MzMsImp0aSI6IjlhNGZiYWNhY2ZiNjQ2OTNhZmIyZDEzYmZhZmZjOGJjIiwidXNlcl9pZCI6MTN9.Q2xR8OaUVX45qelllWw33-tzPCOHYqBGC9h7fpRBMDw
 
 {
     "type": "Emaillllll149",
-    "text": "Welcome to our new product launch!",
+    "text": "checking for admin and superadmin id!",
     "description": "This campaign is to introduce our latest product to our users." 
 }
 

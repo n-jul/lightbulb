@@ -1,12 +1,13 @@
-from sqlalchemy import MetaData, create_engine, Column, Integer,Boolean,String
+from sqlalchemy import MetaData, create_engine, Column, Integer,Boolean,String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
-Base= declarative_base(metadata=MetaData())
+from database import Base
 class extended_user(Base):
     __tablename__ = 'extended_user'
     id=Column(Integer,primary_key=True)
     role=Column(String)
+    practice_id = Column(Integer, ForeignKey('practice.id'),nullable=True,default=None)
 
-class practice(Base):
+class Practice(Base):
     __tablename__ = 'practice'
     id=Column(Integer,primary_key=True)
     name = Column(String)

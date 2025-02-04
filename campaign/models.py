@@ -1,9 +1,11 @@
 from sqlalchemy import Column, BigInteger, String, DateTime, func, ForeignKey, Boolean, Table
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine, MetaData
+from extended_user.models import extended_user
+from database import Base
 engine = create_engine('postgresql://postgres:Anjul123@localhost:5432/lightbulb')
 metadata = MetaData()
-Base = declarative_base(metadata=metadata)
+# Base = declarative_base(metadata=metadata)
 auth_user = Table('auth_user',metadata,autoload_with=engine)
 class UserCampaign(Base):
     __tablename__ = 'user_campaign'
@@ -15,6 +17,8 @@ class UserCampaign(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
     updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now(), nullable=False)
     created_by = Column(BigInteger, nullable=False)
+    admin_id = Column(BigInteger, ForeignKey('extended_user.id'), nullable=True, default=None)
+
 
 class UserCampaignSequence(Base):
     __tablename__ = 'user_campaign_sequence'

@@ -264,3 +264,41 @@
 2025-02-03 11:19:28,699 - extended_user.views - ERROR - Error fetching extended users: name 'practice' is not defined
 2025-02-03 15:10:45,127 - extended_user.views - INFO - Processing login request
 2025-02-03 15:10:47,041 - extended_user.views - INFO - Successful login for user: test_admin
+2025-02-03 15:15:31,157 - extended_user.views - INFO - Processing login request
+2025-02-03 15:15:33,060 - extended_user.views - INFO - Successful login for user: test_admin
+2025-02-03 17:13:20,396 - extended_user.views - INFO - Fetching all practices...
+2025-02-03 17:13:20,627 - extended_user.views - INFO - Successfully retrieved 1 practices
+2025-02-03 17:13:20,635 - extended_user.views - INFO - Fetching all practices...
+2025-02-03 17:13:20,638 - extended_user.views - INFO - Successfully retrieved 1 practices
+2025-02-03 17:25:49,308 - extended_user.views - INFO - Fetching all practices...
+2025-02-03 17:25:49,582 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-03 17:25:49,590 - extended_user.views - INFO - Fetching all practices...
+2025-02-03 17:25:49,593 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-03 17:36:24,358 - extended_user.views - INFO - Attempting to create new user and extended user
+2025-02-03 17:36:24,518 - extended_user.views - WARNING - Invalid user data: {'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}
+2025-02-03 17:36:34,275 - extended_user.views - INFO - Attempting to create new user and extended user
+2025-02-03 17:36:36,676 - extended_user.views - INFO - Created Django user with ID: 21
+2025-02-03 17:36:36,795 - extended_user.views - ERROR - Error creating extended user: Foreign key associated with column 'extended_user.practice_id' could not find table 'pratice' with which to generate a foreign key to target column 'id'
+2025-02-03 17:36:36,831 - extended_user.views - INFO - Rolled back Django user creation for ID: None
+2025-02-03 17:40:09,820 - extended_user.views - INFO - Attempting to create new user and extended user
+2025-02-03 17:40:11,679 - extended_user.views - INFO - Created Django user with ID: 22
+2025-02-03 17:40:11,901 - extended_user.views - ERROR - Error creating extended user: (psycopg2.errors.ForeignKeyViolation) insert or update on table "extended_user" violates foreign key constraint "fk_extended_user_practice_id"
+DETAIL:  Key (practice_id)=(1) is not present in table "practice".
+
+[SQL: INSERT INTO extended_user (id, role, practice_id) VALUES (%(id)s, %(role)s, %(practice_id)s)]
+[parameters: {'id': 22, 'role': 'user', 'practice_id': '1'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-02-03 17:40:11,929 - extended_user.views - INFO - Rolled back Django user creation for ID: None
+2025-02-03 17:41:24,864 - extended_user.views - INFO - Attempting to create new user and extended user
+2025-02-03 17:41:26,768 - extended_user.views - INFO - Created Django user with ID: 23
+2025-02-03 17:41:26,927 - extended_user.views - INFO - Created extended user with ID: 23
+2025-02-04 09:37:39,655 - extended_user.views - INFO - Fetching all practices...
+2025-02-04 09:37:40,269 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-04 09:37:40,299 - extended_user.views - INFO - Fetching all practices...
+2025-02-04 09:37:40,304 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-04 09:50:21,908 - extended_user.views - INFO - Processing login request
+2025-02-04 09:50:24,236 - extended_user.views - INFO - Successful login for user: test_admin
+2025-02-04 09:53:23,688 - extended_user.views - INFO - Fetching all practices...
+2025-02-04 09:53:23,704 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-04 09:53:23,721 - extended_user.views - INFO - Fetching all practices...
+2025-02-04 09:53:23,724 - extended_user.views - INFO - Successfully retrieved 10 practices

@@ -43,3 +43,1313 @@ NameError: name 'AdminUserCampaign' is not defined. Did you mean: 'UserCampaign'
 [03/Feb/2025 15:12:54] WARNING [django.request:248] Unauthorized: /campaign/api/admin/campaigns/1/
 [03/Feb/2025 15:14:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\lightbulb\settings.py changed, reloading.
 [03/Feb/2025 15:15:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 15:15:31] INFO [extended_user.views:89] Processing login request
+[03/Feb/2025 15:15:33] INFO [extended_user.views:99] Successful login for user: test_admin
+[03/Feb/2025 15:15:50] INFO [campaign.views:53] Checking admin status for user_id: 13
+[03/Feb/2025 15:15:50] INFO [campaign.views:58] User 13 confirmed as admin
+[03/Feb/2025 15:15:50] DEBUG [campaign.serializers:31] to_representation output: {'id': 1, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 2, 3, 15, 12, 1, 115307, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 2, 3, 15, 12, 1, 115307, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 13}
+[03/Feb/2025 15:17:07] INFO [campaign.views:53] Checking admin status for user_id: 13
+[03/Feb/2025 15:17:07] INFO [campaign.views:58] User 13 confirmed as admin
+[03/Feb/2025 15:17:07] DEBUG [campaign.serializers:31] to_representation output: {'id': 1, 'type': 'Emaillllll149', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 2, 3, 15, 12, 1, 115307, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 2, 3, 15, 17, 7, 491785, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 13}
+[03/Feb/2025 15:17:38] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[03/Feb/2025 15:18:07] INFO [campaign.views:53] Checking admin status for user_id: 13
+[03/Feb/2025 15:18:07] INFO [campaign.views:58] User 13 confirmed as admin
+[03/Feb/2025 15:18:07] INFO [campaign.views:325] Received request to list all user campaigns
+[03/Feb/2025 15:18:07] INFO [campaign.views:329] Successfully retrieved 1 campaigns
+[03/Feb/2025 15:18:07] DEBUG [campaign.serializers:31] to_representation output: {'id': 1, 'type': 'Emaillllll149', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 2, 3, 15, 12, 1, 115307, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 2, 3, 15, 17, 7, 491785, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 13}
+[03/Feb/2025 15:58:34] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 15:59:08] INFO [campaign.views:53] Checking admin status for user_id: 13
+[03/Feb/2025 15:59:08] INFO [campaign.views:58] User 13 confirmed as admin
+[03/Feb/2025 15:59:08] INFO [campaign.views:294] Received request to create new user campaign by admin.
+[03/Feb/2025 15:59:08] DEBUG [campaign.views:295] Request data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.'}
+[03/Feb/2025 15:59:08] DEBUG [campaign.views:303] serializer: UserCampaignSerializer(data={'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'created_by': 13}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[03/Feb/2025 15:59:08] DEBUG [campaign.views:305] Data from serializer: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 15:59:08] DEBUG [campaign.views:306] Creating new campaign with data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 15:59:08] INFO [campaign.views:317] Successfully created new campaign by user 13
+[03/Feb/2025 15:59:08] DEBUG [campaign.serializers:31] to_representation output: {'id': 2, 'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 2, 3, 15, 59, 8, 548167, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 2, 3, 15, 59, 8, 548167, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 13}
+[03/Feb/2025 15:59:54] INFO [campaign.views:195] Received request to create new user campaign
+[03/Feb/2025 15:59:54] DEBUG [campaign.views:196] Request data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.'}
+[03/Feb/2025 15:59:54] DEBUG [campaign.views:204] serializer: UserCampaignSerializer(data={'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'created_by': 13}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[03/Feb/2025 15:59:54] DEBUG [campaign.views:206] Data from serializer: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 15:59:54] DEBUG [campaign.views:207] Creating new campaign with data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 15:59:54] INFO [campaign.views:32] Checking superadmin status for user_id: 13
+[03/Feb/2025 15:59:54] WARNING [campaign.views:39] User 13 is not a superadmin or doesn't exist
+[03/Feb/2025 15:59:54] INFO [campaign.views:53] Checking admin status for user_id: 13
+[03/Feb/2025 15:59:54] INFO [campaign.views:58] User 13 confirmed as admin
+[03/Feb/2025 15:59:54] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[03/Feb/2025 16:00:22] INFO [campaign.views:195] Received request to create new user campaign
+[03/Feb/2025 16:00:22] DEBUG [campaign.views:196] Request data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.'}
+[03/Feb/2025 16:00:22] DEBUG [campaign.views:204] serializer: UserCampaignSerializer(data={'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'created_by': 13}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[03/Feb/2025 16:00:22] DEBUG [campaign.views:206] Data from serializer: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 16:00:22] DEBUG [campaign.views:207] Creating new campaign with data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 16:00:22] INFO [campaign.views:32] Checking superadmin status for user_id: 13
+[03/Feb/2025 16:00:22] WARNING [campaign.views:39] User 13 is not a superadmin or doesn't exist
+[03/Feb/2025 16:00:22] INFO [campaign.views:53] Checking admin status for user_id: 13
+[03/Feb/2025 16:00:22] INFO [campaign.views:58] User 13 confirmed as admin
+[03/Feb/2025 16:00:22] WARNING [django.request:248] Unauthorized: /campaign/api/campaigns/
+[03/Feb/2025 16:00:47] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 16:00:52] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:01:01] INFO [campaign.views:195] Received request to create new user campaign
+[03/Feb/2025 16:01:01] DEBUG [campaign.views:196] Request data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.'}
+[03/Feb/2025 16:01:01] DEBUG [campaign.views:204] serializer: UserCampaignSerializer(data={'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'created_by': 13}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[03/Feb/2025 16:01:01] DEBUG [campaign.views:206] Data from serializer: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 16:01:01] DEBUG [campaign.views:207] Creating new campaign with data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 16:01:01] INFO [campaign.views:32] Checking superadmin status for user_id: 13
+[03/Feb/2025 16:01:02] WARNING [campaign.views:39] User 13 is not a superadmin or doesn't exist
+[03/Feb/2025 16:01:02] INFO [campaign.views:53] Checking admin status for user_id: 13
+[03/Feb/2025 16:01:02] INFO [campaign.views:58] User 13 confirmed as admin
+[03/Feb/2025 16:01:02] ERROR [campaign.views:229] Failed to create campaign: Foreign key associated with column 'user_campaign.admin_id' could not find table 'extended_user' with which to generate a foreign key to target column 'id'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 220, in create
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\persistence.py", line 76, in save_obj
+    for table, mapper in base_mapper._sorted_tables.items():
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 1257, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+                                           ~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4059, in _sorted_tables
+    sorted_ = sql_util.sort_tables(
+        table_to_mapper,
+        skip_fn=skip,
+        extra_dependencies=extra_dependencies,
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\ddl.py", line 1262, in sort_tables
+    for (t, fkcs) in sort_tables_and_constraints(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tables,
+        ^^^^^^^
+    ...<2 lines>...
+        _warn_for_cycles=True,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\ddl.py", line 1332, in sort_tables_and_constraints
+    filtered = filter_fn(fkc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\ddl.py", line 1252, in _skip_fn
+    if fixed_skip_fn(fk):
+       ~~~~~~~~~~~~~^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4042, in skip
+    dep = table_to_mapper.get(fk.column.table)
+                              ^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 1145, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+                                           ~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\schema.py", line 3184, in column
+    return self._resolve_column()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\schema.py", line 3207, in _resolve_column
+    raise exc.NoReferencedTableError(
+    ...<5 lines>...
+    )
+sqlalchemy.exc.NoReferencedTableError: Foreign key associated with column 'user_campaign.admin_id' could not find table 'extended_user' with which to generate a foreign key to target column 'id'
+[03/Feb/2025 16:01:02] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[03/Feb/2025 16:09:22] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:09:43] INFO [campaign.views:195] Received request to create new user campaign
+[03/Feb/2025 16:09:43] DEBUG [campaign.views:196] Request data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.'}
+[03/Feb/2025 16:09:43] DEBUG [campaign.views:204] serializer: UserCampaignSerializer(data={'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'created_by': 13}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[03/Feb/2025 16:09:43] DEBUG [campaign.views:206] Data from serializer: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 16:09:43] DEBUG [campaign.views:207] Creating new campaign with data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 16:09:43] INFO [campaign.views:32] Checking superadmin status for user_id: 13
+[03/Feb/2025 16:09:43] WARNING [campaign.views:39] User 13 is not a superadmin or doesn't exist
+[03/Feb/2025 16:09:43] INFO [campaign.views:53] Checking admin status for user_id: 13
+[03/Feb/2025 16:09:43] INFO [campaign.views:58] User 13 confirmed as admin
+[03/Feb/2025 16:09:43] ERROR [campaign.views:229] Failed to create campaign: Foreign key associated with column 'user_campaign.admin_id' could not find table 'extended_user' with which to generate a foreign key to target column 'id'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 220, in create
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 1313, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 1288, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 4353, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\session.py", line 4449, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\persistence.py", line 76, in save_obj
+    for table, mapper in base_mapper._sorted_tables.items():
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 1257, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+                                           ~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4059, in _sorted_tables
+    sorted_ = sql_util.sort_tables(
+        table_to_mapper,
+        skip_fn=skip,
+        extra_dependencies=extra_dependencies,
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\ddl.py", line 1262, in sort_tables
+    for (t, fkcs) in sort_tables_and_constraints(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        tables,
+        ^^^^^^^
+    ...<2 lines>...
+        _warn_for_cycles=True,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\ddl.py", line 1332, in sort_tables_and_constraints
+    filtered = filter_fn(fkc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\ddl.py", line 1252, in _skip_fn
+    if fixed_skip_fn(fk):
+       ~~~~~~~~~~~~~^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\orm\mapper.py", line 4042, in skip
+    dep = table_to_mapper.get(fk.column.table)
+                              ^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 1145, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+                                           ~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\schema.py", line 3184, in column
+    return self._resolve_column()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\sqlalchemy\sql\schema.py", line 3207, in _resolve_column
+    raise exc.NoReferencedTableError(
+    ...<5 lines>...
+    )
+sqlalchemy.exc.NoReferencedTableError: Foreign key associated with column 'user_campaign.admin_id' could not find table 'extended_user' with which to generate a foreign key to target column 'id'
+[03/Feb/2025 16:09:43] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[03/Feb/2025 16:14:22] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:14:26] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:15:38] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:16:07] INFO [campaign.views:195] Received request to create new user campaign
+[03/Feb/2025 16:16:07] DEBUG [campaign.views:196] Request data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.'}
+[03/Feb/2025 16:16:07] DEBUG [campaign.views:204] serializer: UserCampaignSerializer(data={'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'created_by': 13}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[03/Feb/2025 16:16:07] DEBUG [campaign.views:206] Data from serializer: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 16:16:07] DEBUG [campaign.views:207] Creating new campaign with data: {'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[03/Feb/2025 16:16:07] INFO [campaign.views:32] Checking superadmin status for user_id: 13
+[03/Feb/2025 16:16:07] WARNING [campaign.views:39] User 13 is not a superadmin or doesn't exist
+[03/Feb/2025 16:16:07] INFO [campaign.views:53] Checking admin status for user_id: 13
+[03/Feb/2025 16:16:07] INFO [campaign.views:58] User 13 confirmed as admin
+[03/Feb/2025 16:16:07] INFO [campaign.views:221] Successfully created new campaign by user 13
+[03/Feb/2025 16:16:07] DEBUG [campaign.serializers:31] to_representation output: {'id': 12, 'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 2, 3, 16, 16, 7, 734528, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 2, 3, 16, 16, 7, 734528, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 13, 'admin_id': 13}
+[03/Feb/2025 16:22:46] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 16:22:51] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:23:01] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 16:23:06] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:23:21] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 16:23:26] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:23:34] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 16:23:40] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:56:33] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:56:38] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:56:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:56:51] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:57:21] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:57:25] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:57:32] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:57:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:58:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:58:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:58:24] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:58:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:58:38] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:58:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:58:47] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:58:52] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:59:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:59:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:59:13] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:59:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:59:25] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:59:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 16:59:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 16:59:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:13:16] WARNING [django.request:248] Unauthorized: /campaign/api/message/
+[03/Feb/2025 17:13:16] WARNING [django.request:248] Unauthorized: /campaign/api/message/
+[03/Feb/2025 17:13:20] INFO [extended_user.views:121] Fetching all practices...
+[03/Feb/2025 17:13:20] INFO [extended_user.views:128] Successfully retrieved 1 practices
+[03/Feb/2025 17:13:20] INFO [extended_user.views:121] Fetching all practices...
+[03/Feb/2025 17:13:20] INFO [extended_user.views:128] Successfully retrieved 1 practices
+[03/Feb/2025 17:20:43] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 17:20:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:24:52] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:25:14] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\views.py changed, reloading.
+[03/Feb/2025 17:25:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:25:39] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\views.py changed, reloading.
+[03/Feb/2025 17:25:44] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:25:49] INFO [extended_user.views:121] Fetching all practices...
+[03/Feb/2025 17:25:49] INFO [extended_user.views:128] Successfully retrieved 10 practices
+[03/Feb/2025 17:25:49] INFO [extended_user.views:121] Fetching all practices...
+[03/Feb/2025 17:25:49] INFO [extended_user.views:128] Successfully retrieved 10 practices
+[03/Feb/2025 17:35:04] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\views.py changed, reloading.
+[03/Feb/2025 17:35:09] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:35:49] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\views.py changed, reloading.
+[03/Feb/2025 17:35:54] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:36:02] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\views.py changed, reloading.
+[03/Feb/2025 17:36:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:36:14] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\views.py changed, reloading.
+[03/Feb/2025 17:36:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:36:24] INFO [extended_user.views:50] Attempting to create new user and extended user
+[03/Feb/2025 17:36:24] WARNING [extended_user.views:85] Invalid user data: {'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}
+[03/Feb/2025 17:36:24] WARNING [django.request:248] Bad Request: /users/api/signup/
+[03/Feb/2025 17:36:34] INFO [extended_user.views:50] Attempting to create new user and extended user
+[03/Feb/2025 17:36:36] INFO [extended_user.views:57] Created Django user with ID: 21
+[03/Feb/2025 17:36:36] ERROR [extended_user.views:76] Error creating extended user: Foreign key associated with column 'extended_user.practice_id' could not find table 'pratice' with which to generate a foreign key to target column 'id'
+[03/Feb/2025 17:36:36] INFO [extended_user.views:82] Rolled back Django user creation for ID: None
+[03/Feb/2025 17:36:36] ERROR [django.request:248] Internal Server Error: /users/api/signup/
+[03/Feb/2025 17:39:54] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\extended_user\models.py changed, reloading.
+[03/Feb/2025 17:39:59] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:40:09] INFO [extended_user.views:50] Attempting to create new user and extended user
+[03/Feb/2025 17:40:11] INFO [extended_user.views:57] Created Django user with ID: 22
+[03/Feb/2025 17:40:11] ERROR [extended_user.views:76] Error creating extended user: (psycopg2.errors.ForeignKeyViolation) insert or update on table "extended_user" violates foreign key constraint "fk_extended_user_practice_id"
+DETAIL:  Key (practice_id)=(1) is not present in table "practice".
+
+[SQL: INSERT INTO extended_user (id, role, practice_id) VALUES (%(id)s, %(role)s, %(practice_id)s)]
+[parameters: {'id': 22, 'role': 'user', 'practice_id': '1'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[03/Feb/2025 17:40:11] INFO [extended_user.views:82] Rolled back Django user creation for ID: None
+[03/Feb/2025 17:40:11] ERROR [django.request:248] Internal Server Error: /users/api/signup/
+[03/Feb/2025 17:41:14] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:41:24] INFO [extended_user.views:50] Attempting to create new user and extended user
+[03/Feb/2025 17:41:26] INFO [extended_user.views:57] Created Django user with ID: 23
+[03/Feb/2025 17:41:26] INFO [extended_user.views:68] Created extended user with ID: 23
+[03/Feb/2025 17:47:31] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\urls.py changed, reloading.
+[03/Feb/2025 17:47:36] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:48:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:48:49] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:49:05] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:49:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:54:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:54:08] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:54:16] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:54:21] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:55:23] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:55:28] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:55:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:55:40] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:55:49] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:55:54] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:56:01] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:56:06] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:56:13] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:56:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 17:56:24] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 17:56:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 18:02:51] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 18:02:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 18:07:21] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 18:07:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 18:07:34] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 18:07:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 18:07:48] INFO [campaign.views:103] Received request to send test email
+[03/Feb/2025 18:07:48] WARNING [django.request:248] Bad Request: /campaign/api/send_email/
+[03/Feb/2025 18:08:11] INFO [campaign.views:103] Received request to send test email
+[03/Feb/2025 18:08:11] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x00000230E49ADD30>
+[03/Feb/2025 18:08:11] DEBUG [campaign.views:116] Querying users with 'user' role
+[03/Feb/2025 18:08:11] ERROR [campaign.views:140] Failed to send email: name 'admin' is not defined
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 119, in create
+    if admin and admin.practice_id:
+       ^^^^^
+NameError: name 'admin' is not defined
+[03/Feb/2025 18:08:11] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+[03/Feb/2025 18:08:24] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[03/Feb/2025 18:08:28] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 18:08:35] INFO [campaign.views:103] Received request to send test email
+[03/Feb/2025 18:08:36] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x000002AD869D1BE0>
+[03/Feb/2025 18:08:36] DEBUG [campaign.views:116] Querying users with 'user' role
+[03/Feb/2025 18:08:36] INFO [campaign.views:129] Attempting to send email to 2 users
+[03/Feb/2025 18:08:36] INFO [campaign.views:130] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[03/Feb/2025 18:08:36] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[03/Feb/2025 18:08:42] ERROR [campaign.views:140] Failed to send email: [WinError 10061] No connection could be made because the target machine actively refused it
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 934, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 132, in create
+    send_email_task.apply_async(args=[subject, message, "anjulkushwaha11@gmail.com", users_list])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\app\task.py", line 594, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\app\base.py", line 801, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\app\amqp.py", line 518, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<7 lines>...
+        **properties
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 186, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 195, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 218, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 234, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 953, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\S\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] No connection could be made because the target machine actively refused it
+[03/Feb/2025 18:08:42] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+[03/Feb/2025 18:09:12] INFO [campaign.views:103] Received request to send test email
+[03/Feb/2025 18:09:12] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x000002AD869D1BE0>
+[03/Feb/2025 18:09:12] DEBUG [campaign.views:116] Querying users with 'user' role
+[03/Feb/2025 18:09:13] INFO [campaign.views:129] Attempting to send email to 2 users
+[03/Feb/2025 18:09:13] INFO [campaign.views:130] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[03/Feb/2025 18:09:19] ERROR [campaign.views:140] Failed to send email: [WinError 10061] No connection could be made because the target machine actively refused it
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 934, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 132, in create
+    send_email_task.apply_async(args=[subject, message, "anjulkushwaha11@gmail.com", users_list])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\app\task.py", line 594, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\app\base.py", line 801, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\app\amqp.py", line 518, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<7 lines>...
+        **properties
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 186, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 195, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 218, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 234, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 953, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\S\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] No connection could be made because the target machine actively refused it
+[03/Feb/2025 18:09:19] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+[03/Feb/2025 18:09:47] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[03/Feb/2025 18:09:59] INFO [campaign.views:103] Received request to send test email
+[03/Feb/2025 18:10:00] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x000001CD21875E80>
+[03/Feb/2025 18:10:00] DEBUG [campaign.views:116] Querying users with 'user' role
+[03/Feb/2025 18:10:00] INFO [campaign.views:129] Attempting to send email to 2 users
+[03/Feb/2025 18:10:00] INFO [campaign.views:130] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[03/Feb/2025 18:10:00] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[03/Feb/2025 18:10:06] ERROR [campaign.views:140] Failed to send email: [WinError 10061] No connection could be made because the target machine actively refused it
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\utils\functional.py", line 32, in __call__
+    return self.__value__
+           ^^^^^^^^^^^^^^
+AttributeError: 'ChannelPromise' object has no attribute '__value__'. Did you mean: '__call__'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+        self._connection_factory, self.recoverable_connection_errors,
+    ...<2 lines>...
+        callback, timeout=timeout
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 934, in _connection_factory
+    self._connection = self._establish_connection()
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\transport\pyamqp.py", line 203, in establish_connection
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\amqp\connection.py", line 324, in connect
+    self.transport.connect()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\amqp\transport.py", line 132, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\amqp\transport.py", line 187, in _connect
+    self.sock.connect(sa)
+    ~~~~~~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 132, in create
+    send_email_task.apply_async(args=[subject, message, "anjulkushwaha11@gmail.com", users_list])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\app\task.py", line 594, in apply_async
+    return app.send_task(
+           ~~~~~~~~~~~~~^
+        self.name, args, kwargs, task_id=task_id, producer=producer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **options
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\app\base.py", line 801, in send_task
+    amqp.send_task_message(P, name, message, **options)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\celery\app\amqp.py", line 518, in send_task_message
+    ret = producer.publish(
+        body,
+    ...<7 lines>...
+        **properties
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 186, in publish
+    return _publish(
+        body, priority, content_type, content_encoding,
+        headers, properties, routing_key, mandatory, immediate,
+        exchange_name, declare, timeout
+    )
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 195, in _publish
+    channel = self.channel
+              ^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 218, in _get_channel
+    channel = self._channel = channel()
+                              ~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\utils\functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+                             ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\messaging.py", line 234, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 953, in default_channel
+    self._ensure_connection(**conn_opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 458, in _ensure_connection
+    with ctx():
+         ~~~^^
+  File "C:\Users\S\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [WinError 10061] No connection could be made because the target machine actively refused it
+[03/Feb/2025 18:10:06] ERROR [django.request:248] Internal Server Error: /campaign/api/send_email/
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[03/Feb/2025 18:11:45] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[04/Feb/2025 09:37:39] INFO [extended_user.views:122] Fetching all practices...
+[04/Feb/2025 09:37:40] INFO [extended_user.views:129] Successfully retrieved 10 practices
+[04/Feb/2025 09:37:40] INFO [extended_user.views:122] Fetching all practices...
+[04/Feb/2025 09:37:40] INFO [extended_user.views:129] Successfully retrieved 10 practices
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[04/Feb/2025 09:45:06] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[04/Feb/2025 09:45:48] INFO [campaign.views:103] Received request to send test email
+[04/Feb/2025 09:45:48] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x000001CD21875E80>
+[04/Feb/2025 09:45:48] DEBUG [campaign.views:116] Querying users with 'user' role
+[04/Feb/2025 09:45:48] INFO [campaign.views:129] Attempting to send email to 2 users
+[04/Feb/2025 09:45:48] INFO [campaign.views:130] Recipient list is ['njulkushwaha@gmail.com', 'anjulkushwaha11@gmail.com']
+[04/Feb/2025 09:45:48] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[04/Feb/2025 09:45:48] DEBUG [amqp:104] using channel_id: 1
+[04/Feb/2025 09:45:48] DEBUG [amqp:460] Channel open
+[04/Feb/2025 09:45:48] INFO [campaign.views:133] Email sent successfully
+[04/Feb/2025 09:47:53] INFO [campaign.views:103] Received request to send test email
+[04/Feb/2025 09:47:53] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x000001CD21875E80>
+[04/Feb/2025 09:47:53] DEBUG [campaign.views:116] Querying users with 'user' role
+[04/Feb/2025 09:47:53] INFO [campaign.views:129] Attempting to send email to 1 users
+[04/Feb/2025 09:47:53] INFO [campaign.views:130] Recipient list is ['njulkushwaha@gmail.com']
+[04/Feb/2025 09:47:53] INFO [campaign.views:133] Email sent successfully
+[04/Feb/2025 09:49:07] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 09:49:11] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 09:49:17] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 09:49:24] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 09:49:33] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 09:49:39] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 09:50:21] INFO [extended_user.views:90] Processing login request
+[04/Feb/2025 09:50:24] INFO [extended_user.views:100] Successful login for user: test_admin
+[04/Feb/2025 09:51:02] INFO [campaign.views:103] Received request to send test email
+[04/Feb/2025 09:51:02] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x000001C7AD5C4440>
+[04/Feb/2025 09:51:02] DEBUG [campaign.views:116] Querying users with 'user' role
+[04/Feb/2025 09:51:02] INFO [campaign.views:129] Attempting to send email to 1 users
+[04/Feb/2025 09:51:02] INFO [campaign.views:130] Recipient list is ['njulkushwaha@gmail.com']
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[04/Feb/2025 09:51:02] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[04/Feb/2025 09:51:02] DEBUG [amqp:104] using channel_id: 1
+[04/Feb/2025 09:51:02] DEBUG [amqp:460] Channel open
+[04/Feb/2025 09:51:02] INFO [campaign.views:133] Email sent successfully
+[04/Feb/2025 09:53:23] INFO [extended_user.views:122] Fetching all practices...
+[04/Feb/2025 09:53:23] INFO [extended_user.views:129] Successfully retrieved 10 practices
+[04/Feb/2025 09:53:23] INFO [extended_user.views:122] Fetching all practices...
+[04/Feb/2025 09:53:23] INFO [extended_user.views:129] Successfully retrieved 10 practices
+[04/Feb/2025 10:02:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:03:03] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:03:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:03:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:03:28] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:03:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:03:40] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:03:46] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:03:57] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:04:03] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:04:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:04:24] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:04:35] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:04:42] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:05:05] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:05:11] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:05:47] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:05:54] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:06:02] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:06:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:06:19] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:06:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:06:36] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:06:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:06:52] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:06:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:07:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:07:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:07:41] INFO [campaign.views:103] Received request to send test email
+[04/Feb/2025 10:07:41] INFO [campaign.views:111] campaign object that we got: <campaign.models.UserCampaign object at 0x00000158AC62BCB0>
+[04/Feb/2025 10:07:41] DEBUG [campaign.views:116] Querying users with 'user' role
+[04/Feb/2025 10:07:41] INFO [campaign.views:129] Attempting to send email to 1 users
+[04/Feb/2025 10:07:41] INFO [campaign.views:130] Recipient list is ['njulkushwaha@gmail.com']
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def accumulate(self, *args, **kwargs):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def send_campaigns_periodically():
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def add():
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def chord(self, header, body, partial_args=0, interval=1, countdown=2, max_retries=3, eager=4, **kwargs):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def send_email_task(subject, message, from_email, recipient_list):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def chunks(task, it, n):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def unlock_chord(self, group_id, callback, interval=0, max_retries=1, result=2, Result=3, GroupResult=4, result_from_tuple=5, **kwargs):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def group(self, tasks, result, group_id, partial_args, add_to_parent=0):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def debug_task(self):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def xmap(task, it):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def backend_cleanup():
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def chain(*args, **kwargs):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [celery.utils.functional:335] 
+def xstarmap(task, it):
+    return 1
+
+[04/Feb/2025 10:07:41] DEBUG [amqp:383] Start from server, version: 0.9, properties: {'capabilities': {'publisher_confirms': True, 'exchange_exchange_bindings': True, 'basic.nack': True, 'consumer_cancel_notify': True, 'connection.blocked': True, 'consumer_priorities': True, 'authentication_failure_close': True, 'per_consumer_qos': True, 'direct_reply_to': True}, 'cluster_name': 'rabbit@my-rabbit', 'copyright': 'Copyright (c) 2007-2024 Broadcom Inc and/or its subsidiaries', 'information': 'Licensed under the MPL 2.0. Website: https://rabbitmq.com', 'platform': 'Erlang/OTP 26.2.5.6', 'product': 'RabbitMQ', 'version': '3.13.7'}, mechanisms: [b'PLAIN', b'AMQPLAIN'], locales: ['en_US']
+[04/Feb/2025 10:07:41] DEBUG [amqp:104] using channel_id: 1
+[04/Feb/2025 10:07:41] DEBUG [amqp:460] Channel open
+[04/Feb/2025 10:07:41] INFO [campaign.views:133] Email sent successfully
+[04/Feb/2025 10:16:55] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:17:05] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:17:29] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:17:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:32:32] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:32:40] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:32:52] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:33:00] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:33:09] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:33:14] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:33:23] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:33:31] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:33:46] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:33:54] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:34:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:34:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:34:21] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:34:27] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:34:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:35:03] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:37:38] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:37:44] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:37:52] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:38:10] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:38:24] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:38:29] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:38:36] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:38:41] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:38:49] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:38:56] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:39:04] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:39:09] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:39:15] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:39:21] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:40:11] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:40:16] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:40:26] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:40:32] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:40:59] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:41:06] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:41:17] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:41:24] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:41:52] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:41:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:42:05] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:42:11] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:43:23] ERROR [django.request:248] Internal Server Error: /campaign/api/campaigns/
+Traceback (most recent call last):
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\S\.virtualenvs\backend-xHKri2Ze\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 215, in create
+    self.get_queryset()
+    ~~~~~~~~~~~~~~~~~^^
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 204, in get_queryset
+    user_query = db.session.query(extended_user).filter_by(id=user_id).first()
+                 ^^
+NameError: name 'db' is not defined
+[04/Feb/2025 10:43:59] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:44:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:44:11] INFO [campaign.views:216] Received request to create new user campaign
+[04/Feb/2025 10:44:11] DEBUG [campaign.views:217] Request data: {'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.'}
+[04/Feb/2025 10:44:11] DEBUG [campaign.views:225] serializer: UserCampaignSerializer(data={'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'created_by': 13}):
+    type = CharField(required=True)
+    text = CharField(required=True)
+    description = CharField(allow_blank=True, required=False)
+    status = CharField(default='pending', required=False)
+    created_at = DateTimeField(read_only=True)
+    updated_at = DateTimeField(read_only=True)
+    created_by = IntegerField(required=True)
+[04/Feb/2025 10:44:11] DEBUG [campaign.views:227] Data from serializer: {'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[04/Feb/2025 10:44:11] DEBUG [campaign.views:228] Creating new campaign with data: {'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_by': 13}
+[04/Feb/2025 10:44:11] INFO [campaign.views:241] Successfully created new campaign by user 13
+[04/Feb/2025 10:44:11] DEBUG [campaign.serializers:31] to_representation output: {'id': 13, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 2, 4, 10, 44, 11, 923139, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 2, 4, 10, 44, 11, 923139, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 13, 'admin_id': 13}
+[04/Feb/2025 10:51:03] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:51:07] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:51:14] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:51:21] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:51:27] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:51:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:51:38] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:51:44] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:51:53] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:51:58] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:53:18] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:53:24] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:53:42] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:53:47] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:54:06] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:54:11] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:54:18] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:54:23] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:54:28] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:54:33] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:54:59] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:55:04] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:55:11] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:55:17] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:55:50] INFO [campaign.views:254] Received request to list all user campaigns
+[04/Feb/2025 10:55:50] ERROR [campaign.views:270] Failed to retrieve campaigns: 'UserCampaignViewSet' object has no attribute 'user_role'
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 257, in list
+    if self.user_role=="superadmin":
+       ^^^^^^^^^^^^^^
+AttributeError: 'UserCampaignViewSet' object has no attribute 'user_role'
+[04/Feb/2025 10:55:50] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[04/Feb/2025 10:58:52] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:59:00] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:59:10] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:59:18] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:59:27] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 10:59:35] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 10:59:43] INFO [campaign.views:254] Received request to list all user campaigns
+[04/Feb/2025 10:59:43] ERROR [campaign.views:271] Failed to retrieve campaigns: object of type 'Query' has no len()
+Traceback (most recent call last):
+  File "F:\PROGRAMMING\django\ILP\backend\campaign\views.py", line 266, in list
+    campaign_count = len(campaigns)
+TypeError: object of type 'Query' has no len()
+[04/Feb/2025 10:59:43] WARNING [django.request:248] Bad Request: /campaign/api/campaigns/
+[04/Feb/2025 11:00:14] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:00:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:00:32] INFO [campaign.views:254] Received request to list all user campaigns
+[04/Feb/2025 11:00:32] INFO [campaign.views:267] Successfully retrieved 11 campaigns
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 8, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 14, 53, 19, 74436, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 9, 'type': 'sdfgh', 'text': 'dfgh', 'description': 'sdfgsdfghxcvb', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 15, 8, 15, 651142, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 1, 'type': 'Emaillllll', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 16, 57, 8, 905764, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 2, 'type': 'email', 'text': 'changed text', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 55, 51, 707665, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 16, 59, 6, 98777, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 3, 'type': 'email', 'text': 'Sample campaign texttttttttttt', 'description': 'Sample campaign description', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 20, 12, 56, 19, 749768, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 17, 56, 14, 20700, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 6, 'type': 'Email', 'text': 'Welcome to our new product launch!!!!!!!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 21, 16, 11, 24, 478843, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 17, 58, 48, 244831, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 10, 'type': 'gggggggggggg', 'text': 'cccccccccc', 'description': 'ddddddddddddddddddddddd', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 50, 22, 898947, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 7, 'type': 'Email', 'text': 'Welcome to our new product launch!llllllllllllllllll', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'active', 'created_at': datetime.datetime(2025, 1, 23, 14, 52, 52, 803280, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 24, 9, 54, 48, 372497, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 11, 'type': 'sdfgh', 'text': 'sdfghm,', 'description': 'sdfghjklsxcvbnm123', 'status': 'pending', 'created_at': datetime.datetime(2025, 2, 3, 12, 16, 56, 975754, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 2, 3, 12, 16, 56, 975754, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 12, 'type': 'Email', 'text': 'checking for admin id!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 2, 3, 16, 16, 7, 734528, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 2, 3, 16, 16, 7, 734528, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 13, 'admin_id': 13}
+[04/Feb/2025 11:00:32] DEBUG [campaign.serializers:31] to_representation output: {'id': 13, 'type': 'Email', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 2, 4, 10, 44, 11, 923139, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 2, 4, 10, 44, 11, 923139, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 13, 'admin_id': 13}
+[04/Feb/2025 11:01:28] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:01:36] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:02:05] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:02:11] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:02:24] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:02:31] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:02:39] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:02:45] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:02:53] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:03:00] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:03:09] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:03:17] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:03:46] DEBUG [campaign.serializers:31] to_representation output: {'id': 1, 'type': 'Emaillllll', 'text': 'Welcome to our new product launch!', 'description': 'This campaign is to introduce our latest product to our users.', 'status': 'pending', 'created_at': datetime.datetime(2025, 1, 20, 12, 51, 29, 69403, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'updated_at': datetime.datetime(2025, 1, 23, 16, 57, 8, 905764, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800))), 'created_by': 14, 'admin_id': None}
+[04/Feb/2025 11:04:21] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:04:31] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:06:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:06:17] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:06:32] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:06:38] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:06:45] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:06:50] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:06:56] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:07:04] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:07:11] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:07:20] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:07:31] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:07:38] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:07:48] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:07:55] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:08:13] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:08:19] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:08:26] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:08:32] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:08:48] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:08:56] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:09:05] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:09:12] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:09:47] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:09:54] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:10:07] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:10:14] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:10:23] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:10:30] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:10:40] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:10:47] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader
+[04/Feb/2025 11:11:08] INFO [django.utils.autoreload:266] F:\PROGRAMMING\django\ILP\backend\campaign\views.py changed, reloading.
+[04/Feb/2025 11:11:17] INFO [django.utils.autoreload:668] Watching for file changes with StatReloader

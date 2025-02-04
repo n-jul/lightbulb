@@ -1,3 +1,4 @@
 *.log   # Ignores all log files
 *.pyc   # Ignores all Python compiled files
 
+debug.log

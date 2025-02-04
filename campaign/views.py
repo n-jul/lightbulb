@@ -8,7 +8,7 @@ from .serializers import EmailSerializer, ScheduleCampaignSerializer
 from .models import UserCampaign, UserMessage, UserCampaignSequence, AdminUserCampaign
 from .serializers import UserCampaignSerializer
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, or_
 from extended_user.models import extended_user
 import logging
 from .tasks import send_email_task
@@ -114,7 +114,14 @@ class SendTestEmailViewSet(viewsets.ViewSet):
                     message = campaign.description
                 try:
                     logger.debug("Querying users with 'user' role")
-                    users_with_role = session.query(extended_user).filter(extended_user.role=='user')
+                    admin_id = request.user.id
+                    admin = session.query(extended_user).filter(extended_user.id == admin_id).first()
+                    if admin and admin.practice_id:
+                        practice_id_of_admin = admin.practice_id
+                    users_with_role = session.query(extended_user).filter(
+                        extended_user.role=='user',
+                        extended_user.practice_id==practice_id_of_admin
+                        )
                     user_ids = [user.id for user in users_with_role]
                     users_list = list(DjangoUser.objects.filter(id__in=user_ids).values_list('email', flat=True))
                     total_users = len(users_list)
@@ -190,8 +197,22 @@ class UserCampaignViewSet(viewsets.ViewSet):
     """
     A viewset for viewing and creating user campaigns using SQLAlchemy.
     """
-    permission_classes = [IsAuthenticated, IsSuperAdmin]
+    permission_classes = [IsAuthenticated]
+    def get_user_role(self):
+        """Fetches user role"""
+        user_id = self.request.user.id
+        user_query = session.query(extended_user).filter_by(id=user_id).first()
+        if not user_query:
+            self.user_role="user"
+        elif user_query.role=="admin":
+            self.user_role="admin"
+        elif user_query.role=="superadmin":
+            self.user_role="superadmin"
+        else:
+            self.user_role="user"
+    
     def create(self, request, *args, **kwargs):
+        self.get_user_role()
         logger.info("Received request to create new user campaign")
         logger.debug(f"Request data: {request.data}")
         created_by = request.user.id
@@ -205,21 +226,24 @@ class UserCampaignViewSet(viewsets.ViewSet):
                 user_campaign_data = serializer.validated_data
                 logger.debug(f"Data from serializer: {serializer.validated_data}")
                 logger.debug(f"Creating new campaign with data: {user_campaign_data}")
-                
-                new_campaign = UserCampaign(
-                    type=user_campaign_data['type'],
-                    text=user_campaign_data['text'],
-                    description=user_campaign_data.get('description', ''),
-                    created_by=user_campaign_data['created_by'],
-                    status=user_campaign_data['status'],
-                )
-                session.add(new_campaign)
-                session.commit()
-                logger.info(f"Successfully created new campaign by user {created_by}")
-                
-                response_serializer = UserCampaignSerializer(new_campaign)
-                return Response(response_serializer.data, status=status.HTTP_201_CREATED)
-
+                # check_role = session.query(extended_user).filter_by(id=request.user.id).first()
+                if self.user_role in ["superadmin", "admin"]:
+                    new_campaign = UserCampaign(
+                        type=user_campaign_data['type'],
+                        text=user_campaign_data['text'],
+                        description=user_campaign_data.get('description', ''),
+                        created_by=user_campaign_data['created_by'],
+                        status=user_campaign_data['status'],
+                        admin_id= created_by if self.user_role=="admin" else None
+                    )
+                    session.add(new_campaign)
+                    session.commit()
+                    logger.info(f"Successfully created new campaign by user {created_by}")
+                    
+                    response_serializer = UserCampaignSerializer(new_campaign)
+                    return Response(response_serializer.data, status=status.HTTP_201_CREATED)
+                else:
+                    return Response({"error":"You are not authorized to perform this action."}, status=status.HTTP_401_UNAUTHORIZED)
         except Exception as e:
             session.rollback()
             logger.error(f"Failed to create campaign: {str(e)}", exc_info=True)
@@ -228,11 +252,19 @@ class UserCampaignViewSet(viewsets.ViewSet):
             session.close()
     def list(self, request, *args, **kwargs):
         logger.info("Received request to list all user campaigns")
+        self.get_user_role()
         try:
-            campaigns = session.query(UserCampaign).all()
+            campaigns = []
+            if self.user_role=="superadmin":
+                campaigns = session.query(UserCampaign).all()
+            elif self.user_role=="admin":
+                campaigns = session.query(UserCampaign).filter(
+                    or_(UserCampaign.admin_id == None, UserCampaign.admin_id == request.user.id)
+                ).all()
+            else:
+                return Response({"error":"You are not authorized to perform this action."}, status=status.HTTP_401_UNAUTHORIZED)
             campaign_count = len(campaigns)
             logger.info(f"Successfully retrieved {campaign_count} campaigns")
-            
             serializer = UserCampaignSerializer(campaigns, many=True)
             return Response(serializer.data)
         except Exception as e:
@@ -241,19 +273,23 @@ class UserCampaignViewSet(viewsets.ViewSet):
         finally:
             session.close()
     def retrieve(self,request,pk=None, *args, **kwargs):
+        self.get_user_role()
         try:
-            campaign = session.query(UserCampaign).filter(UserCampaign.id==pk).first()
-            if campaign is None:
-                return Response({"detail": "Campaign not found"}, status=status.HTTP_404_NOT_FOUND)
-            serializer = UserCampaignSerializer(campaign)
-            return Response(serializer.data)
+            if self.user_role in ["admin","superadmin"]:
+                campaign = session.query(UserCampaign).filter(UserCampaign.id==pk).first()
+                if campaign is None:
+                    return Response({"detail": "Campaign not found"}, status=status.HTTP_404_NOT_FOUND)
+                serializer = UserCampaignSerializer(campaign)
+                return Response(serializer.data)
+            else:
+                return Response({"error":"You are not authorized to perform this action."}, status=status.HTTP_401_UNAUTHORIZED)
         except Exception as e:
             logger.error(f"Failed to retrieve campaign by ID {pk}: {str(e)}", exc_info=True)
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
         finally:
             session.close() 
-
     def update(self,request,pk=None, *args,**kwargs):
+        self.get_user_role()
         try:
             campaign = session.query(UserCampaign).filter(UserCampaign.id==pk).first()
             if campaign is None:
@@ -263,17 +299,30 @@ class UserCampaignViewSet(viewsets.ViewSet):
             if not serializer.is_valid():
                 logger.warning(f"Invalid campaign update data: {serializer.errors}")
                 return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-            campaign.type = request.data.get('type', campaign.type)
-            campaign.text = request.data.get('text', campaign.text)
-            campaign.description = request.data.get('description', campaign.description)
-            campaign.status = request.data.get('status', campaign.status)
-            campaign.created_by = request.user.id or campaign.created_by
-            # Commit the changes to the database
-            session.commit()
+            if self.user_role=="admin":
+                if campaign.admin_id==None or campaign.admin_id!=request.user.id:
+                    return Response({"error":"You are not authorized to perform this action."}, status=status.HTTP_401_UNAUTHORIZED)
+                else:
+                    campaign.type = request.data.get('type', campaign.type)
+                    campaign.text = request.data.get('text', campaign.text)
+                    campaign.description = request.data.get('description', campaign.description)
+                    campaign.status = request.data.get('status', campaign.status)
+                    campaign.created_by = request.user.id or campaign.created_by
+                    session.commit()
+                    response_serializer = UserCampaignSerializer(campaign)
+                    return Response(response_serializer.data, status=status.HTTP_200_OK)
+            elif self.user_role=="superadmin":
+                campaign.type = request.data.get('type', campaign.type)
+                campaign.text = request.data.get('text', campaign.text)
+                campaign.description = request.data.get('description', campaign.description)
+                campaign.status = request.data.get('status', campaign.status)
+                campaign.created_by = request.user.id or campaign.created_by
+                # Commit the changes to the database
+                session.commit()
 
-            # Serialize the updated campaign and return the response
-            response_serializer = UserCampaignSerializer(campaign)
-            return Response(response_serializer.data, status=status.HTTP_200_OK)
+                # Serialize the updated campaign and return the response
+                response_serializer = UserCampaignSerializer(campaign)
+                return Response(response_serializer.data, status=status.HTTP_200_OK)
         except Exception as e:
             session.rollback()
             logger.error(f"Failed to update campaign {pk}: {str(e)}", exc_info=True)

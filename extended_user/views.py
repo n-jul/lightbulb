@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
-from .models import extended_user, practice
+from .models import extended_user, Practice
 from .serializers import ExtendedUserSerializer, UserSerializer, LoginSerializer
 from sqlalchemy import MetaData
 import logging
@@ -59,7 +59,8 @@ class ExtendedUserViewSet(viewsets.ViewSet):
                 # Now create the extended_user in SQLAlchemy
                 extended_user_data = {
                     'role': 'user',
-                    'id': user.id
+                    'id': user.id,
+                    'practice_id': user_data.get('practice_id', None)
                 }
                 new_extended_user = extended_user(**extended_user_data)
                 session.add(new_extended_user)
@@ -121,7 +122,7 @@ class PracticeViewSet(viewsets.ViewSet):
         logger.info("Fetching all practices...")
         try:
             # Use SQLAlchemy to query extended_user table
-            practices = session.query(practice).all()
+            practices = session.query(Practice).all()
             practice_list = [
             {"id": p.id, "name": p.name} for p in practices
             ]
