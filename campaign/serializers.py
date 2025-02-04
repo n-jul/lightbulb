@@ -76,9 +76,13 @@ class UserCampaignSerializer(SQLAlchemySerializer):
             logger.error(f"Error creating UserCampaign instance: {e}", exc_info=True)
             raise
 
-
-
-
+class SuperAdminSendCampaignSerializer(serializers.Serializer):
+    campaign_id = serializers.IntegerField(required=True)
+    practice_ids = serializers.ListField(
+        child=serializers.IntegerField(),
+        required=True,
+        min_length=1
+    )
 # from rest_framework import serializers
 # from .models import UserCampaign
 
