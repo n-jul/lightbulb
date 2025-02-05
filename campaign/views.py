@@ -206,10 +206,13 @@ class UserCampaignViewSet(viewsets.ViewSet):
             self.user_role="user"
         elif user_query.role=="admin":
             self.user_role="admin"
+            self.user_role_data=user_query
         elif user_query.role=="superadmin":
             self.user_role="superadmin"
+            self.user_role_data=user_query
         else:
             self.user_role="user"
+            self.user_role_data=user_query
     
     def create(self, request, *args, **kwargs):
         self.get_user_role()
@@ -253,19 +256,34 @@ class UserCampaignViewSet(viewsets.ViewSet):
     def list(self, request, *args, **kwargs):
         logger.info("Received request to list all user campaigns")
         self.get_user_role()
+        logger.info(f"Request role is {self.user_role}")
         try:
             campaigns = []
             if self.user_role=="superadmin":
                 campaigns = session.query(UserCampaign).all()
             elif self.user_role=="admin":
-                campaigns = session.query(UserCampaign).filter(
-                    or_(UserCampaign.admin_id == None, UserCampaign.admin_id == request.user.id)
+                logger.info("Went to admin condition.")
+                logger.info(f"user role practice_id is {self.user_role_data.practice_id}")
+                admin_users = session.query(extended_user).filter(
+                    extended_user.role=="admin",
+                    extended_user.practice_id==self.user_role_data.practice_id
                 ).all()
+                logger.info(f"the admin user ids are {admin_users}")
+                admin_practice_ids = [admin.id for admin in admin_users]
+                logger.info(f"the admin user ids are {admin_practice_ids}")
+                campaigns = session.query(UserCampaign).filter(
+                    or_(UserCampaign.admin_id == None, UserCampaign.admin_id.in_(admin_practice_ids))
+                ).all()
+                logger.info(f"The length of campaigns are {len(campaigns)}")
             else:
                 return Response({"error":"You are not authorized to perform this action."}, status=status.HTTP_401_UNAUTHORIZED)
             campaign_count = len(campaigns)
             logger.info(f"Successfully retrieved {campaign_count} campaigns")
             serializer = UserCampaignSerializer(campaigns, many=True)
+            for idx, campaign_data in enumerate(serializer.data):
+            # Add the admin_id from the original campaign object to the serialized data
+                campaign_data['admin_id'] = campaigns[idx].admin_id if campaigns[idx].admin_id is not None else None
+
             return Response(serializer.data)
         except Exception as e:
             logger.error(f"Failed to retrieve campaigns: {str(e)}", exc_info=True)
@@ -474,28 +492,48 @@ class ScheduleCampaignViewSet(viewsets.ViewSet):
 
 class SuperAdminSendCampaignViewSet(viewsets.ViewSet):
     # permission_classes=[IsAuthenticated, IsSuperAdmin]
-    def create(self,request,*args,**kwargs):
+    def create(self, request, *args, **kwargs):
+        logger.info("Received request to send campaigns......................")
         serializer = SuperAdminSendCampaignSerializer(data=request.data)
         if not serializer.is_valid():
             logger.warning(f"Invalid campaign data provided: {serializer.errors}")
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        
         try:
             practice_ids = serializer.validated_data["practice_ids"]
-            users_ids = session.query(extended_user).filter(extended_user.practice_id.in_(practice_ids)).all()
+            campaign_id = serializer.validated_data["campaign_id"]
+            logger.info(f"campaign_id is {campaign_id}")
+            logger.info(f"practice_ids are {practice_ids}")
+            # Corrected variable name
+            user_ids = session.query(extended_user).filter(extended_user.practice_id.in_(practice_ids)).all()
+            logger.info(f"user ids are {user_ids}")
+            # Checking the correct variable
             if not user_ids:
-                return Response({"message":"empty user id list."}, status=status.HTTP_400_BAD_REQUEST)
+                return Response({"message": "empty user id list."}, status=status.HTTP_400_BAD_REQUEST)
+            
+            # Extracting the IDs from the query result
             user_ids = [user_id.id for user_id in user_ids]
             users_list = list(DjangoUser.objects.filter(id__in=user_ids).values_list('email', flat=True))
             total_users = len(users_list)   
+            
             logger.info(f"Attempting to send email to {total_users} users")
             logger.info(f"Recipient list is {users_list}")
+            
+            campaign = session.query(UserCampaign).filter(UserCampaign.id==campaign_id).first()
+            subject, message ="",""
+            logger.info(f"campaign object that we got: {campaign}")
+            if campaign:
+                subject = campaign.text
+                message = campaign.description
             send_email_task.apply_async(args=[subject, message, "anjulkushwaha11@gmail.com", users_list])
             logger.info("Email sent successfully")
-            return Response({"message": "Email sent successfully!", "Total users":total_users}, status=status.HTTP_201_CREATED)
+            
+            return Response({"message": "Email sent successfully!", "Total users": total_users}, status=status.HTTP_201_CREATED)
+        
         except Exception as e:
             logger.error(f"Failed to send email: {str(e)}", exc_info=True)
-            return Response({"error": "Failed to send email"}, 
-                                status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-            
+            return Response({"error": "Failed to send email"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+         
             
         

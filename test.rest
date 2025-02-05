@@ -20,9 +20,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
     "description": "This campaign is to introduce our latest product to our users." 
 }
 ###
-GET http://127.0.0.1:8000/campaign/api/campaigns/1
+GET http://127.0.0.1:8000/campaign/api/campaigns/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3NjI3ODg1LCJpYXQiOjE3Mzc2Mjc1ODUsImp0aSI6IjNjYmExZmQ4Y2FhNTRiZTk5NDhiNjYwODViZmZjMzc2IiwidXNlcl9pZCI6MTR9.VCkcIJ8zzI8RH7PxXP1xVxo5ZabNL0zeFzcDx1tj_AQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MzU0MTA1LCJpYXQiOjE3Mzg3NDkzMDUsImp0aSI6IjU0MzM1NTgzYmI0NTQzM2VhYTEwZjY3NDMyNmVhMjQ0IiwidXNlcl9pZCI6MTN9.tkJLSDQkTpoflRm6VDvgQMx42H7jUbhT_pW2p4CIsyw
 ###
 PUT http://127.0.0.1:8000/campaign/api/campaigns/1/
 Content-Type: application/json
