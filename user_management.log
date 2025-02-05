@@ -389,3 +389,39 @@ DETAIL:  Key (practice_id)=(1) is not present in table "practice".
 2025-02-05 15:02:35,565 - extended_user.views - INFO - Successful login for user: test_admin
 2025-02-05 15:25:03,907 - extended_user.views - INFO - Processing login request
 2025-02-05 15:25:05,838 - extended_user.views - INFO - Successful login for user: test_admin
+2025-02-05 15:43:33,365 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 15:43:33,559 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 15:43:33,568 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 15:43:33,585 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 15:48:02,261 - extended_user.views - INFO - Processing login request
+2025-02-05 15:48:03,968 - extended_user.views - INFO - Successful login for user: test_admin
+2025-02-05 16:05:07,334 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:05:07,338 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:05:07,385 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:05:07,389 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:05:19,620 - extended_user.views - INFO - Processing login request
+2025-02-05 16:05:21,611 - extended_user.views - INFO - Successful login for user: n_jul
+2025-02-05 16:05:39,646 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:05:39,649 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:05:39,672 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:05:39,676 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:06:03,091 - extended_user.views - INFO - Processing login request
+2025-02-05 16:06:04,674 - extended_user.views - INFO - Successful login for user: superadmin
+2025-02-05 16:18:40,383 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:18:40,399 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:18:40,419 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:18:40,423 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:18:49,929 - extended_user.views - INFO - Processing login request
+2025-02-05 16:18:52,295 - extended_user.views - INFO - Successful login for user: test_admin
+2025-02-05 16:22:12,329 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:22:12,333 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:22:12,364 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:22:12,375 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:22:23,035 - extended_user.views - INFO - Processing login request
+2025-02-05 16:22:24,805 - extended_user.views - INFO - Successful login for user: n_jul
+2025-02-05 16:25:51,343 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:25:51,347 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:25:51,362 - extended_user.views - INFO - Fetching all practices...
+2025-02-05 16:25:51,366 - extended_user.views - INFO - Successfully retrieved 10 practices
+2025-02-05 16:26:01,900 - extended_user.views - INFO - Processing login request
+2025-02-05 16:26:03,674 - extended_user.views - INFO - Successful login for user: test_admin

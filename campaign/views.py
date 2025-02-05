@@ -260,7 +260,7 @@ class UserCampaignViewSet(viewsets.ViewSet):
         try:
             campaigns = []
             if self.user_role=="superadmin":
-                campaigns = session.query(UserCampaign).all()
+                campaigns = session.query(UserCampaign).filter(UserCampaign.is_deleted==False).all()
             elif self.user_role=="admin":
                 logger.info("Went to admin condition.")
                 logger.info(f"user role practice_id is {self.user_role_data.practice_id}")
@@ -272,7 +272,8 @@ class UserCampaignViewSet(viewsets.ViewSet):
                 admin_practice_ids = [admin.id for admin in admin_users]
                 logger.info(f"the admin user ids are {admin_practice_ids}")
                 campaigns = session.query(UserCampaign).filter(
-                    or_(UserCampaign.admin_id == None, UserCampaign.admin_id.in_(admin_practice_ids))
+                    or_(UserCampaign.admin_id == None, UserCampaign.admin_id.in_(admin_practice_ids)),
+                    UserCampaign.is_deleted==False
                 ).all()
                 logger.info(f"The length of campaigns are {len(campaigns)}")
             else:
@@ -307,6 +308,7 @@ class UserCampaignViewSet(viewsets.ViewSet):
         finally:
             session.close() 
     def update(self,request,pk=None, *args,**kwargs):
+        
         self.get_user_role()
         try:
             campaign = session.query(UserCampaign).filter(UserCampaign.id==pk).first()
@@ -374,6 +376,9 @@ class UserCampaignViewSet(viewsets.ViewSet):
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
         finally:
             session.close()               
+    # def destroy(self,request, *args,**kwargs):
+        
+    
 class MessageViewSet(viewsets.ViewSet):
     permission_classes = [IsAuthenticated]
     def list(self, request):
