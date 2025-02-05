@@ -132,6 +132,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 }
 
 ###
-GET http://127.0.0.1:8000/campaign/api/admin/campaigns/
+POST http://127.0.0.1:8000/campaign/api/sa_campaigns/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MTgwNzMzLCJpYXQiOjE3Mzg1NzU5MzMsImp0aSI6IjlhNGZiYWNhY2ZiNjQ2OTNhZmIyZDEzYmZhZmZjOGJjIiwidXNlcl9pZCI6MTN9.Q2xR8OaUVX45qelllWw33-tzPCOHYqBGC9h7fpRBMDw
+
+{
+    "campaign_id":10,
+    "practice_ids": [2,3,4,5,6,7,8,9,10,11]
+}

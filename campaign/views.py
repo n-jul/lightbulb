@@ -472,13 +472,30 @@ class ScheduleCampaignViewSet(viewsets.ViewSet):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-# class SuperAdminSendCampaignViewSet(viewsets.ViewSet):
-#     permission_classes=[IsAuthenticated, IsSuperAdmin]
-#     def post(self,request,*args,**kwargs):
-#         serializer = SuperAdminSendCampaignSerializer(data=request.data)
-#         if not serializer.is_valid():
-#             logger.warning(f"Invalid campaign data provided: {serializer.errors}")
-#             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-#         try:
+class SuperAdminSendCampaignViewSet(viewsets.ViewSet):
+    # permission_classes=[IsAuthenticated, IsSuperAdmin]
+    def create(self,request,*args,**kwargs):
+        serializer = SuperAdminSendCampaignSerializer(data=request.data)
+        if not serializer.is_valid():
+            logger.warning(f"Invalid campaign data provided: {serializer.errors}")
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            practice_ids = serializer.validated_data["practice_ids"]
+            users_ids = session.query(extended_user).filter(extended_user.practice_id.in_(practice_ids)).all()
+            if not user_ids:
+                return Response({"message":"empty user id list."}, status=status.HTTP_400_BAD_REQUEST)
+            user_ids = [user_id.id for user_id in user_ids]
+            users_list = list(DjangoUser.objects.filter(id__in=user_ids).values_list('email', flat=True))
+            total_users = len(users_list)   
+            logger.info(f"Attempting to send email to {total_users} users")
+            logger.info(f"Recipient list is {users_list}")
+            send_email_task.apply_async(args=[subject, message, "anjulkushwaha11@gmail.com", users_list])
+            logger.info("Email sent successfully")
+            return Response({"message": "Email sent successfully!", "Total users":total_users}, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            logger.error(f"Failed to send email: {str(e)}", exc_info=True)
+            return Response({"error": "Failed to send email"}, 
+                                status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            
             
         
