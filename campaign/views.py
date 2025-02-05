@@ -376,7 +376,52 @@ class UserCampaignViewSet(viewsets.ViewSet):
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
         finally:
             session.close()               
-    # def destroy(self,request, *args,**kwargs):
+    def destroy(self, request, pk=None, *args, **kwargs):
+        self.get_user_role()
+        try:
+            role = self.user_role
+            campaign = session.query(UserCampaign).filter(UserCampaign.id == pk).first()
+            logger.info(f"admin id of campaign is {campaign.admin_id}")
+            if not campaign:
+                logger.warning(f"Campaign with ID {pk} not found.")
+                return Response({"message": "Campaign not found."}, status=status.HTTP_404_NOT_FOUND)
+
+            if role == "superadmin":
+                campaign.is_deleted = True
+                logger.info(f"Superadmin deleted campaign ID {pk}")
+
+            elif role == "admin":
+                admin_users = session.query(extended_user).filter(
+                    extended_user.role == "admin",
+                    extended_user.practice_id == self.user_role_data.practice_id
+                ).all()
+
+                admin_practice_ids = [admin.id for admin in admin_users]
+                logger.info(f"Admin user IDs: {admin_practice_ids}")
+                logger.info(f"admin_id of campaign is {campaign.admin_id}")
+                if campaign.admin_id not in admin_practice_ids:
+                    logger.warning(f"Unauthorized delete attempt on campaign {pk} by admin {self.user_role_data.id}")
+                    return Response({"message": "You are not authorized to perform this."}, status=status.HTTP_401_UNAUTHORIZED)
+
+                campaign.is_deleted = True
+                logger.info(f"Admin {self.user_role_data.id} deleted campaign ID {pk}")
+
+            else:
+                logger.warning(f"Unauthorized delete attempt on campaign {pk} by role {role}")
+                return Response({"message": "You are not authorized to perform this."}, status=status.HTTP_401_UNAUTHORIZED)
+
+            session.commit()
+            return Response({"message": "Campaign deleted successfully."}, status=status.HTTP_200_OK)
+
+        except Exception as e:
+            session.rollback()
+            logger.error(f"Error while deleting campaign ID {pk}: {str(e)}", exc_info=True)
+            return Response({"message": "An error occurred while deleting the campaign."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+        finally:
+            session.close()
+
+                    
         
     
 class MessageViewSet(viewsets.ViewSet):

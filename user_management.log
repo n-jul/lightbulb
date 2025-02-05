@@ -425,3 +425,7 @@ DETAIL:  Key (practice_id)=(1) is not present in table "practice".
 2025-02-05 16:25:51,366 - extended_user.views - INFO - Successfully retrieved 10 practices
 2025-02-05 16:26:01,900 - extended_user.views - INFO - Processing login request
 2025-02-05 16:26:03,674 - extended_user.views - INFO - Successful login for user: test_admin
+2025-02-05 17:02:07,459 - extended_user.views - INFO - Processing login request
+2025-02-05 17:02:09,773 - extended_user.views - INFO - Successful login for user: superadmin
+2025-02-05 17:04:11,906 - extended_user.views - INFO - Processing login request
+2025-02-05 17:04:13,933 - extended_user.views - INFO - Successful login for user: test_admin
