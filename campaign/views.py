@@ -15,7 +15,7 @@ from .tasks import send_email_task
 from django.utils.timezone import make_aware, is_aware, now, get_current_timezone, localtime
 from datetime import timedelta
 from sqlalchemy.exc import SQLAlchemyError
-
+from math import ceil
 # Create a logger for this file
 logger = logging.getLogger(__name__)
 
@@ -257,10 +257,15 @@ class UserCampaignViewSet(viewsets.ViewSet):
         logger.info("Received request to list all user campaigns")
         self.get_user_role()
         logger.info(f"Request role is {self.user_role}")
+        page = int(self.request.query_params.get("page",1))
+        page_size = int(self.request.query_params.get("page_size",1))
+        logger.info(f"The page no of this request is {page}")
         try:
             campaigns = []
+            limit=page_size
+            offset = (page-1)*limit
             if self.user_role=="superadmin":
-                campaigns = session.query(UserCampaign).filter(UserCampaign.is_deleted==False).all()
+                campaigns = session.query(UserCampaign).filter(UserCampaign.is_deleted==False).limit(limit).offset(offset).all()
             elif self.user_role=="admin":
                 logger.info("Went to admin condition.")
                 logger.info(f"user role practice_id is {self.user_role_data.practice_id}")
@@ -274,18 +279,27 @@ class UserCampaignViewSet(viewsets.ViewSet):
                 campaigns = session.query(UserCampaign).filter(
                     or_(UserCampaign.admin_id == None, UserCampaign.admin_id.in_(admin_practice_ids)),
                     UserCampaign.is_deleted==False
-                ).all()
+                ).limit(limit).offset(offset).all()
                 logger.info(f"The length of campaigns are {len(campaigns)}")
             else:
                 return Response({"error":"You are not authorized to perform this action."}, status=status.HTTP_401_UNAUTHORIZED)
-            campaign_count = len(campaigns)
+            campaign_count = session.query(UserCampaign).filter(UserCampaign.is_deleted == False).count()
             logger.info(f"Successfully retrieved {campaign_count} campaigns")
+            total_pages = ceil(campaign_count/page_size)
             serializer = UserCampaignSerializer(campaigns, many=True)
             for idx, campaign_data in enumerate(serializer.data):
             # Add the admin_id from the original campaign object to the serialized data
                 campaign_data['admin_id'] = campaigns[idx].admin_id if campaigns[idx].admin_id is not None else None
-
-            return Response(serializer.data)
+            response_data = {
+            'campaigns': serializer.data,
+            'pagination': {
+                'current_page': page,
+                'page_size': page_size,
+                'total_count': campaign_count,
+                'total_pages': total_pages
+            }
+            }
+            return Response(response_data)
         except Exception as e:
             logger.error(f"Failed to retrieve campaigns: {str(e)}", exc_info=True)
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)

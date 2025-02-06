@@ -28,7 +28,7 @@ class SQLAlchemySerializer(serializers.Serializer):
             column.key: getattr(instance, column.key)
             for column in instance.__table__.columns
         }
-        logger.debug(f"to_representation output: {representation}")
+        # logger.debug(f"to_representation output: {representation}")
         return representation
     @property
     def errors(self):

@@ -20,9 +20,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
     "description": "This campaign is to introduce our latest product to our users." 
 }
 ###
-GET http://127.0.0.1:8000/campaign/api/campaigns/
+GET http://127.0.0.1:8000/campaign/api/campaigns/?page=1&page_size=5
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5MzU5OTI5LCJpYXQiOjE3Mzg3NTUxMjksImp0aSI6ImU0NGU0N2Y0ODNjZjRlMjNhODk5ZTA5ODBkNzEyN2VmIiwidXNlcl9pZCI6MTR9.4ShHfgqOoN_XuivTGlOwTJl3M3aS-XtOtUmRQrcBqCE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM5NDI2NjgyLCJpYXQiOjE3Mzg4MjE4ODIsImp0aSI6IjAwYWZhMGUwMzIzYzRkNmViYjIwZjgwMTc5NzJjMzkyIiwidXNlcl9pZCI6MTR9.TO38hRNaJ8WVeVkP1OklACcHX_NOhn5jqukBi01QxVY
 ###
 ###
 DELETE  http://127.0.0.1:8000/campaign/api/campaigns/11/
